@@ -12,12 +12,12 @@ https://mygit.th-deg.de/jy31613/ai-assistant-project-jonathan/-/wikis/home
 A book recommendation system that will give the user books that he might like.
 
 ## Installation
-Python version: 3.13.3
-Pandas version: 2.3.3
-NumPy version: 2.3.4
-Scikit-learn version: 1.7.2
-Streamlit version: 1.50.0
-SpeechRecognition version: 3.14.3
+- Python version: 3.13.3
+- Pandas version: 2.3.3
+- NumPy version: 2.3.4
+- Scikit-learn version: 1.7.2
+- Streamlit version: 1.50.0
+- SpeechRecognition version: 3.14.3
 
 ## Data
 https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks
