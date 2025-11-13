@@ -24,5 +24,11 @@ https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks
 
 Data description can be found at: https://mygit.th-deg.de/jy31613/ai-assistant-project-jonathan/-/wikis/home/Data
 
+Cleaning Data: After checking for all missing values datatypes (Null/NaN, empty values and 0 values), I discovered my data set's missing values are only shown as 0's. and so I decided to drop one column that wasn't relevant, another changed all missing values to median, and other 2 columns I dropped all rows with 0 values.
+
+Linear Regression Model: I added a linear regression model to my dataset, split my data into training data (70%) and testing data (30%), and also showed the mse and r**2 score results.
+
+Classifiaction Model: I created a new column (rating_catagory) with bins (Low, Medium, High) on the back off the already existing target variable (average_rating). Split the data into training data (70%) and testing data (30%), I used RandomForestClassifier Model and also showed accuracy results.
+
 ## Basic Usage
 Explained later on in the project.
