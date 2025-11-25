@@ -18,6 +18,7 @@ A book recommendation system that will give the user books that he might like.
 - Scikit-learn version: 1.7.2
 - Streamlit version: 1.50.0
 - SpeechRecognition version: 3.14.3
+- joblib: 1.5.2
 
 ## Data
 https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks
