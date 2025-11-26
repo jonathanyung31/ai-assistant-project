@@ -3,7 +3,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score, accuracy_score, classification_report
-
+import joblib
 import streamlit as st
 
 import matplotlib.pyplot as plt
@@ -83,6 +83,12 @@ predicted_y_class = rf_model.predict(X_test_class)
 accuracy_log_reg = accuracy_score(y_test_calss, predicted_y_class)
 
 print(f"Random Forest Accuracy: {accuracy_log_reg:.2f}")
+
+joblib.dump(rf_model, 'book_rf_model.joblib')
+joblib.dump(list(X_train_class.columns), "book_rf_features.joblib")
+joblib.dump(lin_reg_model, 'book_lin_model.joblib')
+joblib.dump(list(X_train.columns), "book_lin_features.joblib")
+
 '''
 st.title('Goodreds Recommansation App')
 st.write("This App will Recommand you Books you might Like!")

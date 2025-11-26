@@ -31,5 +31,12 @@ Linear Regression Model: I added a linear regression model to my dataset, split 
 
 Classifiaction Model: I created a new column (rating_catagory) with bins (Low, Medium, High) on the back off the already existing target variable (average_rating). Split the data into training data (70%) and testing data (30%), I used RandomForestClassifier Model and also showed accuracy results.
 
+## App
+
+Features for the app where added: Title, page icon, etc.
+Widgets were added for the user so models can predict better results.
+Models where loaded to the app using joblib.
+user inputs were inserted as a key value pair for each into a data frame from models to run over. The data frame is also displayed in the app.
+
 ## Basic Usage
 Explained later on in the project.
