@@ -65,12 +65,12 @@ st.write("This App will Recommand you Books you might Like!")
 
 try:
     # Classification
-    rf_model = joblib.load("book_rf_model.joblib")
-    rf_features = joblib.load("book_rf_features.joblib")
+    rf_model = joblib.load("models/book_rf_model.joblib")
+    rf_features = joblib.load("models/book_rf_features.joblib")
 
     # Regression
-    lin_model = joblib.load("book_lin_model.joblib")
-    lin_features = joblib.load("book_lin_features.joblib")
+    lin_model = joblib.load("models/book_lin_model.joblib")
+    lin_features = joblib.load("models/book_lin_features.joblib")
 
 except FileNotFoundError:
     st.error("Model files not found. Please ensure 'churn_model.joblib'"
