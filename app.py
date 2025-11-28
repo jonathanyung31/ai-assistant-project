@@ -60,8 +60,8 @@ st.markdown(
 
 st.set_page_config(page_title="GoodreadsRec",page_icon="📖", layout="wide")
 
-st.title('Goodreads Recommansation App')
-st.write("This App will Recommand you Books you might Like!")
+st.title('Goodreads recommandation App')
+st.write("This App will Recommend you Books you might Like!")
 
 try:
     # Classification
@@ -73,8 +73,7 @@ try:
     lin_features = joblib.load("models/book_lin_features.joblib")
 
 except FileNotFoundError:
-    st.error("Model files not found. Please ensure 'churn_model.joblib'"
-    " and 'churn_model_features.joblib' are in the same directory.")
+    st.error("Model files not found. Please ensure that the files are in the same directory")
     st.stop()   # Stop the app if models are not found
 
 # --- Input Widgets for Customer Features ---

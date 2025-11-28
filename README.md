@@ -36,7 +36,8 @@ Classifiaction Model: I created a new column (rating_catagory) with bins (Low, M
 Features for the app where added: Title, page icon, etc.
 Widgets were added for the user so models can predict better results.
 Models where loaded to the app using joblib.
-user inputs were inserted as a key value pair for each into a data frame from models to run over. The data frame is also displayed in the app.
+user inputs were inserted as a key value pair for each into a data frame for models to process. 
+The data frame is also displayed in the app.
 
 ## Basic Usage
 Explained later on in the project.
