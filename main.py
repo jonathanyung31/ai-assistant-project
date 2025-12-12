@@ -1,4 +1,5 @@
 import pandas as pd
+from pathlib import Path
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -10,7 +11,7 @@ import seaborn as sns
 
 
 try:
-    df = pd.read_csv(r"C:\Users\jonat\Projects\Assistance Systems\ai-assistant-project-jonathan\books.csv", on_bad_lines='skip')
+    df = pd.read_csv(r'data/books.csv', on_bad_lines='skip')
 except FileNotFoundError:
     print('Error: File not Found!')
 
@@ -38,7 +39,7 @@ df = df[df['average_rating'] != 0]
 # Dropping rows with no rating_count (0) by using boolean mask
 df = df[df['ratings_count'] != 0]
 
-df.to_csv('books_copy.csv', index=False)
+df.to_csv('data/books_copy.csv', index=False)
 
 # print(df.select_dtypes(include='number').eq(0).sum())
 
@@ -83,10 +84,10 @@ accuracy_log_reg = accuracy_score(y_test_calss, predicted_y_class)
 
 print(f"Random Forest Accuracy: {accuracy_log_reg:.2f}")
 
-joblib.dump(rf_model, 'book_rf_model.joblib')
-joblib.dump(list(X_train_class.columns), "book_rf_features.joblib")
-joblib.dump(lin_reg_model, 'book_lin_model.joblib')
-joblib.dump(list(X_train.columns), "book_lin_features.joblib")
+joblib.dump(rf_model, 'models/book_rf_model.joblib')
+joblib.dump(list(X_train_class.columns), "models/book_rf_features.joblib")
+joblib.dump(lin_reg_model, 'models/book_lin_model.joblib')
+joblib.dump(list(X_train.columns), "models/book_lin_features.joblib")
 
 '''
 st.title('Goodreds Recommansation App')

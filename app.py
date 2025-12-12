@@ -63,24 +63,29 @@ st.set_page_config(page_title="GoodreadsRec",page_icon="📖", layout="wide")
 st.title('Goodreads recommandation App')
 st.write("This App will Recommend you Books you might Like!")
 
-try:
-    # Classification
-    rf_model = joblib.load("models/book_rf_model.joblib")
-    rf_features = joblib.load("models/book_rf_features.joblib")
+@st.cache_resource
+def load_models():
+    try:
+        # Classification
+        rf_model = joblib.load("models/book_rf_model.joblib")
+        rf_features = joblib.load("models/book_rf_features.joblib")
 
-    # Regression
-    lin_model = joblib.load("models/book_lin_model.joblib")
-    lin_features = joblib.load("models/book_lin_features.joblib")
+        # Regression
+        lin_model = joblib.load("models/book_lin_model.joblib")
+        lin_features = joblib.load("models/book_lin_features.joblib")
 
-except FileNotFoundError:
-    st.error("Model files not found. Please ensure that the files are in the same directory")
-    st.stop()   # Stop the app if models are not found
+        return rf_model, rf_features, lin_model, lin_features
+    
+    except FileNotFoundError:
+        st.error("Model files not found. Please ensure that the files are in the same directory")
+        st.stop()   # Stop the app if models are not found
 
+rf_model, rf_features, lin_model, lin_features = load_models()
 # --- Input Widgets for Customer Features ---
 
 st.sidebar.header("User Details")
 
-average_rating = st.slider("Preferred average rating", 0.0, 5.0, 3.0, 0.5)
+average_rating = st.slider("Preferred average rating", 0.0, 5.0, 2.5, 0.5)
 num_pages = st.radio("Do you like short, medium, or long books?", ["Short","Medium","Long"])
 ratings_count = st.radio("Do you like popular or niche books?", ["Niche", "Popular", "Blockbusters"])
 
@@ -102,4 +107,3 @@ input_lin_df = pd.DataFrame([lin_features])
 st.subheader("Customer Input Summary:")
 st.dataframe(input_rf_df)
 st.dataframe(input_lin_df)
-
