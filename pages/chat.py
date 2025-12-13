@@ -5,6 +5,7 @@ from nltk.tokenize import word_tokenize
 import json
 import random
 from collections import defaultdict
+import pandas as pd
 
 '''
 The Use Case the chatbot will be focused on is for the user
@@ -91,14 +92,45 @@ for sentence in test_sentences:
 
 if intent == "top_rated_books":
     st.write("Here are the top-rated books...")
-elif intent == "top_rated_author_books":
+elif intent == "get_books_by_author":
     st.write("Which author's top books would you like?")
-elif intent == "find_book_by_title":
+elif intent == "search_by_title":
     st.write("Searching for that book...")
-elif intent == "get_book_details":
+elif intent == "get_details":
     st.write("Fetching book details...")
 else:
     st.write("Sorry, I didn't catch that, could you say that more clearly?")
+
+@st.cache_data
+def load_data():
+    df = pd.read_csv("data/books_copy.csv")
+    return df
+
+df = load_data()
+
+def top_rated_books(limit=10):
+    #Get the highest rated books
+    top_books = df.nlargest(limit, 'average_rating')
+    #Each row becomes one dictionary
+    return top_books[['title', 'authors', 'average_rating']].to_dict('records')
+
+def get_books_by_author(author_name, limit=10):
+    #Get books by a specific author
+    author_books = df[df['authors'].str.contains(author_name, case=False)]
+    author_books = author_books.nlargest(limit, 'average_rating')
+    return author_books[['title', 'authors', 'average_rating']].to_dict('records')
+
+def search_by_title(title):
+    #Find a specific book by title
+    result = df[df['title'].str.contains(title, case=False)]
+    if len(result) > 0:
+        return result.iloc[0].to_dict()
+    return None
+
+def get_details(title):
+    #Get full details about a book
+    book = search_by_title(title)
+    return book
 
 
 def speech_to_text():
@@ -121,19 +153,5 @@ def speech_to_text():
     except sr.UnknownValueError:
         print("Sorry, I could not understand the audio, could you repeat that please?")
     except sr.RequestError:
-        print(f"Could not find results, Sorry...")
+        print(f"Could not find results. If it doesn't work again, could you try later?")
 
-
-
-
-'''
-
-
-for sentence in test_sentences:
-    features = extract_features(sentence)
-    predicted_intent = classifier.classify(features)
-    print(f"'{sentence}' -> {predicted_intent}")
-    
-print("\nMost Informative Features (Mensa Data):")
-classifier.show_most_informative_features(5)
-'''
