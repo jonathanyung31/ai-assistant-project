@@ -32,7 +32,9 @@ Linear Regression Model: I added a linear regression model to my dataset, split 
 
 Classifiaction Model: I created a new column (rating_catagory) with bins (Low, Medium, High) on the back off the already existing target variable (average_rating). Split the data into training data (70%) and testing data (30%), I used RandomForestClassifier Model and also showed accuracy results.
 
-## App
+## Basic Usage
+
+#### App
 
 Features for the app where added: Title, page icon, etc.
 Widgets were added for the user so models can predict better results.
@@ -40,5 +42,6 @@ Models where loaded to the app using joblib.
 user inputs were inserted as a key value pair for each into a data frame for models to process. 
 The data frame is also displayed in the app.
 
-## Basic Usage
-Explained later on in the project.
+#### Chatbot
+
+The developed chatbot for my app, BooCompass, serves as the primary interface for users that want to interact with the app via text/voice. I have introduced in the Wiki a system persona, and 2 user personas (Maya and Alex), helping the system meet specific needs of users. I used nltk and Naive Bayes Classifier to identify the intents of the user, giving him/her the results they are looking for. The Use Case for the chatbot is "top-rated books" that comes with 4 intents and 10 example requests for each intent (40 questions total) that are stored in a JSON file.
