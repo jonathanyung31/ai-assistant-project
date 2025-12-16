@@ -1,7 +1,6 @@
-# ai-assistant-project-jonathan
-
 Yung, Jonathan, 22402613
 
+Book Recommander
 
 https://mygit.th-deg.de/jy31613/ai-assistant-project-jonathan.git
 
@@ -12,6 +11,9 @@ https://mygit.th-deg.de/jy31613/ai-assistant-project-jonathan/-/wikis/home
 A book recommendation system that will give the user books that he might like.
 
 ## Installation
+
+pip install -r requirements.txt
+
 - Python version: 3.13.3
 - Pandas version: 2.3.3
 - NumPy version: 2.3.4
@@ -20,28 +22,16 @@ A book recommendation system that will give the user books that he might like.
 - SpeechRecognition version: 3.14.3
 - joblib: 1.5.2
 - nltk: 25.3
+- pyttsx3: 25.3
 
 ## Data
+
 https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks
 
 Data description can be found at: https://mygit.th-deg.de/jy31613/ai-assistant-project-jonathan/-/wikis/home/Data
 
-Cleaning Data: After checking for all missing values datatypes (Null/NaN, empty values and 0 values), I discovered my data set's missing values are only shown as 0's. and so I decided to drop one column that wasn't relevant, another changed all missing values to median, and other 2 columns I dropped all rows with 0 values.
-
-Linear Regression Model: I added a linear regression model to my dataset, split my data into training data (70%) and testing data (30%), and also showed the mse and r**2 score results.
-
-Classifiaction Model: I created a new column (rating_catagory) with bins (Low, Medium, High) on the back off the already existing target variable (average_rating). Split the data into training data (70%) and testing data (30%), I used RandomForestClassifier Model and also showed accuracy results.
-
 ## Basic Usage
 
-#### App
+The user can add his desired book ratings, if it's popular or the length that is desired.
 
-Features for the app where added: Title, page icon, etc.
-Widgets were added for the user so models can predict better results.
-Models where loaded to the app using joblib.
-user inputs were inserted as a key value pair for each into a data frame for models to process. 
-The data frame is also displayed in the app.
-
-#### Chatbot
-
-The developed chatbot for my app, BooCompass, serves as the primary interface for users that want to interact with the app via text/voice. I have introduced in the Wiki a system persona, and 2 user personas (Maya and Alex), helping the system meet specific needs of users. I used nltk and Naive Bayes Classifier to identify the intents of the user, giving him/her the results they are looking for. The Use Case for the chatbot is "top-rated books" that comes with 4 intents and 10 example requests for each intent (40 questions total) that are stored in a JSON file.
+The Use Case that can be searched for in the system by the user relates to Top-Rated Books.
