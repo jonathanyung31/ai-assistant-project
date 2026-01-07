@@ -32,6 +32,6 @@ Data description can be found at: https://mygit.th-deg.de/jy31613/ai-assistant-p
 
 ## Basic Usage
 
-The user can add his desired book ratings, if it's popular or the length that is desired.
+The user can add his desired book ratings, if it's popular or not and the length that he desires.
 
 The Use Case that can be searched for in the system by the user relates to Top-Rated Books.
