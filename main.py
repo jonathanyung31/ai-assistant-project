@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import joblib
 from datetime import datetime
+import random
 
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -14,6 +15,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
+Path('visuals').mkdir(exist_ok=True)
+Path('models').mkdir(exist_ok=True)
 
 # Load data
 try:
@@ -22,21 +25,58 @@ except FileNotFoundError:
     print('Error: File not Found!')
     exit()
 
-'''
-## Seeing how many 0 values I have in the dataset
+df.columns = df.columns.str.strip()
+
+print("\n--- Statistical Analysis Before Cleaning ---")
+
+# 5-number summary for numerical columns
+print("\n5-Number Summary Before Cleaning:")
+print(df[['num_pages', 'average_rating', 'ratings_count']].describe())
+
+# Check for 0 values
+print("\nZero values count:")
 print(df.select_dtypes(include='number').eq(0).sum())
-## Representing in a visual diagram
-plt.figure(figsize=(5, 4))
-sns.heatmap(df.select_dtypes(include='number').eq(0).sum().to_frame(), annot=True,
-fmt='d', cbar=False, cmap='coolwarm')
-plt.title('0 Values Heatmap Before Cleaning')
+
+plt.figure(figsize=(12, 5))
+
+# Histogram for average_rating
+plt.subplot(1, 3, 1)
+plt.hist(df['average_rating'], bins=20, edgecolor='black')
+plt.title('Average Rating Distribution')
+plt.xlabel('Rating')
+plt.ylabel('Frequency')
+
+# Histogram for num_pages
+plt.subplot(1, 3, 2)
+plt.hist(df['num_pages'], bins=30, edgecolor='black')
+plt.title('Number of Pages Distribution')
+plt.xlabel('Pages')
+plt.ylabel('Frequency')
+
+# Histogram for ratings_count
+plt.subplot(1, 3, 3)
+plt.hist(df['ratings_count'], bins=30, edgecolor='black')
+plt.title('Ratings Count Distribution')
+plt.xlabel('Count')
+plt.ylabel('Frequency')
+
 plt.tight_layout()
-plt.show()
-'''
+plt.savefig('visuals/before_cleaning_distributions.png')
+print("\n Saved: visuals/before_cleaning_distributions.png")
+plt.close()
+
+# Heatmap of zero values
+plt.figure(figsize=(8, 6))
+sns.heatmap(df.select_dtypes(include='number').eq(0).sum().to_frame(), 
+            annot=True, fmt='d', cbar=False, cmap='coolwarm')
+plt.title('Zero Values Heatmap Before Cleaning')
+plt.tight_layout()
+plt.savefig('visuals/zero_values_heatmap.png')
+print("Saved: visuals/zero_values_heatmap.png")
+plt.close()
 
 # Data cleaning
 df = df.drop_duplicates()
-df.columns = df.columns.str.strip()
 df = df.drop(columns=['text_reviews_count'])
 
 # Replacing all 0 values of 'num_pages' column with the median
@@ -58,8 +98,6 @@ label_encoder_author = LabelEncoder()
 df['author_encoded'] = label_encoder_author.fit_transform(df['authors'])
 
 df = df.dropna(subset=['book_age_days'])
-
-df.to_csv('data/books_copy.csv', index=False)
 
 ''' print(df.select_dtypes(include='number').eq(0).sum()) '''
 
@@ -97,6 +135,9 @@ df['rating_category'] = pd.cut(
 
 df = df.dropna(subset=['rating_category'])
 
+# Now we can save it with all attributes
+df.to_csv('data/books_copy.csv', index=False)
+
 y_class = df['rating_category']
 X_class = df[['num_pages', 'ratings_count', 'book_age_days',
                'language_code_encoded', 'author_encoded']]
@@ -131,7 +172,10 @@ joblib.dump(label_encoder_author, 'models/author_encoder.joblib')
 # Generating Fake Data
 
 num_fake_books = 1000
-np.random.seed(42) # Random values will be consistent
+
+# Random values will be consistent
+np.random.seed(42)
+random.seed(42)
 
 authors = df['authors'].unique()[:100]
 real_languages = df['language_code'].unique()
@@ -142,8 +186,8 @@ fake_data = {
     'title': [f'Fake Book Title {i}' for i in range(num_fake_books)],
     'authors': np.random.choice(authors, num_fake_books),
     'average_rating': np.round(np.random.uniform(2.5, 5.0, num_fake_books), 2),
-    'isbn': [f'{np.random.randint(1000000000, 9999999999)}' for _ in range(num_fake_books)],
-    'isbn13': [f'{np.random.randint(1000000000000, 9999999999999)}' for _ in range(num_fake_books)],
+    'isbn': [str(random.randint(1000000000, 9999999999)) for i in range(num_fake_books)],
+    'isbn13': [str(random.randint(1000000000000, 9999999999999)) for i in range(num_fake_books)],
     'language_code': np.random.choice(real_languages, num_fake_books),
     'num_pages': np.random.randint(100, 1000, num_fake_books),
     'ratings_count': np.random.randint(50, 300000, num_fake_books),

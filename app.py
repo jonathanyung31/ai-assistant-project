@@ -77,17 +77,51 @@ def load_models():
         return rf_model, rf_features, lin_model, lin_features
     
     except FileNotFoundError:
-        st.error("Model files not found. Please ensure that the files are in the same directory")
-        st.stop()   # Stop the app if models are not found
+        st.error("Model files not found.")
+        st.stop()
 
 rf_model, rf_features, lin_model, lin_features = load_models()
+
+# Load real dataset
+
+@st.cache_data
+def load_book_data():
+    try:
+        return pd.read_csv('data/books_copy.csv')
+    except FileNotFoundError:
+        st.error("Book data not found!")
+        st.stop()
+
+df_real = load_book_data()
+
 # --- Input Widgets for Customer Features ---
 
-st.sidebar.header("User Details")
+st.sidebar.header("📋 Your Preferences")
 
-average_rating = st.slider("Preferred average rating", 0.0, 5.0, 2.5, 0.5)
-num_pages = st.radio("Do you like short, medium, or long books?", ["Short","Medium","Long"])
-ratings_count = st.radio("Do you like popular or niche books?", ["Niche", "Popular", "Blockbusters"])
+num_pages = st.radio("Preffered Book Length:",
+["Short (< 250 pages)", "Medium (250-450 pages)",
+  "Long (> 450 pages)"])
+
+if "Short" in num_pages:
+    num_pages = 200
+elif "Medium" in num_pages:
+    num_pages = 350
+else:
+    num_pages = 600
+
+
+ratings_count = st.radio("Preffered Popularity",
+["Niche", "Popular", "Blockbusters"])
+
+if "Niche" in ratings_count:
+    ratings_count = 500
+elif "Popular" in ratings_count:
+    ratings_count = 5000
+else:
+    ratings_count = 50000
+
+
+average_rating = st.slider("Preferred average rating:", 0.0, 5.0, 2.5, 0.5)
 
 if st.button("Submit"):
     st.write("Processing your desired books now...")

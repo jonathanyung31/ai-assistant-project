@@ -1,0 +1,1001 @@
+bookID,title,authors,average_rating,isbn,isbn13,language_code,num_pages,ratings_count,publisher,language_code_encoded,book_age_days,author_encoded,rating_category
+100000,Fake Book Title 0,Leo Tolstoy/David Magarshack/Priscilla Meyer,3.97,3746317213,6802303397970,rus,505,290676,Thomas Nelson,20,2857.6,65,High
+100001,Fake Book Title 1,Kahlil Gibran/جبران خليل جبران,4.36,9697354961,5599959090126,nl,175,9221,Signet,17,2785.7,60,High
+100002,Fake Book Title 2,Dale Peck,3.58,2181241943,7324999408400,en-US,678,100805,Scholastic Inc.,4,10547.0,15,High
+100003,Fake Book Title 3,Charles Todd,2.82,1958682846,5156208793671,en-CA,953,108175,Simon & Schuster,2,5192.2,7,Medium
+100004,Fake Book Title 4,John Banville,3.21,4163119785,9186715438034,wel,591,3746,Rowman & Littlefield Publishers,24,7397.1,51,Medium
+100005,Fake Book Title 5,Philippa Carr,3.41,9963334018,3810226334795,en-US,293,126360,Farrar  Straus and Giroux,4,19793.9,82,High
+100006,Fake Book Title 6,Henry Miller,4.11,2812140441,7465192957343,gla,261,151435,Nimble Books,9,13801.5,42,High
+100007,Fake Book Title 7,Marguerite Duras,3.93,1127978094,4885290231784,en-CA,446,281343,Firebird,2,18998.2,72,High
+100008,Fake Book Title 8,Charles Willeford/James Lee Burke,3.39,1939042955,9410119639120,eng,460,45790,Simon & Schuster,5,3164.1,10,Medium
+100009,Fake Book Title 9,Charles Willeford/James Lee Burke,4.97,9703905715,9002181999442,jpn,868,106661,Pantheon,13,7868.3,10,High
+100010,Fake Book Title 10,Marguerite Duras/Barbara Bray,4.01,7635473142,7573901591856,fre,683,248972,Wiley,7,11257.2,73,High
+100011,Fake Book Title 11,Ralph Ginzburg,3.09,6241752544,7363869217878,glg,186,63861,Interlink Publishing Group,10,1872.1,84,Medium
+100012,Fake Book Title 12,Satyajit Das,2.75,7825844140,2973813075084,nor,361,182435,One World (UK),18,447.2,92,Medium
+100013,Fake Book Title 13,W. Frederick Zimmerman,2.88,4460967357,4558403971487,ale,313,63282,Cambridge University Press,0,13529.0,97,Medium
+100014,Fake Book Title 14,Edward P. Jones,3.11,8293453178,3891156601305,spa,764,277611,Booket,21,12967.1,25,Medium
+100015,Fake Book Title 15,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,2.9,6756332150,8771830688361,rus,821,155851,Kingfisher,20,8430.8,68,Medium
+100016,Fake Book Title 16,J.K. Rowling,2.97,1667779376,9601029126786,nor,672,112542,Teacher Created Resources,18,9979.2,45,Medium
+100017,Fake Book Title 17,Marguerite Duras/Barbara Bray,3.21,2445662585,8836212393350,mul,879,30149,O'Reilly Media,16,8522.2,73,Medium
+100018,Fake Book Title 18,Heidi Boyd,2.93,5693307665,1978430882247,fre,361,229256,New Directions Publishing,7,836.3,36,Medium
+100019,Fake Book Title 19,Frank Herbert/Brian Herbert/Kevin J. Anderson,4.74,5710360983,3321229816757,swe,829,118524,Tor Science Fiction,22,6950.0,30,High
+100020,Fake Book Title 20,J.K. Rowling,2.7,8934927891,8307943753187,jpn,382,271450,Amistad,13,3842.0,45,Medium
+100021,Fake Book Title 21,V.T. Rajshekar/Y.N. Kly,3.81,7887950851,6423714402614,lat,747,243638,Firebird,14,2297.6,95,High
+100022,Fake Book Title 22,Mulk Raj Anand/E.M. Forster,3.53,4466589567,1385358553663,swe,566,34731,Sterling Children's Books,22,19150.2,79,High
+100023,Fake Book Title 23,Philippa Carr,4.96,8429141456,5477056509192,en-GB,479,91378,Del Rey Books,3,12133.4,82,High
+100024,Fake Book Title 24,Rolland Baker/Heidi Baker,2.78,3303082117,1055046247460,glg,461,218562,Teaching Resources,10,14672.2,90,Medium
+100025,Fake Book Title 25,Charles Willeford/Lawrence Block,3.49,2625792787,4834314033913,ger,548,34590,Delacorte Books for Young Readers,8,6557.2,11,High
+100026,Fake Book Title 26,Gloria Goldreich,4.92,7665963761,2286679049475,ara,540,157658,Knopf,1,8084.4,34,High
+100027,Fake Book Title 27,Edward P. Jones,4.66,8995970241,8451962776781,lat,192,84750,Harper Perennial,14,5017.0,25,High
+100028,Fake Book Title 28,Marguerite Duras/Richard Seever,4.54,3479708607,2060831683426,ita,720,187697,Abdo Publishing Company,12,2268.9,74,High
+100029,Fake Book Title 29,Ruby Ann Boxcar,3.14,4026113008,9306182318671,ger,852,46052,The New Press,8,3880.3,91,Medium
+100030,Fake Book Title 30,Jean Gibran/جبران خليل جبران/Kahlil Gibran,2.93,9786748825,6046722873052,mul,966,49862,Firebird,16,16024.2,49,Medium
+100031,Fake Book Title 31,Anthony Thorlby,4.17,5728765136,4167146967274,rus,523,191101,Black Classic Press,20,13668.6,2,High
+100032,Fake Book Title 32,Dave Lakhani,4.82,6488854841,3382714591842,nl,241,257956,Ace,17,11103.9,17,High
+100033,Fake Book Title 33,Kahlil Gibran/John Walbridge/Robin Waterfield,3.89,2566942273,7585990305564,fre,390,108996,Interlink Publishing Group,7,9693.4,58,High
+100034,Fake Book Title 34,Mulk Raj Anand/E.M. Forster,3.93,6884882440,8891497660208,tur,531,66718,Shambhala,23,18477.0,79,High
+100035,Fake Book Title 35,Edward Lear/Laura Huliska-Beith/Edward Mendelson,3.2,3783290795,7643913975574,ger,848,99053,Scribner,8,1793.2,24,Medium
+100036,Fake Book Title 36,Dale Peck,4.42,4131575764,2410362658391,zho,951,211192,Pearson,25,5874.6,15,High
+100037,Fake Book Title 37,Eliot Ness/Oscar Fraley,2.97,5996775663,3338778486024,mul,923,220512,Sovereign World,16,7236.0,27,Medium
+100038,Fake Book Title 38,Eliot Ness/Oscar Fraley,3.31,6924716023,3084552798873,fre,788,194936,William Morrow Paperbacks,7,15727.9,27,Medium
+100039,Fake Book Title 39,Julia Wilkinson,3.56,3392080953,7912909886891,por,752,104651,Simon & Schuster,19,19853.0,57,High
+100040,Fake Book Title 40,Eliot Ness/Oscar Fraley,3.77,8235363119,3239949322647,grc,800,270006,O'Reilly Media,11,5090.6,27,High
+100041,Fake Book Title 41,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,3.11,4332894265,9144539452510,glg,148,61894,Little  Brown Book Group,10,17532.0,67,Medium
+100042,Fake Book Title 42,Leo Tolstoy/Amy Mandelker/Constance Garnett,2.79,6649827836,8462696568081,zho,401,201215,Vintage Crime/Black Lizard,25,16674.3,63,Medium
+100043,Fake Book Title 43,V.T. Rajshekar/Y.N. Kly,4.03,2149938334,7672368848158,en-CA,980,174920,Mira Books,2,4776.1,95,High
+100044,Fake Book Title 44,W. Frederick Zimmerman,3.22,2351531223,5040805564411,lat,289,74651,Scribner,14,8205.9,97,Medium
+100045,Fake Book Title 45,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,3.95,8110054933,9101371376371,wel,235,282894,Del Rey Books,24,8408.9,67,High
+100046,Fake Book Title 46,J.R.R. Tolkien,2.89,2970753705,3728790977712,fre,654,257977,Citadel,7,19572.4,47,Medium
+100047,Fake Book Title 47,Philippa Carr,3.7,2137651678,4316898659093,en-US,503,173473,Signet,4,3916.8,82,High
+100048,Fake Book Title 48,Ewan McGregor/Charley Boorman/Robert Uhlig,3.83,7805745017,1563125379832,en-US,991,93380,Association for Supervision & Curriculum Development,4,16056.5,28,High
+100049,Fake Book Title 49,Gary Russell,2.63,7010379415,5230609984749,fre,964,225441,Penguin Books,7,6926.9,32,Medium
+100050,Fake Book Title 50,Patricia A. McKillip,3.34,5284391408,2182001120234,rus,701,213656,Dover Publications,20,14715.6,81,Medium
+100051,Fake Book Title 51,Douglas Adams,2.84,7483366056,8851344426082,zho,906,191437,French & European,25,8611.9,22,Medium
+100052,Fake Book Title 52,Marguerite Duras/Richard Seever,2.66,1470939445,5303766293800,glg,440,241183,EMC/Paradigm Publishing,10,11721.1,74,Medium
+100053,Fake Book Title 53,Mulk Raj Anand/E.M. Forster,4.97,3694860228,1780569680298,rus,856,162677,William Morrow,20,16713.3,79,High
+100054,Fake Book Title 54,Molly Hatchet,3.31,5567816720,8719783947424,ger,803,178098,Dover Publications,8,16154.8,78,Medium
+100055,Fake Book Title 55,Chris   Smith/Christopher  Lee/Richard Taylor,4.52,9573276057,3461258685911,gla,417,45145,Scholastic,9,17377.2,12,High
+100056,Fake Book Title 56,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.14,7567496105,5120116013939,en-US,717,145392,Clarity Press,4,1535.6,59,Medium
+100057,Fake Book Title 57,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,4.2,9639245200,5167495523315,gla,462,162030,Barnes & Noble,9,13953.4,68,High
+100058,Fake Book Title 58,J.K. Rowling,4.4,4095476665,8272329003485,swe,921,277717,McGraw-Hill,22,3113.7,45,High
+100059,Fake Book Title 59,Henry Miller/Jiří Níl,3.99,8047877267,5841718784356,eng,481,62483,Farrar  Straus and Giroux,5,8529.6,43,High
+100060,Fake Book Title 60,Kahlil Gibran/John Walbridge/Robin Waterfield,3.68,5774080233,4083406747489,spa,332,20041,Ballantine Books,21,11136.5,58,High
+100061,Fake Book Title 61,Mulk Raj Anand/E.M. Forster,3.53,2867302554,1826762395930,zho,876,272969,Black Classic Press,25,8272.8,79,High
+100062,Fake Book Title 62,Cynthia Harrod-Eagles,3.37,2948728483,7060079842139,eng,443,147795,Picador USA,5,10567.6,14,Medium
+100063,Fake Book Title 63,Adam Ginsberg,4.82,4919706735,7707327343247,zho,648,122858,ASCD,25,19931.8,0,High
+100064,Fake Book Title 64,J.R.R. Tolkien/Alan  Lee,4.58,3615507143,8182973419604,por,916,158178,Atheneum Books for Young Readers,19,3020.0,48,High
+100065,Fake Book Title 65,Julia Wilkinson,4.91,5951406973,6274860724248,swe,652,137736,Sterling,22,13627.6,57,High
+100066,Fake Book Title 66,Heidi Fleiss/Libby Keatinge,2.81,4274958945,4235727258091,zho,628,7465,Little  Brown Book Group,25,8140.5,37,Medium
+100067,Fake Book Title 67,Charles Willeford,4.33,9592390865,5241166469002,glg,955,246088,Buccaneer Books,10,2976.6,8,High
+100068,Fake Book Title 68,Quentin Blake,4.85,6687206971,4967902705743,fre,888,254255,Scribner,7,3481.8,83,High
+100069,Fake Book Title 69,Frank Herbert,2.95,1083651970,3541364691166,fre,918,299238,Mira Books,7,19004.0,29,Medium
+100070,Fake Book Title 70,Rob Orsini,2.67,9285415473,9146718775486,en-CA,670,188271,Penguin Classics,2,17636.0,85,Medium
+100071,Fake Book Title 71,Douglas Adams,4.35,2320763135,2017541065297,mul,282,168666,Black Classic Press,16,18174.8,22,High
+100072,Fake Book Title 72,J.K. Rowling,3.94,1248786714,8260910159517,gla,140,50026,Random House Books for Young Readers,9,19833.7,45,High
+100073,Fake Book Title 73,Bill Bryson,4.6,5067116918,8331370817015,nl,650,266026,William Morrow,17,4455.3,4,High
+100074,Fake Book Title 74,Marianne Sturman/Leo Tolstoy,2.85,9957813353,7829573924614,wel,496,221933,Zebra,24,7344.1,75,Medium
+100075,Fake Book Title 75,Douglas Adams,4.49,4289233844,5484988926409,en-US,803,211559,Barnes & Noble Classics,4,13505.1,22,High
+100076,Fake Book Title 76,Marianne Sturman/Leo Tolstoy,3.0,3361388464,6807669108809,enm,878,296342,One World (UK),6,9864.5,75,Medium
+100077,Fake Book Title 77,Kahlil Gibran/جبران خليل جبران,2.91,6633778586,2390052017117,wel,593,239291,Penguin Books,24,8580.1,60,Medium
+100078,Fake Book Title 78,Narendra Jadhav,2.91,8086172302,8915290690200,en-US,758,219576,Routledge,4,7390.6,80,Medium
+100079,Fake Book Title 79,Patricia A. McKillip,4.54,7517938612,7527693732800,spa,432,188849,Farrar Straus Giroux,21,12023.9,81,High
+100080,Fake Book Title 80,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.16,1519709079,1907056211798,gla,226,38628,O'Reilly Media,9,11666.8,59,High
+100081,Fake Book Title 81,Adam Ginsberg,3.81,1965067727,7632582538754,lat,657,90503,Simon & Schuster,14,3535.2,0,High
+100082,Fake Book Title 82,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,3.4,2452066459,1694079265140,spa,656,208909,Picador USA,21,9627.6,39,Medium
+100083,Fake Book Title 83,Daniel Abraham,4.69,1945826486,2283652425506,nl,100,111485,Scholastic Inc.,17,11232.4,16,High
+100084,Fake Book Title 84,Eliot Ness/Oscar Fraley,3.48,9894847574,4816331203390,ara,267,216151,Signet,1,11562.6,27,High
+100085,Fake Book Title 85,Ralph Ginzburg,4.54,3710566582,4674256020520,nl,719,151588,iUniverse,17,4490.5,84,High
+100086,Fake Book Title 86,Molly Hatchet,3.6,1983297492,6331484485157,zho,118,45525,Sovereign World,25,14939.5,78,High
+100087,Fake Book Title 87,Robert Louis Stevenson,3.44,4888749350,4723802503423,glg,431,216282,Scholastic Inc.,10,859.8,86,High
+100088,Fake Book Title 88,Lucas Carlson/Leonard Richardson,3.66,8987073217,4345509626832,rus,683,157686,Clarity Press,20,7332.1,70,High
+100089,Fake Book Title 89,Dale Peck,3.25,9894264595,7975905265972,mul,555,153534,Buccaneer Books,16,15684.5,15,Medium
+100090,Fake Book Title 90,Charles Todd,4.37,6317189421,5212998388289,jpn,208,93576,Penguin Classics,13,11437.0,7,High
+100091,Fake Book Title 91,Charles Willeford,3.76,8168204967,6658843091358,en-US,367,51051,One Hour Entertainment,4,5492.9,8,High
+100092,Fake Book Title 92,Marguerite Duras,3.08,3030106617,5981197902846,nor,544,192079,Firebird,18,14010.4,72,Medium
+100093,Fake Book Title 93,Eliot Ness/Oscar Fraley,4.75,8664882079,9200727497800,msa,339,144278,New Directions Publishing,15,11505.7,27,High
+100094,Fake Book Title 94,Bryce Courtenay,3.46,8763140509,6426086702908,msa,400,25761,New Directions,15,15999.2,6,High
+100095,Fake Book Title 95,Henry James/Patricia Crick,3.86,1817804383,7327610225653,en-GB,701,30156,iUniverse,3,14797.2,41,High
+100096,Fake Book Title 96,Edward Lear/Laura Huliska-Beith/Edward Mendelson,4.77,7146318035,9196933390476,msa,202,217633,Kingfisher,15,12344.5,24,High
+100097,Fake Book Title 97,Henry Miller/Thomas H. Moore,4.06,7114223633,6634308743034,en-US,349,138336,Ace,4,9950.4,44,High
+100098,Fake Book Title 98,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,2.79,4131356954,4577339809883,ger,552,227239,Grove Press,8,2980.0,68,Medium
+100099,Fake Book Title 99,Satyajit Das,4.85,1422701550,6503445271701,gla,619,126529,Wings Books,9,5496.3,92,High
+100100,Fake Book Title 100,John McPhee/William Howarth,4.07,4700855390,1804936700913,en-US,252,136263,Cambridge University Press,4,8594.0,55,High
+100101,Fake Book Title 101,Marguerite Duras/Richard Seever,3.34,2067970820,1284094574818,jpn,958,28934,Delacorte Books for Young Readers,13,12132.2,74,Medium
+100102,Fake Book Title 102,Mulk Raj Anand/E.M. Forster,2.85,2926780541,6194408945026,rus,273,264902,Cherry Lane Music Company,20,10451.7,79,Medium
+100103,Fake Book Title 103,John C. Maxwell/Stephen R. Graves/Thomas G. Addington,4.49,2811967841,4449513340709,tur,442,280569,Cherry Lane Music Company,23,6023.5,52,High
+100104,Fake Book Title 104,Heidi Hayes Jacobs,4.05,6491309593,5047275953453,lat,769,15138,Atheneum Books for Young Readers,14,491.9,38,High
+100105,Fake Book Title 105,Dale Peck,3.83,4965395580,5324316365377,en-CA,530,176168,Pragmatic Bookshelf,2,10108.7,15,High
+100106,Fake Book Title 106,Marsha Collier,4.73,3363629219,6938586196884,nor,826,272208,Cherry Lane Music Company,18,5973.3,77,High
+100107,Fake Book Title 107,Vasant Moon/Gail Omvedt/Eleanor Zelliot,4.47,9807209816,9597758269798,msa,788,195547,Kingfisher,15,14789.0,96,High
+100108,Fake Book Title 108,Marguerite Duras/Richard Seever,2.88,4590711152,9106710379535,en-CA,786,178257,New Directions,2,835.2,74,Medium
+100109,Fake Book Title 109,Cynthia Harrod-Eagles,3.28,5161807235,7196757234674,fre,951,78127,Puffin,7,11848.1,14,Medium
+100110,Fake Book Title 110,Chris   Smith/Christopher  Lee/Richard Taylor,3.12,4645120421,3461743251322,wel,949,139834,Putnam,24,18850.8,12,Medium
+100111,Fake Book Title 111,Marguerite Duras/Barbara Bray,4.36,6009268066,4236207676525,en-CA,757,205826,Crown,2,3789.5,73,High
+100112,Fake Book Title 112,J.K. Rowling/Mary GrandPré,2.58,7380780055,2309306595559,zho,423,69137,North Light Books,25,9625.8,46,Medium
+100113,Fake Book Title 113,J.R.R. Tolkien/Alan  Lee,3.92,1251837136,1853273488539,msa,772,274491,Atheneum Books for Young Readers: Richard Jackson Books,15,2160.1,48,High
+100114,Fake Book Title 114,Marguerite Duras/Barbara Bray,4.41,2627677155,1114951960049,grc,738,240391,Little  Brown Book Group,11,12650.3,73,High
+100115,Fake Book Title 115,Narendra Jadhav,4.69,9526836552,3419837798766,por,519,289322,Mira Books,19,11174.7,80,High
+100116,Fake Book Title 116,Dave Thomas/David Heinemeier Hansson/Leon Breedt/Mike Clark/Thomas  Fuchs/Andreas  Schwarz,3.36,7249213370,2194994907136,por,693,68418,Teacher Created Resources,19,8363.6,18,Medium
+100117,Fake Book Title 117,Quentin Blake,4.55,8380507338,3657327059099,eng,584,219621,Penguin Classics,5,10602.2,83,High
+100118,Fake Book Title 118,J.R.R. Tolkien/Alan  Lee,2.78,1664847319,4844034992209,spa,758,295114,Harper,21,17969.2,48,Medium
+100119,Fake Book Title 119,Heidi Fleiss/Libby Keatinge,4.62,2274350418,9020876047969,spa,850,251564,Pragmatic Bookshelf,21,4219.2,37,High
+100120,Fake Book Title 120,Heidi Fleiss/Libby Keatinge,2.82,5160575046,2062459806909,grc,511,142230,Farrar Straus Giroux,11,808.1,37,Medium
+100121,Fake Book Title 121,Rolland Baker/Heidi Baker,3.49,3328710672,1276973225593,enm,183,259954,North Light Books,6,17283.8,90,High
+100122,Fake Book Title 122,Douglas Adams/Stephen Fry,4.49,8507497883,8235094217511,ita,212,77653,Barnes & Noble,12,11696.7,23,High
+100123,Fake Book Title 123,John C. Maxwell/Stephen R. Graves/Thomas G. Addington,2.87,1245522987,1292108675678,en-GB,836,33922,Crown,3,17853.1,52,Medium
+100124,Fake Book Title 124,Wendy Wasserstein,3.07,7803990970,6046489847336,grc,431,272922,EMC/Paradigm Publishing,11,12086.0,98,Medium
+100125,Fake Book Title 125,J.R.R. Tolkien,4.31,1676168421,9834821354766,glg,477,282777,Interlink Publishing Group,10,16272.5,47,High
+100126,Fake Book Title 126,Ewan McGregor/Charley Boorman/Robert Uhlig,4.3,1798112150,8574922292349,glg,854,85824,Barnes & Noble Classics,10,8801.6,28,High
+100127,Fake Book Title 127,Charles Todd,4.1,3555656321,4156413442112,spa,754,198572,Wiley,21,15088.5,7,High
+100128,Fake Book Title 128,Gary Paulsen,4.23,6305160342,5239772230997,mul,140,220407,Shambhala,16,18292.6,31,High
+100129,Fake Book Title 129,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,3.86,3553440342,5438962328022,grc,869,65992,Simon & Schuster,11,11598.6,39,High
+100130,Fake Book Title 130,Rolland Baker/Heidi Baker,3.13,3660223333,7235498865643,rus,896,13739,Routledge,20,3914.7,90,Medium
+100131,Fake Book Title 131,Lucas Carlson/Leonard Richardson,3.36,7540301973,2388979093765,en-GB,204,33326,HarperAudio,3,5642.8,70,Medium
+100132,Fake Book Title 132,Edward P. Jones/Kevin R. Free,2.95,9309500117,9076282390924,glg,301,102018,Delacorte Books for Young Readers,10,4265.4,26,Medium
+100133,Fake Book Title 133,Eliot Ness/Oscar Fraley,4.77,8370987661,5280214092735,fre,549,275244,Del Rey Books,7,5212.0,27,High
+100134,Fake Book Title 134,Marguerite Duras/Barbara Bray,3.96,6320115677,6275189889023,grc,918,66266,Atheneum Books for Young Readers,11,6381.5,73,High
+100135,Fake Book Title 135,Brian Herbert,3.5,2699887270,2420980769179,swe,942,215566,Viking Juvenile,22,11265.1,5,High
+100136,Fake Book Title 136,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.66,6583444930,1557313177579,zho,365,21694,Crown,25,11910.2,19,High
+100137,Fake Book Title 137,Adam Ginsberg,4.87,1311570307,8130047292961,grc,309,62071,Teaching Resources,11,8739.3,0,High
+100138,Fake Book Title 138,Henry James/Gabriel Brownstein/Mary Cregan,2.88,5278201677,7633058431600,en-GB,662,168247,Dover Publications,3,12448.8,40,Medium
+100139,Fake Book Title 139,Jean Gibran/جبران خليل جبران/Kahlil Gibran,3.97,9904586976,9373265094514,swe,217,42341,Scribner,22,1966.7,49,High
+100140,Fake Book Title 140,Heidi Fleiss/Libby Keatinge,3.76,2139027119,2452435032897,en-GB,812,25725,The New Press,3,2088.7,37,High
+100141,Fake Book Title 141,Vasant Moon/Gail Omvedt/Eleanor Zelliot,4.03,9303285822,6827344523970,nor,476,149409,Gramercy Books,18,3738.9,96,High
+100142,Fake Book Title 142,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,2.55,4783282817,5041746983953,en-US,650,262368,Cherry Lane Music Company,4,10537.5,19,Medium
+100143,Fake Book Title 143,Julia Wilkinson,4.68,4776436931,5769455956746,wel,639,92318,Atheneum Books for Young Readers: Richard Jackson Books,24,4566.8,57,High
+100144,Fake Book Title 144,Charles Willeford,4.83,6882074066,5934597812307,swe,870,297192,Puffin,22,5927.3,8,High
+100145,Fake Book Title 145,W. Frederick Zimmerman,3.91,5972484792,4152647307359,mul,183,184434,Pragmatic Bookshelf,16,8225.1,97,High
+100146,Fake Book Title 146,J.K. Rowling/Mary GrandPré,4.24,8316648259,1276228608421,lat,553,105460,Random House Audio,14,16306.0,46,High
+100147,Fake Book Title 147,Douglas Adams/Stephen Fry,4.81,9623534576,4646261745730,wel,766,129937,Tor Books,24,637.2,23,High
+100148,Fake Book Title 148,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.27,3849232839,3536552005535,ger,728,296113,Teacher Created Resources,8,13115.6,59,High
+100149,Fake Book Title 149,Molly Hatchet,2.88,5871743247,6261665381612,nor,613,201604,Changeling Press,18,13498.4,78,Medium
+100150,Fake Book Title 150,John McPhee,3.94,3376077463,7753113358131,ale,704,286812,Buccaneer Books,0,16046.6,54,High
+100151,Fake Book Title 151,Chris   Smith/Christopher  Lee/Richard Taylor,4.02,6464693977,2381794760871,tur,777,34725,North Light Books,23,18679.6,12,High
+100152,Fake Book Title 152,Tom Wolfe,3.56,3597724331,7085858377976,grc,486,281113,New Directions,11,760.4,94,High
+100153,Fake Book Title 153,Dale Peck,4.34,8377088167,2718217542831,en-GB,449,266367,North Light Books,3,3384.5,15,High
+100154,Fake Book Title 154,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.84,7393195616,5082096210955,eng,395,288594,Changeling Press,5,17765.0,59,High
+100155,Fake Book Title 155,Dave Lakhani,4.81,4633987776,2339336909284,nl,357,181567,Viking Juvenile,17,9368.0,17,High
+100156,Fake Book Title 156,Charles Willeford/Elmore Leonard,3.63,9986353481,6741398700521,wel,180,70355,Pocket Books,24,11450.7,9,High
+100157,Fake Book Title 157,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,2.78,2188332531,8928477785001,ale,367,168686,North Light Books,0,13383.5,67,Medium
+100158,Fake Book Title 158,Narendra Jadhav,4.96,5310195918,5013606580271,rus,518,88841,Dramatists Play Service,20,13698.5,80,High
+100159,Fake Book Title 159,Robert Louis Stevenson/Scott McKowen,4.6,4311931853,7605406911694,nl,334,159084,Thomas Nelson,17,18659.7,89,High
+100160,Fake Book Title 160,Leo Tolstoy/David Magarshack/Priscilla Meyer,2.81,2125089309,4266029917764,wel,932,70583,Tor Books,24,19940.1,65,Medium
+100161,Fake Book Title 161,Robert Louis Stevenson/Scott McKowen,4.8,8478529823,7685806676812,wel,410,187306,Ivy Books,24,14505.3,89,High
+100162,Fake Book Title 162,Douglas Adams,4.67,1041531046,6195272395898,rus,912,141700,Mira Books,20,6004.6,22,High
+100163,Fake Book Title 163,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,3.8,4882343658,5337049622553,en-GB,456,131110,Cherry Lane Music Company,3,17638.9,61,High
+100164,Fake Book Title 164,Edward P. Jones/Kevin R. Free,3.98,3343292475,2295847933946,nl,312,149746,Turtleback Books,17,1331.5,26,High
+100165,Fake Book Title 165,Dale Peck,3.5,8879525611,5711931474288,spa,673,242238,Heinemann Drama,21,4902.3,15,High
+100166,Fake Book Title 166,Louis E. Catron,2.64,5931025271,7683631486567,ita,148,237551,Clarity Press,12,17985.2,69,Medium
+100167,Fake Book Title 167,Heidi Hayes Jacobs,3.34,1547374338,3712846947357,fre,226,297725,Ace,7,5395.3,38,Medium
+100168,Fake Book Title 168,Frank Herbert,4.51,6618926823,7853649632414,ita,322,183937,Dramatists Play Service,12,4697.5,29,High
+100169,Fake Book Title 169,Donna Ickes/Edward Sciranko/Keith Vasconcelles,2.51,4696689457,7345026818845,jpn,378,5036,Chosen Books,13,3077.1,21,Medium
+100170,Fake Book Title 170,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,3.33,9155819200,2606775401436,wel,507,294492,Pragmatic Bookshelf,24,17233.7,50,Medium
+100171,Fake Book Title 171,Cynthia Harrod-Eagles,3.5,5736462531,8822459444664,glg,604,263675,Teaching Resources,10,10183.6,14,High
+100172,Fake Book Title 172,Anthony Thorlby,3.84,4993808565,2796454967790,nor,393,200389,Barnes & Noble Classics,18,13616.5,2,High
+100173,Fake Book Title 173,Henry James/Gabriel Brownstein/Mary Cregan,4.8,4713453204,2533872437929,wel,895,122000,Atheneum Books for Young Readers: Richard Jackson Books,24,5059.1,40,High
+100174,Fake Book Title 174,Wendy Wasserstein,3.37,4482238042,8581422119038,ale,376,125405,Association for Supervision & Curriculum Development,0,15249.1,98,Medium
+100175,Fake Book Title 175,Barry R. Cournoyer,3.37,9080621072,2818523702597,spa,537,27848,New Directions Publishing,21,15287.7,3,Medium
+100176,Fake Book Title 176,Dave Lakhani,4.34,1106456634,2576365791658,en-US,206,91699,Harper Perennial,4,6502.9,17,High
+100177,Fake Book Title 177,Marsha Collier,3.63,9292791081,1216402949080,glg,757,19527,Sovereign World,10,8428.8,77,High
+100178,Fake Book Title 178,Eliot Ness/Oscar Fraley,3.06,4482141802,8276928074268,por,519,217450,Dover Publications,19,4482.3,27,Medium
+100179,Fake Book Title 179,Leo Tolstoy/Constance Garnett/Amy Mandelker,3.63,2145921803,5273398713554,rus,710,217110,Grove Press,20,19539.8,64,High
+100180,Fake Book Title 180,Bill Bryson,2.85,5759234471,3982342535025,enm,528,286529,Black Classic Press,6,13041.4,4,Medium
+100181,Fake Book Title 181,Wendy Wasserstein,2.94,4745927824,5729355306423,fre,474,273636,Delacorte Press,7,18714.8,98,Medium
+100182,Fake Book Title 182,Wendy Wasserstein,3.75,8982597239,5721462407241,en-CA,172,299521,Cambridge University Press,2,6322.0,98,High
+100183,Fake Book Title 183,Adam Ginsberg,3.55,1955345537,3566213426916,glg,733,106514,Gramercy Books,10,15717.4,0,High
+100184,Fake Book Title 184,Henry Miller/Jiří Níl,4.79,7271954644,3938029360819,mul,129,131234,Putnam,16,15402.6,43,High
+100185,Fake Book Title 185,Heidi Boyd,3.41,1977515194,5855179964849,ger,287,87101,Atheneum Books for Young Readers,8,13945.7,36,High
+100186,Fake Book Title 186,Eliot Ness/Oscar Fraley,3.95,9691572571,6271733492967,wel,463,150703,FT Press,24,19325.3,27,High
+100187,Fake Book Title 187,Charles Willeford/James Lee Burke,4.08,6124453431,7352587005529,ger,965,245350,Greenwillow Books,8,8092.5,10,High
+100188,Fake Book Title 188,Kahlil Gibran/John Walbridge/Robin Waterfield,2.53,6704841644,9721468110122,nl,899,59772,Rowman & Littlefield Publishers,17,2931.6,58,Medium
+100189,Fake Book Title 189,Marguerite Duras/Richard Seever,4.16,4712367625,9053903553216,ita,550,92086,Farrar Straus Giroux,12,13554.0,74,High
+100190,Fake Book Title 190,Eliot Ness/Oscar Fraley,2.95,6493800024,3379871324829,en-CA,294,228684,Nimble Books,2,14685.0,27,Medium
+100191,Fake Book Title 191,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,4.9,7597996327,1117272613143,ita,255,147645,Wings Books,12,11656.3,88,High
+100192,Fake Book Title 192,J.K. Rowling/Mary GrandPré,2.87,5033992825,7961922185256,tur,271,248759,Ivy Books,23,4425.9,46,Medium
+100193,Fake Book Title 193,John McPhee,3.54,9462806178,7685632817736,en-CA,946,281746,Teacher Created Resources,2,10270.0,54,High
+100194,Fake Book Title 194,Eliot Ness/Oscar Fraley,2.71,2140169349,8745241405581,en-CA,140,141930,Ace Books,2,6494.8,27,Medium
+100195,Fake Book Title 195,Charles Willeford/Elmore Leonard,4.99,7161404428,8573465023972,eng,162,235469,Farrar Straus Giroux,5,8758.3,9,High
+100196,Fake Book Title 196,W. Frederick Zimmerman,3.76,6642201119,6283394424243,en-US,122,154742,William Morrow,4,13033.9,97,High
+100197,Fake Book Title 197,Tara MacCarthy,3.99,3196545325,9427588485323,por,459,263081,Putnam,19,14997.3,93,High
+100198,Fake Book Title 198,Charles Todd,2.67,3476426797,4123790631111,eng,174,293996,Rowman & Littlefield Publishers,5,4924.7,7,Medium
+100199,Fake Book Title 199,John McPhee,4.37,2094024844,8009234476251,ger,659,85074,Wings Books,8,8323.6,54,High
+100200,Fake Book Title 200,Chris   Smith/Christopher  Lee/Richard Taylor,3.02,8339176912,6617682899023,rus,771,245859,Turtleback Books,20,5650.0,12,Medium
+100201,Fake Book Title 201,Eliot Ness/Oscar Fraley,4.75,9597198563,6730527577294,ale,924,118689,Cliffs Notes,0,4265.1,27,High
+100202,Fake Book Title 202,Brian Herbert,3.01,3880327491,5932237601033,enm,217,81988,Grove Press,6,15746.8,5,Medium
+100203,Fake Book Title 203,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,2.98,6859286614,7422663751059,wel,711,217863,Ace,24,18218.2,88,Medium
+100204,Fake Book Title 204,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,2.59,4642197907,4515704967647,jpn,479,252150,Farrar  Straus and Giroux,13,7634.5,67,Medium
+100205,Fake Book Title 205,Adam Ginsberg,3.68,7049001493,4163439388958,nor,778,288243,Atria Books,18,15116.4,0,High
+100206,Fake Book Title 206,Satyajit Das,3.91,1546696950,1474809060450,en-US,389,84576,The New Press,4,17977.5,92,High
+100207,Fake Book Title 207,Tom Wolfe,2.66,9333798503,4688124353280,enm,539,46270,EMC/Paradigm Publishing,6,16978.6,94,Medium
+100208,Fake Book Title 208,Anthony Thorlby,4.44,4877520294,2218451449645,swe,767,75327,French & European,22,3954.5,2,High
+100209,Fake Book Title 209,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,3.63,6587537178,3450275849710,enm,106,122382,ASCD,6,19141.8,50,High
+100210,Fake Book Title 210,Robert Louis Stevenson/Scott McKowen,3.81,5296710795,6328479604630,ita,295,234281,Barnes & Noble,12,7761.0,89,High
+100211,Fake Book Title 211,Marguerite Duras/Barbara Bray,3.6,2232285036,5442035657063,lat,520,22981,Del Rey,14,7026.0,73,High
+100212,Fake Book Title 212,Leo Tolstoy/David Magarshack/Priscilla Meyer,3.5,8106906538,3712953299698,ita,667,89166,Ace Books,12,1590.8,65,High
+100213,Fake Book Title 213,Eliot Ness/Oscar Fraley,3.9,7292076361,8446250240872,nor,932,251721,Putnam,18,9911.0,27,High
+100214,Fake Book Title 214,Gloria Goldreich,2.89,5659161352,7634818563928,tur,292,51963,Shambhala,23,2505.5,34,Medium
+100215,Fake Book Title 215,Leo Tolstoy/David Magarshack/Priscilla Meyer,2.95,2439622619,8898762535169,nl,658,250266,EMC/Paradigm Publishing,17,5245.1,65,Medium
+100216,Fake Book Title 216,Gary Paulsen,4.65,4226113732,8360249845003,msa,247,94826,Random House Books for Young Readers,15,6588.2,31,High
+100217,Fake Book Title 217,Gary Russell,4.87,8184602688,1646580032778,en-GB,886,26041,Crown,3,16246.3,32,High
+100218,Fake Book Title 218,J.K. Rowling,3.43,1855256552,2920215375951,ara,768,185967,Penguin Books,1,17555.2,45,High
+100219,Fake Book Title 219,W. Frederick Zimmerman,3.18,1104906255,5366989405230,eng,301,104142,Gramercy Books,5,6303.9,97,Medium
+100220,Fake Book Title 220,Leo Tolstoy/Louise Maude/Aylmer Maude,4.11,5607762160,3926397479853,nor,543,229627,French & European,18,17225.5,66,High
+100221,Fake Book Title 221,Quentin Blake,3.52,8285786023,6835798335891,en-GB,518,186434,Shambhala,3,17196.7,83,High
+100222,Fake Book Title 222,Anthony Thorlby,2.56,7418301077,2861569631656,enm,526,237163,Crown,6,15378.9,2,Medium
+100223,Fake Book Title 223,J.K. Rowling,2.89,2047905204,2730917122644,nl,578,95606,Dramatists Play Service,17,3245.4,45,Medium
+100224,Fake Book Title 224,J.K. Rowling,4.29,2825989011,4905236544925,enm,574,157039,The New Press,6,13919.5,45,High
+100225,Fake Book Title 225,Kahlil Gibran/John Walbridge/Robin Waterfield,4.15,7519578899,4889416020127,gla,225,128517,Teacher Created Resources,9,18920.5,58,High
+100226,Fake Book Title 226,Marianne Sturman/Leo Tolstoy,2.57,9805620900,7581804501791,nor,494,218850,Sovereign World,18,13766.7,75,Medium
+100227,Fake Book Title 227,Marguerite Duras,3.05,4643576871,9144937901670,jpn,916,126205,Greenwillow Books,13,6876.3,72,Medium
+100228,Fake Book Title 228,Robert Louis Stevenson/Scott McKowen,3.08,2960488639,3652144305808,eng,980,290424,William Morrow,5,10193.9,89,Medium
+100229,Fake Book Title 229,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,4.18,8737025391,9491255839990,nl,905,59828,Atria Books,17,13043.8,88,High
+100230,Fake Book Title 230,J.K. Rowling/Mary GrandPré,2.55,7852415525,6197359464241,msa,675,45883,Pantheon,15,10390.0,46,Medium
+100231,Fake Book Title 231,Zilpha Keatley Snyder,2.76,9123612497,2511664110637,tur,424,284819,Crown,23,2720.3,99,Medium
+100232,Fake Book Title 232,J.K. Rowling,4.5,7462972995,7125231854337,fre,491,32138,Buccaneer Books,7,6492.4,45,High
+100233,Fake Book Title 233,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,2.95,7648059419,7035768609723,tur,787,210772,Pearson,23,16120.0,68,Medium
+100234,Fake Book Title 234,Adam Ginsberg,4.13,4853479481,7126697515472,ita,727,196425,Ballantine Books,12,17278.9,0,High
+100235,Fake Book Title 235,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.1,7333678472,2715737053610,en-GB,539,76411,Ace Books,3,3060.9,59,Medium
+100236,Fake Book Title 236,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,2.75,8033702319,8961566974943,glg,303,135239,Cherry Lane Music Company,10,19065.1,50,Medium
+100237,Fake Book Title 237,Tara MacCarthy,3.11,7533932947,2182485712170,wel,585,90315,Greenwillow Books,24,6821.4,93,Medium
+100238,Fake Book Title 238,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,4.31,3691864041,1787268639595,enm,932,97768,Gramercy Books,6,13369.5,50,High
+100239,Fake Book Title 239,George Smoot/Keay Davidson,4.64,6474354351,1395631278694,ale,130,94926,Buccaneer Books,0,15127.1,33,High
+100240,Fake Book Title 240,Leo Tolstoy/Amy Mandelker/Constance Garnett,4.58,9922723063,7038076251250,zho,487,30999,Harper Perennial,25,16307.6,63,High
+100241,Fake Book Title 241,Charles Willeford/James Lee Burke,3.49,2227193073,2922633390933,spa,724,213004,New Directions,21,18934.8,10,High
+100242,Fake Book Title 242,Leo Tolstoy/Louise Maude/Aylmer Maude,4.17,6461974809,6820368463713,jpn,976,111591,Workman Publishing Company,13,6509.2,66,High
+100243,Fake Book Title 243,Delia Sherman,3.01,3319936135,8501417431763,glg,533,195741,Brookline Books,10,17221.8,20,Medium
+100244,Fake Book Title 244,Frank Herbert/Brian Herbert/Kevin J. Anderson,3.23,1594312071,9130194689645,lat,936,61892,Del Rey Books,14,2950.7,30,Medium
+100245,Fake Book Title 245,Satyajit Das,4.74,6288227800,4277852261187,msa,475,232980,Dramatists Play Service,15,14208.5,92,High
+100246,Fake Book Title 246,Madeleine L'Engle,2.53,3980491761,7959703022867,grc,443,289184,Interlink Publishing Group,11,14933.7,71,Medium
+100247,Fake Book Title 247,Robert Louis Stevenson/Milo Winter,2.71,4034047118,8907882293924,msa,542,147315,Teaching Resources,15,13672.1,87,Medium
+100248,Fake Book Title 248,Tara MacCarthy,3.02,5570828113,8557390966865,msa,678,292303,North Light Books,15,5319.2,93,Medium
+100249,Fake Book Title 249,Henry James/Gabriel Brownstein/Mary Cregan,2.57,7045593274,1078979448310,jpn,174,130406,iUniverse,13,17507.2,40,Medium
+100250,Fake Book Title 250,Dave Thomas/David Heinemeier Hansson/Leon Breedt/Mike Clark/Thomas  Fuchs/Andreas  Schwarz,2.95,7625464411,4778303069619,ale,656,244679,Clarity Press,0,3680.5,18,Medium
+100251,Fake Book Title 251,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,3.96,2785736751,5897146555069,en-GB,871,212852,Pantheon,3,1418.1,1,High
+100252,Fake Book Title 252,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,3.55,7099469983,7434663995794,en-GB,765,165632,iUniverse,3,14452.4,88,High
+100253,Fake Book Title 253,Ewan McGregor/Charley Boorman/Robert Uhlig,4.73,3987248494,4467438702413,swe,254,263500,Ballantine Books,22,9701.0,28,High
+100254,Fake Book Title 254,Anthony Thorlby,4.54,6928691380,3003419924038,enm,529,3899,Sterling,6,17037.0,2,High
+100255,Fake Book Title 255,Tara MacCarthy,3.35,6805759868,9610819456942,ger,462,12410,Nimble Books,8,7893.0,93,Medium
+100256,Fake Book Title 256,Edward Lear/Laura Huliska-Beith/Edward Mendelson,3.15,8531118333,6513187991238,mul,547,253329,Broadway Books,16,3669.2,24,Medium
+100257,Fake Book Title 257,Kahlil Gibran/جبران خليل جبران,3.45,6242173772,7835856938123,lat,333,94817,Barnes & Noble,14,16788.5,60,High
+100258,Fake Book Title 258,W. Frederick Zimmerman,3.98,6237376063,7904637994357,por,662,261495,Picador USA,19,11142.8,97,High
+100259,Fake Book Title 259,Kate Horsley,3.17,7166868574,3008270893284,ita,917,176922,Knopf,12,4079.9,62,Medium
+100260,Fake Book Title 260,Anthony Thorlby,4.06,5419627962,7190542198492,enm,361,54380,Atheneum Books for Young Readers: Richard Jackson Books,6,14509.7,2,High
+100261,Fake Book Title 261,Frank Herbert,3.52,1116402431,9056695151321,enm,926,51757,Booket,6,10400.7,29,High
+100262,Fake Book Title 262,Zilpha Keatley Snyder,3.88,8055556030,4034898463489,gla,224,280883,The New Press,9,12230.7,99,High
+100263,Fake Book Title 263,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.59,2982979741,6506723374758,en-CA,344,29134,William Morrow,2,9414.7,59,High
+100264,Fake Book Title 264,John Carratello/Patty Carratello/Theresa Wright,3.24,5510938155,5196689260157,en-US,641,40437,Shambhala,4,16636.7,53,Medium
+100265,Fake Book Title 265,Zilpha Keatley Snyder,4.87,6923206003,3058600931925,lat,584,2692,Atria Books,14,16653.5,99,High
+100266,Fake Book Title 266,Kate Horsley,4.41,6204041308,7567791165822,rus,221,186683,Brookline Books,20,14293.8,62,High
+100267,Fake Book Title 267,Robert Louis Stevenson/Scott McKowen,2.85,6698759353,3489764351672,fre,224,146560,Delacorte Books for Young Readers,7,2434.6,89,Medium
+100268,Fake Book Title 268,Cynthia Harrod-Eagles,4.67,6923301988,7835486944033,ita,648,254561,EMC/Paradigm Publishing,12,16835.9,14,High
+100269,Fake Book Title 269,Leo Tolstoy/David Magarshack/Priscilla Meyer,3.72,8868054898,8440531378428,spa,269,264007,Delacorte Books for Young Readers,21,13540.3,65,High
+100270,Fake Book Title 270,Rolland Baker/Heidi Baker,4.74,5646751885,9560667626989,spa,223,84431,Knopf,21,14051.1,90,High
+100271,Fake Book Title 271,Bryce Courtenay,4.5,9673185158,4049426348751,zho,968,249930,Farrar  Straus and Giroux,25,7492.2,6,High
+100272,Fake Book Title 272,Gary Russell,3.56,3316787198,3935845994547,en-CA,134,194034,Amistad,2,17629.7,32,High
+100273,Fake Book Title 273,Henry Miller/Thomas H. Moore,2.56,2503068227,6083049307673,en-CA,186,60322,FT Press,2,14607.7,44,Medium
+100274,Fake Book Title 274,J.K. Rowling/Mary GrandPré,3.17,3792347639,4290547517782,gla,745,173173,Del Rey,9,2575.7,46,Medium
+100275,Fake Book Title 275,Dave Thomas/David Heinemeier Hansson/Leon Breedt/Mike Clark/Thomas  Fuchs/Andreas  Schwarz,3.85,3799264931,9521256275827,ale,807,213858,Amistad,0,8371.7,18,High
+100276,Fake Book Title 276,Kahlil Gibran/John Walbridge/Robin Waterfield,4.08,4239406957,4432265281640,nor,885,253141,Atria Books,18,17769.1,58,High
+100277,Fake Book Title 277,Leo Tolstoy/Constance Garnett/Amy Mandelker,3.14,5078551333,7755189915104,rus,300,264114,Puffin,20,1291.7,64,Medium
+100278,Fake Book Title 278,Marguerite Duras/Richard Seever,2.85,9677466102,8196196100126,ger,468,106171,Barnes & Noble Classics,8,19242.4,74,Medium
+100279,Fake Book Title 279,Rob Orsini,4.59,1654477195,9653004883952,wel,896,76922,Random House Books for Young Readers,24,13700.4,85,High
+100280,Fake Book Title 280,Edward P. Jones/Kevin R. Free,4.96,5837082260,8811857851951,spa,176,264287,Workman Publishing Company,21,12762.1,26,High
+100281,Fake Book Title 281,Heidi Baker/Rolland Baker,3.81,3875303857,3944151546206,ara,158,275099,Amistad,1,5677.4,35,High
+100282,Fake Book Title 282,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,2.93,6231117883,4881624181590,enm,530,121809,Puffin,6,5250.0,61,Medium
+100283,Fake Book Title 283,Dave Lakhani,3.18,8299146480,1572485166976,en-US,737,293175,Ace,4,18862.3,17,Medium
+100284,Fake Book Title 284,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,2.55,8588769565,4952550396619,swe,599,82339,Thomas Nelson,22,6221.6,19,Medium
+100285,Fake Book Title 285,J.R.R. Tolkien,4.79,4518871744,6078960355307,nl,208,116556,Del Rey,17,15592.0,47,High
+100286,Fake Book Title 286,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,2.79,9438411468,9713483275714,wel,835,78563,William Morrow Paperbacks,24,8083.9,1,Medium
+100287,Fake Book Title 287,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.94,9410288290,9987432639205,por,377,182053,Ace,19,3099.3,59,High
+100288,Fake Book Title 288,Mulk Raj Anand/E.M. Forster,3.19,4070964768,5712069637540,en-US,167,259530,Vintage Crime/Black Lizard,4,575.4,79,Medium
+100289,Fake Book Title 289,J.K. Rowling,3.89,9916336966,8764093900485,jpn,168,262093,Ballantine Books,13,11051.5,45,High
+100290,Fake Book Title 290,J.K. Rowling/Mary GrandPré,4.13,3693985578,4846342299363,ger,264,191808,One World (UK),8,19524.4,46,High
+100291,Fake Book Title 291,Lucas Carlson/Leonard Richardson,4.57,8612747444,8481789116731,lat,588,133548,Firebird,14,7613.0,70,High
+100292,Fake Book Title 292,Gary Paulsen,3.02,4361393222,5354028875173,ita,404,254074,Interlink Publishing Group,12,7378.5,31,Medium
+100293,Fake Book Title 293,Madeleine L'Engle,2.53,2591589823,1571227698321,enm,773,131020,Putnam,6,7121.2,71,Medium
+100294,Fake Book Title 294,Brian Herbert,2.84,2465576748,5623316396210,rus,464,90059,Random House Audio,20,10585.9,5,Medium
+100295,Fake Book Title 295,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,4.75,8943866829,2532516179967,nor,953,199620,New Directions,18,9017.5,50,High
+100296,Fake Book Title 296,Chris   Smith/Christopher  Lee/Richard Taylor,4.68,8826851692,3065853317837,en-CA,920,197517,Scribner,2,17642.1,12,High
+100297,Fake Book Title 297,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.99,5748253283,4690394582833,gla,478,44866,Scribner,9,10290.9,19,High
+100298,Fake Book Title 298,Zilpha Keatley Snyder,4.0,9421518487,8531795399047,enm,442,4188,Scholastic,6,10334.8,99,High
+100299,Fake Book Title 299,Lucas Carlson/Leonard Richardson,4.16,8854238082,3961546460241,zho,998,91226,Picador USA,25,3081.9,70,High
+100300,Fake Book Title 300,Edward Lear/Laura Huliska-Beith/Edward Mendelson,2.94,4037867512,6148394708490,ale,653,266211,One Hour Entertainment,0,19661.1,24,Medium
+100301,Fake Book Title 301,W. Frederick Zimmerman,4.79,2870403050,3384115838248,gla,453,272645,Barnes  Noble Classics,9,5273.2,97,High
+100302,Fake Book Title 302,Kate Horsley,3.55,7371573279,8240394411108,rus,515,194078,Penguin Classics,20,1805.5,62,High
+100303,Fake Book Title 303,Satyajit Das,3.46,6447717367,2043328167226,swe,208,272472,Vintage Crime/Black Lizard,22,13385.9,92,High
+100304,Fake Book Title 304,Marianne Sturman/Leo Tolstoy,3.8,4658080160,5879050576845,glg,662,221602,Delacorte Press,10,12055.0,75,High
+100305,Fake Book Title 305,Rolland Baker/Heidi Baker,2.62,5667181604,3335887021838,glg,861,43814,The New Press,10,8516.4,90,Medium
+100306,Fake Book Title 306,Satyajit Das,2.92,9081544414,3573757765898,wel,596,123080,Ace,24,8654.7,92,Medium
+100307,Fake Book Title 307,Charles Willeford/James Lee Burke,4.35,6922713963,6668117281030,ara,440,95717,Dover Publications,1,15779.7,10,High
+100308,Fake Book Title 308,Charles Todd,2.71,5418232833,5354360173104,msa,482,60178,Atheneum Books for Young Readers,15,4207.8,7,Medium
+100309,Fake Book Title 309,Frank Herbert,4.01,8949781901,7909211817271,zho,632,219178,Delacorte Press,25,16470.7,29,High
+100310,Fake Book Title 310,Frank Herbert/Brian Herbert/Kevin J. Anderson,3.11,6075963527,3501773175517,ita,399,284063,Crown,12,13103.1,30,Medium
+100311,Fake Book Title 311,Henry Miller/Jiří Níl,3.47,6206015111,7598848849877,tur,238,233590,Cliffs Notes,23,8591.5,43,High
+100312,Fake Book Title 312,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.22,8721631198,2329086184149,wel,458,5089,Delacorte Books for Young Readers,24,9358.4,19,Medium
+100313,Fake Book Title 313,Marguerite Duras/Richard Seever,3.39,6756711494,8087095877465,fre,935,152403,Thomas Nelson,7,5404.3,74,Medium
+100314,Fake Book Title 314,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,4.3,9633533290,8998814253768,ale,598,112985,One Hour Entertainment,0,15132.8,19,High
+100315,Fake Book Title 315,Mark Smylie,3.24,5071897791,9589720934891,nor,484,10492,Picador USA,18,10435.3,76,Medium
+100316,Fake Book Title 316,Kahlil Gibran/جبران خليل جبران,3.92,1367704871,2639529565504,grc,703,289780,Barnes & Noble,11,6665.0,60,High
+100317,Fake Book Title 317,Patricia A. McKillip,3.69,8387664437,7998797060797,ita,379,53103,Sterling,12,12068.4,81,High
+100318,Fake Book Title 318,Henry Miller/Thomas H. Moore,4.16,4256292393,9702513636811,ara,736,181611,Gramercy Books,1,19916.2,44,High
+100319,Fake Book Title 319,Barry R. Cournoyer,4.84,8261111839,6679100122246,en-CA,582,214226,Scholastic,2,8911.4,3,High
+100320,Fake Book Title 320,Marianne Sturman/Leo Tolstoy,4.33,7403028869,5990014739406,lat,210,86396,Atheneum Books for Young Readers,14,18442.8,75,High
+100321,Fake Book Title 321,Heidi Fleiss/Libby Keatinge,3.04,4405620755,3295994742166,rus,965,34447,Dover Publications,20,7139.4,37,Medium
+100322,Fake Book Title 322,Edward Lear/Laura Huliska-Beith/Edward Mendelson,2.58,5694628398,1807661767842,wel,238,116264,Harper,24,1439.7,24,Medium
+100323,Fake Book Title 323,John Banville,3.16,6246716604,1285441730182,nl,534,157271,Harper,17,4375.3,51,Medium
+100324,Fake Book Title 324,John C. Maxwell/Stephen R. Graves/Thomas G. Addington,3.99,3971203213,3782527426098,wel,608,277118,New Directions Publishing,24,8586.1,52,High
+100325,Fake Book Title 325,Ralph Ginzburg,2.63,7792729530,9029189184954,enm,372,113193,Little  Brown Book Group,6,4677.5,84,Medium
+100326,Fake Book Title 326,Rolland Baker/Heidi Baker,3.74,7575259637,8528897417706,zho,198,263063,Random House Audio,25,369.5,90,High
+100327,Fake Book Title 327,George Smoot/Keay Davidson,3.99,6715705115,6311371294569,enm,863,263208,Buccaneer Books,6,18331.1,33,High
+100328,Fake Book Title 328,Rolland Baker/Heidi Baker,3.34,8313706299,2641854411710,zho,949,10153,Tor Science Fiction,25,16934.6,90,Medium
+100329,Fake Book Title 329,Molly Hatchet,4.43,6458544482,7342183162808,grc,203,82459,Buccaneer Books,11,14939.9,78,High
+100330,Fake Book Title 330,Philippa Carr,2.77,2079770569,2448479392515,nor,313,23298,Houghton Mifflin Harcourt,18,3660.0,82,Medium
+100331,Fake Book Title 331,Lucas Carlson/Leonard Richardson,2.69,6122110529,1911243991576,ara,860,174638,Pragmatic Bookshelf,1,2728.3,70,Medium
+100332,Fake Book Title 332,Kate Horsley,4.32,1795212538,8551558146497,jpn,763,155292,Ace Books,13,1692.4,62,High
+100333,Fake Book Title 333,J.R.R. Tolkien/Alan  Lee,3.74,7374584386,2604838089027,swe,861,8074,Cherry Lane Music Company,22,14581.3,48,High
+100334,Fake Book Title 334,J.R.R. Tolkien,4.22,6128695961,2673764638233,swe,886,234914,Buccaneer Books,22,18602.1,47,High
+100335,Fake Book Title 335,John Carratello/Patty Carratello/Theresa Wright,3.59,6272000062,4753806082361,jpn,264,174925,New Directions,13,8818.6,53,High
+100336,Fake Book Title 336,Delia Sherman,3.12,6065662867,2372142436671,gla,952,143977,Chosen Books,9,2704.3,20,Medium
+100337,Fake Book Title 337,Rolland Baker/Heidi Baker,4.55,9650701349,8828350916894,swe,619,85228,One World (UK),22,10425.8,90,High
+100338,Fake Book Title 338,Lucas Carlson/Leonard Richardson,4.5,3294092753,1141773807907,nl,383,282219,Wings Books,17,7214.3,70,High
+100339,Fake Book Title 339,Charles Willeford/Lawrence Block,4.24,2178158203,7046006552302,rus,616,63660,EMC/Paradigm Publishing,20,7724.7,11,High
+100340,Fake Book Title 340,Anthony Thorlby,3.18,5184564874,3120928333493,en-US,756,70893,Atheneum Books for Young Readers,4,12564.8,2,Medium
+100341,Fake Book Title 341,Henry James/Gabriel Brownstein/Mary Cregan,3.98,7671625956,9401523718927,wel,712,107287,Grove Press,24,14477.0,40,High
+100342,Fake Book Title 342,Edward P. Jones,3.4,3108307952,5024688561631,lat,263,180953,Chosen Books,14,2536.7,25,Medium
+100343,Fake Book Title 343,Heidi Boyd,2.73,4748302739,2569308335862,glg,985,174549,FT Press,10,1063.8,36,Medium
+100344,Fake Book Title 344,Frank Herbert/Brian Herbert/Kevin J. Anderson,4.79,7760554363,2812916120278,rus,758,130349,French & European,20,19888.7,30,High
+100345,Fake Book Title 345,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,2.84,7311011808,7465271614827,lat,163,5718,Delacorte Books for Young Readers,14,4934.6,67,Medium
+100346,Fake Book Title 346,Marianne Sturman/Leo Tolstoy,4.88,7186766399,6265118756527,msa,190,222592,Picador USA,15,1422.0,75,High
+100347,Fake Book Title 347,J.R.R. Tolkien/Alan  Lee,3.62,5515628633,7730802718663,nor,216,178317,Farrar  Straus and Giroux,18,4093.2,48,High
+100348,Fake Book Title 348,John McPhee,2.96,3051831252,2203204392135,tur,965,155539,Shambhala,23,1129.9,54,Medium
+100349,Fake Book Title 349,John McPhee,3.85,4530959836,3889009838466,ara,366,106183,Delacorte Press,1,8058.2,54,High
+100350,Fake Book Title 350,Robert Louis Stevenson/Milo Winter,4.68,7015992643,7178053184269,nl,921,272945,Atheneum Books for Young Readers: Richard Jackson Books,17,16120.2,87,High
+100351,Fake Book Title 351,Philippa Carr,4.33,9908115095,4748314304060,swe,784,269546,Atria Books,22,7065.3,82,High
+100352,Fake Book Title 352,Heidi Boyd,4.52,1230249217,8785429519612,jpn,658,210174,Turtleback Books,13,9086.5,36,High
+100353,Fake Book Title 353,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,4.15,2304963614,4821919437064,en-GB,239,88885,O'Reilly Media,3,13630.1,88,High
+100354,Fake Book Title 354,Wendy Wasserstein,4.23,5268845844,3461447755004,eng,345,97543,Association for Supervision & Curriculum Development,5,10357.1,98,High
+100355,Fake Book Title 355,V.T. Rajshekar/Y.N. Kly,4.62,8578226896,3167895246650,tur,760,291121,Archaia,23,17279.5,95,High
+100356,Fake Book Title 356,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,3.12,7539399243,7182107343435,fre,857,172216,Pearson,7,17369.6,88,Medium
+100357,Fake Book Title 357,Madeleine L'Engle,3.72,7196439534,8554689628065,swe,494,101998,Teacher Created Resources,22,559.6,71,High
+100358,Fake Book Title 358,John Banville,3.05,9547119184,5355697404227,msa,586,185244,Pocket Books,15,15641.9,51,Medium
+100359,Fake Book Title 359,Lucas Carlson/Leonard Richardson,4.97,3667292043,5364048618226,nor,575,29543,Delacorte Books for Young Readers,18,9411.5,70,High
+100360,Fake Book Title 360,Zilpha Keatley Snyder,4.86,4178659381,6014836426926,grc,616,293901,Tor Science Fiction,11,19780.9,99,High
+100361,Fake Book Title 361,Douglas Adams,2.6,6201313620,1471117007449,ara,283,199936,O'Reilly Media,1,9853.3,22,Medium
+100362,Fake Book Title 362,Heidi Fleiss/Libby Keatinge,4.26,3836517266,4613363069973,lat,119,138418,Changeling Press,14,19742.7,37,High
+100363,Fake Book Title 363,V.T. Rajshekar/Y.N. Kly,4.81,1674555072,4317903135288,gla,657,156520,Sterling,9,15181.0,95,High
+100364,Fake Book Title 364,Ruby Ann Boxcar,2.95,1322401182,7892339506770,en-GB,623,298036,Firebird,3,5246.4,91,Medium
+100365,Fake Book Title 365,Delia Sherman,3.92,5306459450,5213168232993,lat,681,13311,Scribner,14,10936.4,20,High
+100366,Fake Book Title 366,Adam Ginsberg,4.79,7845366946,7788173854250,enm,628,76759,Association for Supervision & Curriculum Development,6,19845.6,0,High
+100367,Fake Book Title 367,Kahlil Gibran/John Walbridge/Robin Waterfield,2.58,2250949136,5239616951490,ger,982,96035,Harper,8,17202.6,58,Medium
+100368,Fake Book Title 368,Heidi Boyd,4.24,6289150149,2248091424798,ale,246,293975,Signet,0,2276.8,36,High
+100369,Fake Book Title 369,Kahlil Gibran/جبران خليل جبران,3.24,8331319481,1214652573935,por,765,275846,Archaia,19,14234.6,60,Medium
+100370,Fake Book Title 370,Chris Malta/Lisa Suttora,4.81,2950049698,7356495258983,enm,403,267297,Viking Juvenile,6,7150.5,13,High
+100371,Fake Book Title 371,Bill Bryson,4.93,3952295757,6570288790386,eng,719,287694,Amistad,5,502.1,4,High
+100372,Fake Book Title 372,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,4.86,9263135031,7803795059037,ara,847,246454,Teaching Resources,1,8287.3,19,High
+100373,Fake Book Title 373,Brian Herbert,3.69,5010075517,8402669826193,en-GB,919,100386,Buccaneer Books,3,4974.4,5,High
+100374,Fake Book Title 374,Satyajit Das,4.66,2825957977,4039475092038,fre,963,113549,Chosen Books,7,16443.5,92,High
+100375,Fake Book Title 375,Kahlil Gibran/جبران خليل جبران,4.61,3338877621,9288267796955,eng,681,149574,Scholastic,5,6988.5,60,High
+100376,Fake Book Title 376,Chris Malta/Lisa Suttora,3.3,3781569954,2283208955502,spa,794,166558,iUniverse,21,16613.4,13,Medium
+100377,Fake Book Title 377,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,4.57,9196564761,1240808218774,enm,861,147076,Greenwillow Books,6,376.7,68,High
+100378,Fake Book Title 378,Robert Louis Stevenson,2.59,4550353803,4793582199567,fre,327,250869,Delacorte Press,7,6409.0,86,Medium
+100379,Fake Book Title 379,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.99,1306702926,8004186667204,ger,201,12406,The New Press,8,5100.3,19,High
+100380,Fake Book Title 380,Mulk Raj Anand/E.M. Forster,3.08,6534540349,6040172514176,en-US,686,128178,EMC/Paradigm Publishing,4,4951.1,79,Medium
+100381,Fake Book Title 381,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,2.8,5829062179,8449257558083,jpn,516,2237,Penguin Classics,13,1703.8,88,Medium
+100382,Fake Book Title 382,Narendra Jadhav,2.69,8252816758,8076825390250,gla,315,297292,Pocket Books,9,4039.2,80,Medium
+100383,Fake Book Title 383,Henry James/Patricia Crick,4.24,8300300577,3687000461955,ger,506,152347,Farrar  Straus and Giroux,8,11273.2,41,High
+100384,Fake Book Title 384,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,3.35,9343730920,2470070530107,wel,498,134728,Putnam,24,6085.9,50,Medium
+100385,Fake Book Title 385,Marguerite Duras,4.31,7415801613,2388605476565,zho,814,126320,Changeling Press,25,8560.5,72,High
+100386,Fake Book Title 386,Rolland Baker/Heidi Baker,2.66,9935429720,3735069791901,grc,803,276581,Knopf,11,7764.8,90,Medium
+100387,Fake Book Title 387,John Carratello/Patty Carratello/Theresa Wright,3.29,2075321966,6748970020310,en-US,860,243048,Routledge,4,17563.4,53,Medium
+100388,Fake Book Title 388,Patricia A. McKillip,3.85,1392245997,6454892428063,en-CA,598,241553,Pragmatic Bookshelf,2,18140.5,81,High
+100389,Fake Book Title 389,Mark Smylie,4.48,5083595988,8695287217204,por,853,62111,Ace Books,19,10044.2,76,High
+100390,Fake Book Title 390,Robert Louis Stevenson,3.3,4248149900,5199818601079,nl,564,235547,Cambridge University Press,17,6847.6,86,Medium
+100391,Fake Book Title 391,Marianne Sturman/Leo Tolstoy,4.06,8093179263,5299510967453,en-CA,790,81307,French & European,2,2462.0,75,High
+100392,Fake Book Title 392,Gloria Goldreich,4.71,9229469952,3041975558421,glg,830,61803,Pocket Books,10,19085.1,34,High
+100393,Fake Book Title 393,John Carratello/Patty Carratello/Theresa Wright,4.04,7808938880,1968982556881,spa,181,23458,iUniverse,21,1547.6,53,High
+100394,Fake Book Title 394,Chris Malta/Lisa Suttora,3.08,5686850445,4091262588488,swe,703,124166,O'Reilly Media,22,6209.4,13,Medium
+100395,Fake Book Title 395,Satyajit Das,2.56,6789448659,1219556335911,ger,786,131258,O'Reilly Media,8,6217.5,92,Medium
+100396,Fake Book Title 396,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,4.68,6726515966,3416812030316,ale,850,17463,Chosen Books,0,6656.1,50,High
+100397,Fake Book Title 397,Julia Wilkinson,2.55,3878201524,1200581413528,ale,871,113700,William Morrow,0,3590.8,57,Medium
+100398,Fake Book Title 398,Henry James/Gabriel Brownstein/Mary Cregan,4.69,4683935600,9732372168572,swe,464,59550,Changeling Press,22,15742.4,40,High
+100399,Fake Book Title 399,Edward P. Jones/Kevin R. Free,3.82,6711463258,7102946733732,ara,262,56408,Kingfisher,1,2770.2,26,High
+100400,Fake Book Title 400,Barry R. Cournoyer,4.85,8274273035,5560055965394,ita,147,66247,Teaching Resources,12,12831.4,3,High
+100401,Fake Book Title 401,John McPhee,4.5,9354542654,7541952292229,zho,610,223911,New Directions Publishing,25,2796.7,54,High
+100402,Fake Book Title 402,J.K. Rowling,4.99,3362646960,3078276326388,zho,428,223542,Cliffs Notes,25,1750.0,45,High
+100403,Fake Book Title 403,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.38,2953462417,6892821214268,gla,939,261595,Viking Juvenile,9,18221.6,59,Medium
+100404,Fake Book Title 404,Delia Sherman,4.42,6645808194,8554019008189,en-US,215,76290,Broadway Books,4,4098.2,20,High
+100405,Fake Book Title 405,Rolland Baker/Heidi Baker,3.5,2388450337,5625954105896,wel,948,235645,Dramatists Play Service,24,16490.2,90,High
+100406,Fake Book Title 406,Chris   Smith/Christopher  Lee/Richard Taylor,3.7,5243939720,9727704558737,gla,436,221185,Gramercy Books,9,11058.8,12,High
+100407,Fake Book Title 407,Louis E. Catron,4.07,7625389037,9987026642802,glg,980,278516,Heinemann Drama,10,1893.7,69,High
+100408,Fake Book Title 408,Lucas Carlson/Leonard Richardson,4.68,2774884818,1976504296548,jpn,836,7018,Barnes  Noble Classics,13,19125.2,70,High
+100409,Fake Book Title 409,Gary Russell,4.96,8543865915,3935897420555,por,963,289712,Del Rey Books,19,5214.1,32,High
+100410,Fake Book Title 410,Kahlil Gibran/جبران خليل جبران,4.42,7981077394,3767538145623,msa,939,190970,Viking Juvenile,15,17244.1,60,High
+100411,Fake Book Title 411,Dave Lakhani,3.54,4264134512,3030328873203,nor,246,263894,Knopf,18,3679.6,17,High
+100412,Fake Book Title 412,John McPhee/William Howarth,3.55,6169243284,1045135059218,mul,674,232126,Vintage Crime/Black Lizard,16,17132.2,55,High
+100413,Fake Book Title 413,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,4.34,3358880404,1218454614469,tur,905,23249,Association for Supervision & Curriculum Development,23,624.7,19,High
+100414,Fake Book Title 414,Rob Orsini,3.1,9279291478,1808504192134,msa,422,163237,iUniverse,15,10413.8,85,Medium
+100415,Fake Book Title 415,Mark Smylie,2.78,8293928340,7401527484531,en-GB,542,185438,Barnes & Noble Classics,3,15473.0,76,Medium
+100416,Fake Book Title 416,Satyajit Das,3.39,1521521078,4148855636714,ale,936,5570,Harper Perennial,0,18719.7,92,Medium
+100417,Fake Book Title 417,Donna Ickes/Edward Sciranko/Keith Vasconcelles,3.22,5975196341,1622158161504,spa,112,109864,French & European,21,18217.2,21,Medium
+100418,Fake Book Title 418,Mulk Raj Anand/E.M. Forster,3.24,3365835550,4948876122485,lat,593,167577,Tor Books,14,16458.3,79,Medium
+100419,Fake Book Title 419,J.R.R. Tolkien,3.08,7666869046,5365068901868,spa,800,246406,Routledge,21,17804.6,47,Medium
+100420,Fake Book Title 420,Leo Tolstoy/Constance Garnett/Amy Mandelker,2.61,1400330495,6629500770824,glg,386,123414,Sterling,10,4276.7,64,Medium
+100421,Fake Book Title 421,Frank Herbert,2.54,4921003983,3101840206629,ger,819,15005,One Hour Entertainment,8,5945.0,29,Medium
+100422,Fake Book Title 422,Marsha Collier,4.97,4574027737,1927291775794,tur,213,175171,Broadway Books,23,6038.9,77,High
+100423,Fake Book Title 423,Kate Horsley,3.57,8372755146,4926370386680,swe,579,145039,Zebra,22,7768.5,62,High
+100424,Fake Book Title 424,Vasant Moon/Gail Omvedt/Eleanor Zelliot,3.46,6469318275,1811668992099,fre,121,250194,Random House Audio,7,8087.9,96,High
+100425,Fake Book Title 425,J.R.R. Tolkien/Alan  Lee,4.2,8880079328,8056434039880,ale,448,64975,Harper Perennial,0,11057.3,48,High
+100426,Fake Book Title 426,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,3.05,9505085936,6466826988627,en-GB,825,70319,Changeling Press,3,3504.2,1,Medium
+100427,Fake Book Title 427,Molly Hatchet,4.87,6341783555,2517529202265,mul,782,152235,Random House Books for Young Readers,16,13937.6,78,High
+100428,Fake Book Title 428,Charles Willeford/Lawrence Block,4.47,3367665472,9033964352967,wel,934,100027,Farrar Straus Giroux,24,3655.2,11,High
+100429,Fake Book Title 429,Marguerite Duras,2.72,2647489402,7489729811607,swe,665,29395,North Light Books,22,6457.9,72,Medium
+100430,Fake Book Title 430,Dale Peck,3.54,4776677517,6129052827481,enm,909,255738,Cliffs Notes,6,10248.2,15,High
+100431,Fake Book Title 431,Kahlil Gibran/John Walbridge/Robin Waterfield,4.7,4710967433,5267577076325,grc,419,261848,One World (UK),11,16003.1,58,High
+100432,Fake Book Title 432,Robert Louis Stevenson/Milo Winter,4.86,7077131430,7478803232322,wel,225,178983,Mira Books,24,14884.5,87,High
+100433,Fake Book Title 433,Barry R. Cournoyer,3.67,7475684019,3646752666245,ger,376,97456,Farrar Straus Giroux,8,13040.1,3,High
+100434,Fake Book Title 434,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,4.03,4524233168,1418372919395,mul,303,3503,Brookline Books,16,3423.6,50,High
+100435,Fake Book Title 435,Marguerite Duras,2.92,5933179746,1171271263926,zho,293,102861,Zebra,25,11106.2,72,Medium
+100436,Fake Book Title 436,Narendra Jadhav,4.98,7608153267,6896779602189,spa,780,54985,Citadel,21,2082.0,80,High
+100437,Fake Book Title 437,Henry James/Gabriel Brownstein/Mary Cregan,3.08,6777263354,7621367701665,gla,763,174492,Dramatists Play Service,9,7774.5,40,Medium
+100438,Fake Book Title 438,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,4.86,7628981661,6410487190489,nl,646,270522,Rowman & Littlefield Publishers,17,8484.4,67,High
+100439,Fake Book Title 439,Mark Smylie,4.12,3995732958,4608218986282,glg,795,15584,Dover Publications,10,1146.7,76,High
+100440,Fake Book Title 440,Gloria Goldreich,4.02,7750819485,8384071703840,ita,385,36370,William Morrow Paperbacks,12,5744.8,34,High
+100441,Fake Book Title 441,Narendra Jadhav,3.78,8625905455,3508247841048,nor,156,49220,Scholastic,18,19129.2,80,High
+100442,Fake Book Title 442,Eliot Ness/Oscar Fraley,3.08,5482431018,5925089045321,grc,833,100596,Rowman & Littlefield Publishers,11,19089.6,27,Medium
+100443,Fake Book Title 443,Edward P. Jones,2.94,8493451569,1769198692368,spa,402,80251,Barnes & Noble,21,7282.9,25,Medium
+100444,Fake Book Title 444,Gloria Goldreich,3.05,8779941999,5075585840049,zho,262,234523,Sterling Children's Books,25,1211.3,34,Medium
+100445,Fake Book Title 445,Gloria Goldreich,2.97,5212581851,8265022046381,fre,118,270834,Cherry Lane Music Company,7,3881.5,34,Medium
+100446,Fake Book Title 446,Henry James/Gabriel Brownstein/Mary Cregan,4.45,1158998032,9063253455445,tur,469,231374,Greenwillow Books,23,8066.2,40,High
+100447,Fake Book Title 447,Ruby Ann Boxcar,3.38,7829772942,9890992802822,en-GB,363,161171,Delacorte Press,3,18974.7,91,Medium
+100448,Fake Book Title 448,Leo Tolstoy/David Magarshack/Priscilla Meyer,2.64,4735334423,7939893896849,por,893,233662,Delacorte Press,19,3137.4,65,Medium
+100449,Fake Book Title 449,Dave Lakhani,4.92,2891100776,2097655431963,ale,212,187175,Tor Science Fiction,0,15356.6,17,High
+100450,Fake Book Title 450,Tara MacCarthy,4.71,2962491159,3301948789320,nor,587,200846,ASCD,18,2499.0,93,High
+100451,Fake Book Title 451,Dale Peck,4.82,4102872611,6129207878282,glg,426,143329,Farrar Straus Giroux,10,19632.0,15,High
+100452,Fake Book Title 452,Marianne Sturman/Leo Tolstoy,4.99,1662976399,7914041861339,spa,641,196896,Sterling Children's Books,21,7858.0,75,High
+100453,Fake Book Title 453,Mulk Raj Anand/E.M. Forster,2.93,9457665185,6741234623994,tur,746,164094,Scholastic Inc.,23,15586.7,79,Medium
+100454,Fake Book Title 454,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,3.49,8270110908,8964235414282,tur,678,202210,Ballantine Books,23,7091.8,88,High
+100455,Fake Book Title 455,J.R.R. Tolkien/Alan  Lee,4.4,3791027186,5107156776564,en-US,164,70513,One World (UK),4,12689.3,48,High
+100456,Fake Book Title 456,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,4.24,8953271391,3393167427974,rus,391,93550,Gramercy Books,20,4135.2,68,High
+100457,Fake Book Title 457,Mulk Raj Anand/E.M. Forster,2.88,8556573246,2918066715916,msa,124,207822,Turtleback Books,15,3232.1,79,Medium
+100458,Fake Book Title 458,Douglas Adams/Stephen Fry,4.54,9744120054,2856093355116,msa,648,37208,HarperAudio,15,18783.9,23,High
+100459,Fake Book Title 459,George Smoot/Keay Davidson,3.06,1293864877,8907740777110,ita,100,84657,Heinemann Drama,12,18383.0,33,Medium
+100460,Fake Book Title 460,Bill Bryson,3.06,9250327663,6525329634132,zho,648,245067,Houghton Mifflin Harcourt,25,17790.5,4,Medium
+100461,Fake Book Title 461,Robert Louis Stevenson/Scott McKowen,3.84,5283911723,3123459802338,msa,240,120126,Zebra,15,12645.4,89,High
+100462,Fake Book Title 462,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,3.98,4207337120,7303018801651,swe,843,58742,New Directions,22,16235.3,61,High
+100463,Fake Book Title 463,Julia Wilkinson,3.95,4747699292,8950876255688,tur,747,130891,Booket,23,1720.5,57,High
+100464,Fake Book Title 464,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,2.73,2905584866,9148877132068,nl,287,192866,Vintage Crime/Black Lizard,17,6938.6,19,Medium
+100465,Fake Book Title 465,Leo Tolstoy/Amy Mandelker/Constance Garnett,4.69,8275679594,2589652924344,ara,227,278004,Black Classic Press,1,6524.6,63,High
+100466,Fake Book Title 466,Bryce Courtenay,3.16,4880176825,6354475833941,ale,300,161131,Greenwillow Books,0,12845.9,6,Medium
+100467,Fake Book Title 467,Leo Tolstoy/David Magarshack/Priscilla Meyer,2.82,5492496998,4779744435705,mul,226,111768,Clarity Press,16,7354.2,65,Medium
+100468,Fake Book Title 468,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,4.72,4419410162,3608453011737,wel,356,242,Delacorte Books for Young Readers,24,3280.9,1,High
+100469,Fake Book Title 469,Donna Ickes/Edward Sciranko/Keith Vasconcelles,4.89,6554972315,7972259824927,spa,775,247586,Black Classic Press,21,12076.6,21,High
+100470,Fake Book Title 470,Heidi Boyd,4.66,6904897514,1861198751712,msa,646,36463,Citadel,15,16355.4,36,High
+100471,Fake Book Title 471,Zilpha Keatley Snyder,4.52,1625217504,6259948450760,por,293,143938,Turtleback Books,19,7868.0,99,High
+100472,Fake Book Title 472,Delia Sherman,4.14,7576309274,4062271638448,nl,802,39132,Scholastic,17,2962.1,20,High
+100473,Fake Book Title 473,Narendra Jadhav,3.88,4403845222,2663225452446,spa,203,123180,Ivy Books,21,4227.0,80,High
+100474,Fake Book Title 474,Zilpha Keatley Snyder,2.72,1730074215,2792985823086,nor,634,50990,Gramercy Books,18,5028.0,99,Medium
+100475,Fake Book Title 475,Kahlil Gibran/John Walbridge/Robin Waterfield,3.52,9929101065,3135199152670,ita,364,163252,Changeling Press,12,6253.5,58,High
+100476,Fake Book Title 476,Gloria Goldreich,3.43,9035194895,2082383113193,nor,901,40192,HarperAudio,18,12986.3,34,High
+100477,Fake Book Title 477,Leo Tolstoy/Amy Mandelker/Constance Garnett,3.15,6329323383,4912640333512,eng,483,36518,Vintage Crime/Black Lizard,5,12164.6,63,Medium
+100478,Fake Book Title 478,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.31,1614685938,4483779894743,rus,359,141777,Sovereign World,20,14032.5,59,High
+100479,Fake Book Title 479,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.74,6385791669,8047284015816,glg,513,179019,Heinemann Drama,10,7482.7,59,High
+100480,Fake Book Title 480,Eliot Ness/Oscar Fraley,2.7,8750840032,2480237650908,ita,457,236237,Ace Books,12,16544.2,27,Medium
+100481,Fake Book Title 481,Edward P. Jones/Kevin R. Free,3.05,9165632300,2322045682058,lat,174,42106,Vintage Crime/Black Lizard,14,4372.3,26,Medium
+100482,Fake Book Title 482,Chris   Smith/Christopher  Lee/Richard Taylor,4.21,1678500147,4474905447749,jpn,454,51881,Pearson,13,9574.6,12,High
+100483,Fake Book Title 483,Gary Paulsen,2.69,7818568548,2615460858786,gla,683,249714,Houghton Mifflin Harcourt,9,16091.4,31,Medium
+100484,Fake Book Title 484,J.K. Rowling/Mary GrandPré,4.63,6369130994,3153202611249,swe,870,108167,Pearson,22,3902.4,46,High
+100485,Fake Book Title 485,Gloria Goldreich,3.74,8925520026,1891038188396,nl,287,276865,Harper,17,2522.2,34,High
+100486,Fake Book Title 486,J.K. Rowling/Mary GrandPré,3.7,3075362821,8621736796964,eng,784,289242,Penguin Classics,5,17716.1,46,High
+100487,Fake Book Title 487,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,3.98,6313758032,9729070051922,ita,389,288157,Rowman & Littlefield Publishers,12,7098.4,39,High
+100488,Fake Book Title 488,Robert Louis Stevenson/Scott McKowen,4.56,7751356568,7730340378318,mul,144,44004,Wiley,16,13792.8,89,High
+100489,Fake Book Title 489,Lucas Carlson/Leonard Richardson,3.37,7763765757,8506242243250,spa,672,233242,Delacorte Press,21,862.7,70,Medium
+100490,Fake Book Title 490,Marguerite Duras/Richard Seever,4.2,2268006448,7224149813218,glg,182,767,Scholastic,10,13914.1,74,High
+100491,Fake Book Title 491,J.K. Rowling/Mary GrandPré,3.91,8122042835,5836936983210,por,222,273870,Barnes & Noble,19,6571.6,46,High
+100492,Fake Book Title 492,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,3.17,2178884276,8843812248642,lat,457,180932,Penguin Classics,14,1459.5,1,Medium
+100493,Fake Book Title 493,John Banville,4.7,4431078106,3615134392291,lat,627,118746,Farrar  Straus and Giroux,14,12338.7,51,High
+100494,Fake Book Title 494,V.T. Rajshekar/Y.N. Kly,4.49,2513206988,9775885652767,mul,165,5044,Pantheon,16,5093.2,95,High
+100495,Fake Book Title 495,Narendra Jadhav,4.15,3734252963,9429091024553,lat,756,266428,Kingfisher,14,7960.0,80,High
+100496,Fake Book Title 496,Madeleine L'Engle,4.63,7961674558,2542155162368,zho,474,69350,FT Press,25,1947.2,71,High
+100497,Fake Book Title 497,Edward P. Jones,4.67,4600630513,7735710348840,jpn,261,37455,Amistad,13,3254.6,25,High
+100498,Fake Book Title 498,Kahlil Gibran/جبران خليل جبران,4.27,3698305085,8375048271438,grc,845,297066,Greenwillow Books,11,6215.8,60,High
+100499,Fake Book Title 499,John Carratello/Patty Carratello/Theresa Wright,4.59,3776011793,5383124996111,en-CA,479,23235,William Morrow Paperbacks,2,2127.4,53,High
+100500,Fake Book Title 500,Charles Willeford/Lawrence Block,4.24,2893321208,1342716255034,ale,755,174564,Barnes & Noble,0,18249.1,11,High
+100501,Fake Book Title 501,John McPhee/William Howarth,4.2,7784217828,7730168241696,por,457,133703,One Hour Entertainment,19,483.7,55,High
+100502,Fake Book Title 502,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,4.05,4145461251,9436858144112,en-GB,287,51767,Sovereign World,3,9865.6,1,High
+100503,Fake Book Title 503,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,4.38,6562457052,7053690602618,gla,421,2813,Booket,9,2785.0,67,High
+100504,Fake Book Title 504,Henry James/Gabriel Brownstein/Mary Cregan,2.9,8505373158,6658629691449,glg,549,55530,Sterling,10,6406.3,40,Medium
+100505,Fake Book Title 505,Leo Tolstoy/Constance Garnett/Amy Mandelker,4.7,1754368373,5756196881561,ger,573,169881,One Hour Entertainment,8,18548.2,64,High
+100506,Fake Book Title 506,Heidi Hayes Jacobs,4.68,9467483275,1456038836673,rus,112,207189,Delacorte Books for Young Readers,20,3539.9,38,High
+100507,Fake Book Title 507,Charles Willeford,2.57,9218363978,1516336760089,fre,283,118144,Association for Supervision & Curriculum Development,7,19329.1,8,Medium
+100508,Fake Book Title 508,Kahlil Gibran/John Walbridge/Robin Waterfield,4.56,4566852761,5942556186879,nl,210,156429,Grove Press,17,4405.8,58,High
+100509,Fake Book Title 509,Madeleine L'Engle,2.82,8758809005,9302135410465,jpn,607,227493,iUniverse,13,14925.7,71,Medium
+100510,Fake Book Title 510,Julia Wilkinson,3.34,5789617427,7290106015725,ita,389,11114,Cliffs Notes,12,11099.0,57,Medium
+100511,Fake Book Title 511,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,4.36,5135595227,5097397107092,swe,394,76898,Pantheon,22,17731.7,61,High
+100512,Fake Book Title 512,Eliot Ness/Oscar Fraley,2.9,5151086814,3808796855957,nl,550,37598,Harper,17,11242.7,27,Medium
+100513,Fake Book Title 513,Madeleine L'Engle,4.54,9503787171,5359821879151,mul,314,168067,Workman Publishing Company,16,10861.1,71,High
+100514,Fake Book Title 514,Charles Willeford/Lawrence Block,4.58,2570991899,5241953932354,ita,731,268670,Grove Press,12,4202.8,11,High
+100515,Fake Book Title 515,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,3.77,8690920484,7832422767579,nl,993,2432,Routledge,17,3628.9,1,High
+100516,Fake Book Title 516,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,2.52,5354747485,4057351943586,msa,666,176398,Dramatists Play Service,15,18360.3,59,Medium
+100517,Fake Book Title 517,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.22,3304560537,5158284687860,wel,126,79748,Atheneum Books for Young Readers,24,6802.1,59,Medium
+100518,Fake Book Title 518,Lucas Carlson/Leonard Richardson,4.04,7248258423,6594592271326,msa,729,245812,Simon & Schuster,15,7670.8,70,High
+100519,Fake Book Title 519,Henry James/Patricia Crick,4.95,8182649048,7312303241090,ger,832,243431,Rowman & Littlefield Publishers,8,15284.1,41,High
+100520,Fake Book Title 520,Gary Russell,4.08,7805633786,7187761791993,fre,330,45145,Houghton Mifflin Harcourt,7,7017.8,32,High
+100521,Fake Book Title 521,Ralph Ginzburg,3.15,9333490239,3502091637697,zho,664,289391,Sovereign World,25,19058.7,84,Medium
+100522,Fake Book Title 522,Rolland Baker/Heidi Baker,4.09,6299224734,4089408858679,ale,906,22060,William Morrow,0,14854.2,90,High
+100523,Fake Book Title 523,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,3.85,9697414638,1667826339293,msa,420,134012,Picador USA,15,12095.5,61,High
+100524,Fake Book Title 524,Edward P. Jones/Kevin R. Free,4.45,7706193636,1988230130560,en-GB,332,109212,Atheneum Books for Young Readers,3,17661.4,26,High
+100525,Fake Book Title 525,Jude Fisher,2.77,9861449701,1348832128238,en-GB,769,270220,William Morrow,3,1339.0,56,Medium
+100526,Fake Book Title 526,Madeleine L'Engle,4.4,8833399096,9407512077436,glg,536,68892,William Morrow Paperbacks,10,5412.4,71,High
+100527,Fake Book Title 527,Ralph Ginzburg,3.85,2753617371,6832568523557,ita,880,295859,Greenwillow Books,12,9496.0,84,High
+100528,Fake Book Title 528,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,4.91,1600337712,6992039826270,wel,632,271471,Del Rey,24,4821.7,39,High
+100529,Fake Book Title 529,Leo Tolstoy/David Magarshack/Priscilla Meyer,3.35,5064162365,4121225480582,ger,502,173361,Thomas Nelson,8,14971.6,65,Medium
+100530,Fake Book Title 530,Robert Louis Stevenson,4.08,3115806625,2045066856313,en-GB,152,276877,Viking Juvenile,3,18413.6,86,High
+100531,Fake Book Title 531,Jude Fisher,4.83,1417436465,3598549329268,spa,886,131792,ASCD,21,8685.7,56,High
+100532,Fake Book Title 532,Zilpha Keatley Snyder,2.76,5877639950,3495020479401,mul,412,220333,Barnes & Noble,16,7082.8,99,Medium
+100533,Fake Book Title 533,Gloria Goldreich,4.84,7243352390,2953241031197,ale,380,149011,Rowman & Littlefield Publishers,0,19245.0,34,High
+100534,Fake Book Title 534,Robert Louis Stevenson/Scott McKowen,4.22,9381721143,7420377687451,spa,825,175657,Clarity Press,21,9099.7,89,High
+100535,Fake Book Title 535,J.K. Rowling/Mary GrandPré,2.67,9730449971,2279730855343,grc,130,245194,McGraw-Hill,11,9967.5,46,Medium
+100536,Fake Book Title 536,Madeleine L'Engle,3.25,2591414076,6918898863756,grc,436,152761,Chosen Books,11,7269.6,71,Medium
+100537,Fake Book Title 537,Douglas Adams,4.27,7199283151,6674947869480,rus,282,195834,Ivy Books,20,18224.0,22,High
+100538,Fake Book Title 538,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,2.67,5082603360,8687771100246,fre,122,252267,Harper,7,11536.4,1,Medium
+100539,Fake Book Title 539,Satyajit Das,3.96,8969097897,9572585767810,eng,643,163294,Scholastic,5,15330.3,92,High
+100540,Fake Book Title 540,Edward Lear/Laura Huliska-Beith/Edward Mendelson,3.36,8239941612,6581950725533,tur,545,101208,Farrar Straus Giroux,23,16304.8,24,Medium
+100541,Fake Book Title 541,J.K. Rowling,4.05,2540492440,7278327323474,gla,173,273771,Cliffs Notes,9,7077.2,45,High
+100542,Fake Book Title 542,Kahlil Gibran/John Walbridge/Robin Waterfield,2.61,7004964045,7653657471010,spa,109,282370,Puffin,21,8880.6,58,Medium
+100543,Fake Book Title 543,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,4.68,2952996248,6182687637273,mul,583,64022,Rowman & Littlefield Publishers,16,17024.7,50,High
+100544,Fake Book Title 544,Jean Gibran/جبران خليل جبران/Kahlil Gibran,4.93,3846570058,4122988181279,en-CA,555,282190,Archaia,2,7497.5,49,High
+100545,Fake Book Title 545,Henry Miller/Jiří Níl,4.92,1091729577,1033195076198,swe,665,100972,Teacher Created Resources,22,15953.9,43,High
+100546,Fake Book Title 546,Satyajit Das,4.37,8674224347,4199889718347,zho,663,35981,Houghton Mifflin Harcourt,25,18841.4,92,High
+100547,Fake Book Title 547,Gary Paulsen,2.83,3424843951,6598929626326,ara,759,124218,FT Press,1,12601.7,31,Medium
+100548,Fake Book Title 548,Rob Orsini,4.4,4735313433,2832085087916,gla,259,166832,Pantheon,9,14926.9,85,High
+100549,Fake Book Title 549,Heidi Fleiss/Libby Keatinge,2.56,5307145891,9731396588919,glg,981,123149,Ivy Books,10,16173.1,37,Medium
+100550,Fake Book Title 550,Rolland Baker/Heidi Baker,2.56,1749459431,6824579712042,tur,113,34743,Firebird,23,16957.4,90,Medium
+100551,Fake Book Title 551,Rolland Baker/Heidi Baker,3.31,1110724913,2369000825370,gla,277,108994,William Morrow Paperbacks,9,8121.9,90,Medium
+100552,Fake Book Title 552,John Banville,3.72,5358791907,7099875745055,spa,511,224705,Puffin,21,1371.6,51,High
+100553,Fake Book Title 553,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,4.43,2390587865,6622036511649,wel,977,207624,The New Press,24,8255.8,67,High
+100554,Fake Book Title 554,Louis E. Catron,4.21,6043349038,6909388179844,tur,152,279568,Sterling Children's Books,23,13594.2,69,High
+100555,Fake Book Title 555,Gary Paulsen,3.61,1225052083,1199486756579,ara,507,247622,Atheneum Books for Young Readers: Richard Jackson Books,1,9207.6,31,High
+100556,Fake Book Title 556,John Carratello/Patty Carratello/Theresa Wright,3.18,8480622107,4686221018728,ger,946,45963,Routledge,8,15070.9,53,Medium
+100557,Fake Book Title 557,Vasant Moon/Gail Omvedt/Eleanor Zelliot,4.99,3259520140,7163569246124,swe,121,197147,Barnes & Noble Classics,22,7374.4,96,High
+100558,Fake Book Title 558,Rolland Baker/Heidi Baker,3.57,4202607993,1846114059849,grc,129,87846,Picador USA,11,12828.2,90,High
+100559,Fake Book Title 559,Bryce Courtenay,3.63,7340428136,8706828916228,fre,802,288263,iUniverse,7,4025.4,6,High
+100560,Fake Book Title 560,Daniel Abraham,2.91,8636525027,8381900240963,nor,359,84861,Teaching Resources,18,15078.9,16,Medium
+100561,Fake Book Title 561,Louis E. Catron,4.49,5763350700,3929034989247,zho,304,190171,Chosen Books,25,11079.7,69,High
+100562,Fake Book Title 562,Adam Ginsberg,4.23,3163970710,8283768688633,tur,158,232942,Putnam,23,4371.8,0,High
+100563,Fake Book Title 563,Heidi Hayes Jacobs,3.05,9776185998,7177789529788,ger,570,39228,Chosen Books,8,6096.7,38,Medium
+100564,Fake Book Title 564,Donna Ickes/Edward Sciranko/Keith Vasconcelles,2.71,7534583219,7603709889026,por,875,295015,iUniverse,19,15063.9,21,Medium
+100565,Fake Book Title 565,Gary Paulsen,4.2,5140460939,4967206145680,por,565,17049,Puffin,19,9840.9,31,High
+100566,Fake Book Title 566,Robert Louis Stevenson,4.14,7019900273,8937798167405,swe,111,195673,Grove Press,22,4606.8,86,High
+100567,Fake Book Title 567,Chris Malta/Lisa Suttora,3.18,3946766309,1587748074488,ger,730,171294,Mira Books,8,19357.4,13,Medium
+100568,Fake Book Title 568,J.K. Rowling,4.88,9202102595,1353453941123,gla,389,295916,Pocket Books,9,14406.5,45,High
+100569,Fake Book Title 569,Heidi Fleiss/Libby Keatinge,2.88,5641959772,5592688918133,nl,949,272819,Penguin Books,17,19158.3,37,Medium
+100570,Fake Book Title 570,Marguerite Duras,3.58,3612617557,2842333360416,mul,859,198287,Simon & Schuster,16,8751.2,72,High
+100571,Fake Book Title 571,Quentin Blake,4.86,1282103057,7013272902699,ara,453,6909,Greenwillow Books,1,9693.6,83,High
+100572,Fake Book Title 572,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.55,6691628146,3831996027409,en-CA,738,111036,Vintage,2,17996.4,59,High
+100573,Fake Book Title 573,J.R.R. Tolkien/Alan  Lee,4.1,7573691558,2321698811893,nl,174,232704,Putnam,17,10674.3,48,High
+100574,Fake Book Title 574,Kahlil Gibran/جبران خليل جبران,3.49,7895255573,6944634619235,spa,972,284033,Chosen Books,21,14252.4,60,High
+100575,Fake Book Title 575,John McPhee/William Howarth,3.19,4014119648,8585045359528,tur,815,289410,Viking Juvenile,23,5316.4,55,Medium
+100576,Fake Book Title 576,Daniel Abraham,4.96,6218484323,8640273313499,jpn,660,49572,The New Press,13,9136.5,16,High
+100577,Fake Book Title 577,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.52,6276339732,1941272593432,glg,690,230283,Kingfisher,10,2788.9,59,High
+100578,Fake Book Title 578,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,4.74,7242730249,6824410552361,rus,540,7535,Pearson,20,4409.4,39,High
+100579,Fake Book Title 579,J.R.R. Tolkien,3.07,5703357871,8199181164264,ale,340,243106,Shambhala,0,383.5,47,Medium
+100580,Fake Book Title 580,George Smoot/Keay Davidson,3.03,7127904756,6232479298914,jpn,960,112751,Greenwillow Books,13,1136.0,33,Medium
+100581,Fake Book Title 581,Gloria Goldreich,2.58,8151583833,2684647442155,gla,253,207402,Delacorte Press,9,19554.0,34,Medium
+100582,Fake Book Title 582,Charles Willeford/James Lee Burke,4.13,9259157845,7910815561873,wel,885,102688,Dover Publications,24,5123.6,10,High
+100583,Fake Book Title 583,Heidi Hayes Jacobs,3.42,1288335378,9636491412577,spa,195,184564,EMC/Paradigm Publishing,21,13389.1,38,High
+100584,Fake Book Title 584,Frank Herbert,4.66,4572433066,1958437370758,rus,825,274420,Harper Perennial,20,16840.7,29,High
+100585,Fake Book Title 585,Marguerite Duras/Richard Seever,3.68,5695387521,1065974257876,eng,393,93455,Firebird,5,11177.2,74,High
+100586,Fake Book Title 586,Philippa Carr,4.92,8468071953,2539434845589,grc,308,284782,Puffin,11,3372.0,82,High
+100587,Fake Book Title 587,Frank Herbert,2.96,4486522557,9450778577307,mul,442,210098,Zebra,16,14661.6,29,Medium
+100588,Fake Book Title 588,Jude Fisher,4.67,3389594115,2705959613276,lat,187,162831,Puffin,14,12150.9,56,High
+100589,Fake Book Title 589,Ewan McGregor/Charley Boorman/Robert Uhlig,4.44,5819946657,4637947833672,rus,917,37069,Teaching Resources,20,14723.1,28,High
+100590,Fake Book Title 590,Satyajit Das,4.43,8517413631,9328293499796,tur,875,261547,Houghton Mifflin Harcourt,23,15479.0,92,High
+100591,Fake Book Title 591,V.T. Rajshekar/Y.N. Kly,4.61,4096932037,3035143491588,jpn,489,65183,Delacorte Press,13,19517.2,95,High
+100592,Fake Book Title 592,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,4.4,9454207717,9282404055955,glg,424,197580,New Directions,10,11626.9,19,High
+100593,Fake Book Title 593,Ruby Ann Boxcar,4.07,7873709012,5662878661585,tur,988,158648,Knopf,23,7073.1,91,High
+100594,Fake Book Title 594,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,2.83,2510308881,7818450102247,lat,931,128635,Atheneum Books for Young Readers: Richard Jackson Books,14,13097.6,19,Medium
+100595,Fake Book Title 595,Frank Herbert,2.58,1913706213,7524849381427,por,256,245222,Mira Books,19,1708.8,29,Medium
+100596,Fake Book Title 596,Henry Miller/Thomas H. Moore,4.8,8115628227,7712542078505,grc,767,125864,Turtleback Books,11,17985.4,44,High
+100597,Fake Book Title 597,Robert Louis Stevenson/Scott McKowen,4.04,5759761714,4282941582225,wel,750,25989,Tor Science Fiction,24,2709.0,89,High
+100598,Fake Book Title 598,Satyajit Das,4.49,2578662692,1783598638105,ger,732,153989,Dramatists Play Service,8,6802.2,92,High
+100599,Fake Book Title 599,Edward P. Jones/Kevin R. Free,3.7,8570333548,8736366947672,ale,676,262397,Teacher Created Resources,0,16382.2,26,High
+100600,Fake Book Title 600,Eliot Ness/Oscar Fraley,2.79,3465740756,5631972153819,ara,718,291257,Tor Books,1,12093.2,27,Medium
+100601,Fake Book Title 601,Robert Louis Stevenson/Scott McKowen,2.81,8761956684,3658849495315,tur,758,90930,Cherry Lane Music Company,23,8094.0,89,Medium
+100602,Fake Book Title 602,Brian Herbert,4.21,9702693937,2703673804434,zho,236,3798,Workman Publishing Company,25,9660.9,5,High
+100603,Fake Book Title 603,Gary Paulsen,3.58,2148679234,8282295072503,gla,773,236144,Penguin Classics,9,17144.0,31,High
+100604,Fake Book Title 604,Leo Tolstoy/Amy Mandelker/Constance Garnett,3.0,6069848439,5001147408375,en-GB,527,152006,Tor Books,3,7041.0,63,Medium
+100605,Fake Book Title 605,Donna Ickes/Edward Sciranko/Keith Vasconcelles,3.73,6754503097,2071824558815,ale,551,156305,Del Rey,0,17440.6,21,High
+100606,Fake Book Title 606,Edward P. Jones/Kevin R. Free,2.66,1026224160,7811134360505,wel,711,150381,Del Rey Books,24,2095.5,26,Medium
+100607,Fake Book Title 607,Marguerite Duras/Richard Seever,3.95,4736031885,5148430115185,rus,949,167081,Harper,20,15617.4,74,High
+100608,Fake Book Title 608,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.17,2721355673,6259085501244,en-GB,918,125879,Knopf,3,17006.6,19,Medium
+100609,Fake Book Title 609,Heidi Boyd,4.49,1131671246,7945301226997,fre,240,128266,Puffin,7,3935.0,36,High
+100610,Fake Book Title 610,Delia Sherman,3.28,6218955985,1612953275653,nor,182,65951,New Directions Publishing,18,8814.9,20,Medium
+100611,Fake Book Title 611,Eliot Ness/Oscar Fraley,3.64,7098134112,3592529332251,ale,276,243436,Ace Books,0,3614.6,27,High
+100612,Fake Book Title 612,Henry Miller/Jiří Níl,2.53,2464137110,8901696958282,en-GB,297,175657,Booket,3,14239.2,43,Medium
+100613,Fake Book Title 613,Marguerite Duras/Richard Seever,2.68,6884333221,3941985458813,tur,723,98096,Farrar Straus Giroux,23,10876.6,74,Medium
+100614,Fake Book Title 614,Henry James/Gabriel Brownstein/Mary Cregan,3.48,8394198376,4727912062010,ita,667,78328,Ace,12,12839.6,40,High
+100615,Fake Book Title 615,Donna Ickes/Edward Sciranko/Keith Vasconcelles,3.7,1225953184,4392201508905,msa,790,274585,Cherry Lane Music Company,15,4223.0,21,High
+100616,Fake Book Title 616,Anthony Thorlby,4.0,3653594796,1747866274266,msa,520,102526,Black Classic Press,15,4522.6,2,High
+100617,Fake Book Title 617,Zilpha Keatley Snyder,3.23,3894673596,2376207916076,gla,500,97587,Brookline Books,9,1179.8,99,Medium
+100618,Fake Book Title 618,Ruby Ann Boxcar,4.24,6463640105,4553807953546,wel,797,181479,Penguin Classics,24,6688.8,91,High
+100619,Fake Book Title 619,Ralph Ginzburg,4.65,8137972345,3601149130164,ara,570,218030,Cambridge University Press,1,11355.6,84,High
+100620,Fake Book Title 620,Gary Paulsen,4.45,7193532615,6623219803955,gla,317,297697,Knopf,9,17210.6,31,High
+100621,Fake Book Title 621,John Banville,2.6,2173242669,2529296171527,en-CA,927,75453,Dramatists Play Service,2,13460.1,51,Medium
+100622,Fake Book Title 622,Zilpha Keatley Snyder,3.7,5783809766,1218499873823,eng,828,64336,Sovereign World,5,8914.0,99,High
+100623,Fake Book Title 623,Charles Willeford/Lawrence Block,2.76,2846465000,2977487097953,rus,731,104977,Pragmatic Bookshelf,20,19079.5,11,Medium
+100624,Fake Book Title 624,Chris   Smith/Christopher  Lee/Richard Taylor,3.11,8160279830,3630300001711,wel,274,277102,Pantheon,24,14487.4,12,Medium
+100625,Fake Book Title 625,Cynthia Harrod-Eagles,4.97,1195066088,2764972357314,spa,122,299422,North Light Books,21,18628.8,14,High
+100626,Fake Book Title 626,Wendy Wasserstein,2.86,3574081104,2859398408102,ger,824,23436,Del Rey Books,8,10724.2,98,Medium
+100627,Fake Book Title 627,Charles Willeford,3.75,1033015788,5644624406250,gla,334,177876,William Morrow,9,5448.6,8,High
+100628,Fake Book Title 628,Robert Louis Stevenson,4.05,6392415228,9321967124895,grc,112,290496,Archaia,11,1402.3,86,High
+100629,Fake Book Title 629,Leo Tolstoy/David Magarshack/Priscilla Meyer,4.26,2409274786,4028112857507,swe,200,252206,Teaching Resources,22,14621.7,65,High
+100630,Fake Book Title 630,Henry Miller,3.9,5328166990,8087878933128,nor,635,248774,Amistad,18,2746.8,42,High
+100631,Fake Book Title 631,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,2.52,8503368512,8068200454328,eng,975,201252,Zebra,5,6310.0,1,Medium
+100632,Fake Book Title 632,Madeleine L'Engle,3.32,1754603440,7962308556533,ita,622,25575,iUniverse,12,10820.1,71,Medium
+100633,Fake Book Title 633,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.79,4022245086,1864308821823,tur,884,79868,Rowman & Littlefield Publishers,23,11447.3,19,High
+100634,Fake Book Title 634,Gary Paulsen,2.72,8757570742,9361209329114,en-US,551,114639,Putnam,4,12157.5,31,Medium
+100635,Fake Book Title 635,Mark Smylie,3.38,5604529187,5728418981731,ale,530,145456,EMC/Paradigm Publishing,0,3629.4,76,Medium
+100636,Fake Book Title 636,Leo Tolstoy/David Magarshack/Priscilla Meyer,2.58,5476654128,7553677846761,jpn,892,94765,Abdo Publishing Company,13,7821.1,65,Medium
+100637,Fake Book Title 637,Henry James/Patricia Crick,2.7,5375461598,6940026669978,en-CA,705,193889,Simon & Schuster,2,12483.6,41,Medium
+100638,Fake Book Title 638,Ralph Ginzburg,3.49,4956362540,6468794978931,grc,812,268838,Little  Brown Book Group,11,19407.4,84,High
+100639,Fake Book Title 639,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,2.83,8997701619,5010936384370,swe,632,257488,Scholastic Inc.,22,14652.0,68,Medium
+100640,Fake Book Title 640,Edward P. Jones/Kevin R. Free,3.92,7767834064,6283386955491,ita,951,167729,Pantheon,12,18480.3,26,High
+100641,Fake Book Title 641,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,4.22,7757700186,6647133911143,ita,822,83228,Tor Books,12,15331.0,1,High
+100642,Fake Book Title 642,Leo Tolstoy/Constance Garnett/Amy Mandelker,4.5,7088949191,2570435699854,en-US,751,175508,Knopf,4,11983.4,64,High
+100643,Fake Book Title 643,Gary Russell,3.0,5789633176,8770403016115,mul,392,254516,Greenwillow Books,16,4135.4,32,Medium
+100644,Fake Book Title 644,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,2.92,2394868732,8163249404219,zho,909,86774,Vintage Crime/Black Lizard,25,13455.4,68,Medium
+100645,Fake Book Title 645,Dave Lakhani,2.76,7949795085,9524397448959,mul,200,229254,ASCD,16,12605.1,17,Medium
+100646,Fake Book Title 646,Gloria Goldreich,4.09,9245348297,7579319478442,en-US,601,96443,Penguin Classics,4,12194.5,34,High
+100647,Fake Book Title 647,Gary Russell,4.27,5673482258,1991368720934,eng,403,76362,Sterling Children's Books,5,9981.9,32,High
+100648,Fake Book Title 648,Molly Hatchet,2.58,4627032705,2151734016795,ger,970,71246,Vintage Crime/Black Lizard,8,10745.2,78,Medium
+100649,Fake Book Title 649,Robert Louis Stevenson,4.84,6340003593,8097462642133,wel,639,70064,Archaia,24,6931.8,86,High
+100650,Fake Book Title 650,Douglas Adams/Stephen Fry,2.63,7824150224,4053846078851,en-GB,652,142044,Penguin Classics,3,10561.7,23,Medium
+100651,Fake Book Title 651,Heidi Fleiss/Libby Keatinge,3.85,3250402001,4534040524159,en-US,454,33390,Atheneum Books for Young Readers,4,4244.0,37,High
+100652,Fake Book Title 652,Marguerite Duras,4.27,2458198451,2017207069341,swe,402,113761,Delacorte Press,22,16174.6,72,High
+100653,Fake Book Title 653,Kahlil Gibran/جبران خليل جبران,4.68,1722124509,1580892137492,por,595,215300,Ace,19,4012.7,60,High
+100654,Fake Book Title 654,Charles Willeford/James Lee Burke,4.29,3190227431,1891018662389,gla,757,11144,Viking Juvenile,9,2033.3,10,High
+100655,Fake Book Title 655,Patricia A. McKillip,4.5,6795522649,7343314642332,en-US,867,267935,Tor Science Fiction,4,8930.7,81,High
+100656,Fake Book Title 656,Charles Willeford/Lawrence Block,3.35,4500557310,4503424725992,ger,326,111635,Pearson,8,13290.9,11,Medium
+100657,Fake Book Title 657,Chris   Smith/Christopher  Lee/Richard Taylor,4.54,2014766981,7477987406761,en-US,335,68848,Clarity Press,4,8959.6,12,High
+100658,Fake Book Title 658,Daniel Abraham,2.7,5923940434,9168269762293,por,972,201654,Barnes & Noble Classics,19,5799.1,16,Medium
+100659,Fake Book Title 659,Gloria Goldreich,4.74,1847275937,7981491357271,por,991,110180,Citadel,19,11324.7,34,High
+100660,Fake Book Title 660,Delia Sherman,3.87,3587283948,5252148890957,msa,554,284358,Scholastic Inc.,15,7178.4,20,High
+100661,Fake Book Title 661,J.R.R. Tolkien,4.54,3815389788,9600124259149,grc,112,166717,New Directions,11,18681.9,47,High
+100662,Fake Book Title 662,Chris Malta/Lisa Suttora,3.63,7417183769,8849456647585,swe,309,30307,Rowman & Littlefield Publishers,22,18481.1,13,High
+100663,Fake Book Title 663,Donna Ickes/Edward Sciranko/Keith Vasconcelles,4.11,7977267911,9348860142575,ara,840,52741,Archaia,1,10229.1,21,High
+100664,Fake Book Title 664,Bryce Courtenay,3.82,7988845536,7057406094700,tur,496,79818,Pantheon,23,6803.0,6,High
+100665,Fake Book Title 665,Dave Lakhani,4.33,5943324387,5552212180020,lat,199,14076,Teaching Resources,14,14838.6,17,High
+100666,Fake Book Title 666,Chris   Smith/Christopher  Lee/Richard Taylor,2.7,5588254555,2592096490070,enm,130,225212,Wings Books,6,1085.9,12,Medium
+100667,Fake Book Title 667,Rob Orsini,2.65,5536224717,1482260700824,mul,997,293102,Archaia,16,9687.1,85,Medium
+100668,Fake Book Title 668,John McPhee,3.12,3178995337,1873538648002,ger,627,19660,McGraw-Hill,8,6968.7,54,Medium
+100669,Fake Book Title 669,Barry R. Cournoyer,2.9,6628158856,4770830608175,fre,748,177768,Vintage,7,18439.7,3,Medium
+100670,Fake Book Title 670,Douglas Adams/Stephen Fry,4.68,2940955281,4894921634715,msa,428,178696,Nimble Books,15,600.7,23,High
+100671,Fake Book Title 671,Heidi Hayes Jacobs,3.05,5539308214,4962740322384,ita,265,222173,Barnes & Noble,12,11219.5,38,Medium
+100672,Fake Book Title 672,Brian Herbert,4.94,8867077130,4636453011329,grc,558,298376,North Light Books,11,14907.9,5,High
+100673,Fake Book Title 673,Frank Herbert/Brian Herbert/Kevin J. Anderson,3.34,9919491730,9336569738080,wel,921,19338,EMC/Paradigm Publishing,24,9888.3,30,Medium
+100674,Fake Book Title 674,Henry Miller,2.96,4673457063,3327492236159,glg,199,84475,Abdo Publishing Company,10,2041.9,42,Medium
+100675,Fake Book Title 675,J.R.R. Tolkien/Alan  Lee,4.47,7472806994,4047912252530,ale,720,967,Picador USA,0,19459.3,48,High
+100676,Fake Book Title 676,Vasant Moon/Gail Omvedt/Eleanor Zelliot,4.15,4847761430,4934226394586,spa,954,253237,Pantheon,21,10536.1,96,High
+100677,Fake Book Title 677,Henry James/Gabriel Brownstein/Mary Cregan,3.75,3799620568,5843188691208,zho,272,39154,Viking Juvenile,25,12424.5,40,High
+100678,Fake Book Title 678,Delia Sherman,3.89,5560712830,9076036211078,glg,848,149184,William Morrow,10,5010.8,20,High
+100679,Fake Book Title 679,Cynthia Harrod-Eagles,4.3,4067961943,4836488121562,swe,261,279193,ASCD,22,9858.5,14,High
+100680,Fake Book Title 680,Marguerite Duras/Richard Seever,3.07,1741134891,6314878997887,lat,827,262141,Gramercy Books,14,8791.4,74,Medium
+100681,Fake Book Title 681,Marsha Collier,4.99,5976777081,1129288446020,tur,875,61219,Changeling Press,23,1835.6,77,High
+100682,Fake Book Title 682,Douglas Adams,4.94,6509985983,5971893011753,enm,362,154592,Abdo Publishing Company,6,2449.5,22,High
+100683,Fake Book Title 683,Frank Herbert,4.13,3567900251,9474434780429,wel,903,129794,Putnam,24,16808.8,29,High
+100684,Fake Book Title 684,Tara MacCarthy,3.0,8075122626,6914444144642,lat,373,59871,Ace Books,14,5073.9,93,Medium
+100685,Fake Book Title 685,Heidi Baker/Rolland Baker,4.2,5578056564,5866147957091,swe,102,217791,Pragmatic Bookshelf,22,4193.0,35,High
+100686,Fake Book Title 686,Zilpha Keatley Snyder,2.68,9995834531,6719352804473,glg,127,249315,Pragmatic Bookshelf,10,10278.9,99,Medium
+100687,Fake Book Title 687,John Banville,2.58,8208584394,5874192991911,zho,425,214177,Barnes & Noble,25,15459.3,51,Medium
+100688,Fake Book Title 688,Marianne Sturman/Leo Tolstoy,3.14,6515369278,4312703083283,en-CA,248,274386,Cliffs Notes,2,1581.3,75,Medium
+100689,Fake Book Title 689,Gary Russell,3.66,4750707607,5229535506742,enm,639,203884,Interlink Publishing Group,6,11690.6,32,High
+100690,Fake Book Title 690,Jean Gibran/جبران خليل جبران/Kahlil Gibran,4.67,2431779064,2000296539105,ale,587,234588,Black Classic Press,0,2705.7,49,High
+100691,Fake Book Title 691,Daniel Abraham,4.32,6797436140,8110747998297,ale,921,86845,O'Reilly Media,0,1080.9,16,High
+100692,Fake Book Title 692,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.36,2683446724,6624949146620,ita,537,165209,Citadel,12,1400.6,59,High
+100693,Fake Book Title 693,Zilpha Keatley Snyder,3.56,5028688786,3463940084301,en-US,164,135749,Interlink Publishing Group,4,16743.8,99,High
+100694,Fake Book Title 694,Gary Russell,3.36,8695129534,1449774486530,gla,455,243927,Ace Books,9,2681.4,32,Medium
+100695,Fake Book Title 695,John Carratello/Patty Carratello/Theresa Wright,3.43,4492602049,9751663305956,tur,632,199348,Brookline Books,23,1251.5,53,High
+100696,Fake Book Title 696,Marsha Collier,4.97,3260842187,6201194525342,fre,351,188555,Little  Brown Book Group,7,8963.2,77,High
+100697,Fake Book Title 697,Donna Ickes/Edward Sciranko/Keith Vasconcelles,2.6,2554039848,8118558535423,enm,334,136335,Little  Brown Book Group,6,16936.8,21,Medium
+100698,Fake Book Title 698,Kahlil Gibran/John Walbridge/Robin Waterfield,4.67,6852312425,7035244730298,ara,326,102462,One Hour Entertainment,1,5517.4,58,High
+100699,Fake Book Title 699,Gloria Goldreich,3.95,6214917780,9369967399799,eng,624,19454,Atheneum Books for Young Readers,5,8645.3,34,High
+100700,Fake Book Title 700,Kate Horsley,3.6,3088517710,7307897643654,ger,412,116595,HarperAudio,8,1148.9,62,High
+100701,Fake Book Title 701,Kahlil Gibran/John Walbridge/Robin Waterfield,4.31,1590838716,6280693707508,glg,148,222178,Shambhala,10,9182.7,58,High
+100702,Fake Book Title 702,Charles Todd,3.72,5626388820,3992928286045,fre,217,150295,Ace Books,7,11706.4,7,High
+100703,Fake Book Title 703,John Banville,4.68,9752058817,6167623629674,mul,153,184149,Sterling,16,11574.8,51,High
+100704,Fake Book Title 704,Gary Russell,4.75,2617999521,9281116148663,grc,749,286183,FT Press,11,6892.2,32,High
+100705,Fake Book Title 705,J.K. Rowling/Mary GrandPré,3.55,1696846464,4908803779182,glg,664,261707,Broadway Books,10,6560.5,46,High
+100706,Fake Book Title 706,W. Frederick Zimmerman,3.19,2879792991,4927126039130,nor,143,286713,Viking Juvenile,18,2458.6,97,Medium
+100707,Fake Book Title 707,Charles Willeford/Elmore Leonard,3.98,7059591606,8397252604905,gla,914,256925,Penguin Books,9,7567.1,9,High
+100708,Fake Book Title 708,Kahlil Gibran/John Walbridge/Robin Waterfield,4.78,2928130926,7538363220778,rus,152,284633,Brookline Books,20,2318.6,58,High
+100709,Fake Book Title 709,Eliot Ness/Oscar Fraley,3.03,3293560436,9157405835059,jpn,685,15045,ASCD,13,15417.1,27,Medium
+100710,Fake Book Title 710,Narendra Jadhav,4.06,4586784711,3073830172504,msa,657,23609,McGraw-Hill,15,19337.8,80,High
+100711,Fake Book Title 711,Mark Smylie,4.08,9523104008,1942618777017,en-GB,624,98050,Houghton Mifflin Harcourt,3,19412.4,76,High
+100712,Fake Book Title 712,Leo Tolstoy/Louise Maude/Aylmer Maude,4.33,7560389844,9306772619727,msa,776,152241,New Directions Publishing,15,17350.7,66,High
+100713,Fake Book Title 713,Rolland Baker/Heidi Baker,2.83,5150090143,4422614023478,jpn,201,25567,Zebra,13,12161.6,90,Medium
+100714,Fake Book Title 714,Frank Herbert/Brian Herbert/Kevin J. Anderson,4.29,4508521152,3106683509001,tur,891,215608,Signet,23,14126.5,30,High
+100715,Fake Book Title 715,Bill Bryson,4.77,2073755632,8268366093032,ara,869,105736,Puffin,1,5965.0,4,High
+100716,Fake Book Title 716,Gloria Goldreich,2.95,8048810275,3653663753513,ger,948,88201,Ballantine Books,8,12750.2,34,Medium
+100717,Fake Book Title 717,Adam Ginsberg,3.09,9049270990,7026699383602,enm,967,265521,HarperAudio,6,9311.7,0,Medium
+100718,Fake Book Title 718,Marsha Collier,4.93,4655730355,3518816089806,tur,497,120368,One Hour Entertainment,23,9829.4,77,High
+100719,Fake Book Title 719,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,2.95,2224336336,4172759637071,en-CA,237,195540,Harper,2,15243.9,50,Medium
+100720,Fake Book Title 720,Marsha Collier,4.64,4277561834,2424979701887,spa,774,173910,Ballantine Books,21,5900.5,77,High
+100721,Fake Book Title 721,John Banville,3.73,6466597005,6851839600943,en-GB,486,115995,Kingfisher,3,6609.7,51,High
+100722,Fake Book Title 722,Julia Wilkinson,3.12,2878930355,6511202495224,wel,210,213506,Del Rey,24,18520.3,57,Medium
+100723,Fake Book Title 723,Philippa Carr,4.68,5409514899,2020632401499,enm,713,52496,Ace Books,6,1469.0,82,High
+100724,Fake Book Title 724,Edward Lear/Laura Huliska-Beith/Edward Mendelson,3.61,5523703900,8950004709227,nor,116,187705,Changeling Press,18,9900.4,24,High
+100725,Fake Book Title 725,Henry James/Patricia Crick,3.79,7451071432,4681961765902,en-CA,879,140198,Scribner,2,18287.8,41,High
+100726,Fake Book Title 726,Charles Willeford/James Lee Burke,3.4,6307626407,3786422240475,lat,281,69391,Crown,14,12349.5,10,Medium
+100727,Fake Book Title 727,Frank Herbert,3.98,5271453859,3276710801592,lat,983,31135,Tor Science Fiction,14,11093.7,29,High
+100728,Fake Book Title 728,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,2.91,2610237679,8630501088093,por,635,5800,One Hour Entertainment,19,5268.7,19,Medium
+100729,Fake Book Title 729,Zilpha Keatley Snyder,3.48,5416031878,8553273314639,zho,640,35953,Black Classic Press,25,7105.2,99,High
+100730,Fake Book Title 730,Kate Horsley,4.92,4997866845,8547990100894,enm,270,203611,Clarity Press,6,17095.0,62,High
+100731,Fake Book Title 731,Leo Tolstoy/Constance Garnett/Amy Mandelker,3.15,8086527181,9400807115174,rus,508,91086,Ace,20,11345.2,64,Medium
+100732,Fake Book Title 732,Patricia A. McKillip,4.14,4398953973,1083250710128,ger,839,88004,Little  Brown Book Group,8,10472.0,81,High
+100733,Fake Book Title 733,Julia Wilkinson,3.31,1590985753,1314351133374,glg,477,117355,Dover Publications,10,2320.2,57,Medium
+100734,Fake Book Title 734,Ruby Ann Boxcar,4.43,8858766173,1071626087892,mul,287,200803,O'Reilly Media,16,679.7,91,High
+100735,Fake Book Title 735,Molly Hatchet,2.83,8325222092,4978208403271,ara,957,32151,Delacorte Books for Young Readers,1,19287.0,78,Medium
+100736,Fake Book Title 736,Dale Peck,4.92,1340272119,6490447175296,en-US,329,2825,Random House Audio,4,7767.1,15,High
+100737,Fake Book Title 737,Heidi Baker/Rolland Baker,3.63,2099184899,2804440017919,grc,932,111547,Ballantine Books,11,12209.1,35,High
+100738,Fake Book Title 738,J.K. Rowling/Mary GrandPré,3.09,4586139213,9853574933799,por,951,45669,Mira Books,19,1930.2,46,Medium
+100739,Fake Book Title 739,Marianne Sturman/Leo Tolstoy,2.68,7561728644,6384122343242,fre,218,252438,Harper Perennial,7,13777.9,75,Medium
+100740,Fake Book Title 740,W. Frederick Zimmerman,2.92,2237386857,2147473614282,nl,255,233396,Amistad,17,18675.9,97,Medium
+100741,Fake Book Title 741,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,3.8,2293434554,1806697266667,fre,883,65199,Houghton Mifflin Harcourt,7,11668.2,1,High
+100742,Fake Book Title 742,Marguerite Duras,3.34,1205082311,9019953037503,rus,786,26666,HarperAudio,20,2841.3,72,Medium
+100743,Fake Book Title 743,Leo Tolstoy/Constance Garnett/Amy Mandelker,4.57,2963288053,8629312908612,jpn,564,221817,Houghton Mifflin Harcourt,13,11787.1,64,High
+100744,Fake Book Title 744,Charles Willeford/James Lee Burke,3.58,9182543558,3357917599678,enm,203,185689,Ace Books,6,15412.2,10,High
+100745,Fake Book Title 745,Gary Paulsen,3.12,9660523876,9623870776912,mul,703,168221,McGraw-Hill,16,8345.0,31,Medium
+100746,Fake Book Title 746,Daniel Abraham,4.04,5911625145,3899912208459,eng,797,206953,Association for Supervision & Curriculum Development,5,17640.6,16,High
+100747,Fake Book Title 747,Robert Louis Stevenson/Scott McKowen,4.27,2843567009,1336740003028,eng,894,231368,Tor Science Fiction,5,13101.9,89,High
+100748,Fake Book Title 748,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,2.92,7935554354,4943761026810,nor,601,287673,Citadel,18,18021.8,1,Medium
+100749,Fake Book Title 749,Charles Todd,2.92,2789144223,4715710235573,enm,792,55913,Sterling Children's Books,6,12607.5,7,Medium
+100750,Fake Book Title 750,Charles Willeford/Lawrence Block,2.59,9957643727,1385404924445,en-GB,781,173165,Grove Press,3,2942.8,11,Medium
+100751,Fake Book Title 751,Satyajit Das,4.34,9481076448,9875935144969,por,798,253397,Pragmatic Bookshelf,19,6445.8,92,High
+100752,Fake Book Title 752,Wendy Wasserstein,4.16,3380064537,3165389301142,jpn,274,189102,Simon & Schuster,13,4327.2,98,High
+100753,Fake Book Title 753,J.R.R. Tolkien/Alan  Lee,3.69,3019214800,7597230241351,en-GB,833,278545,Penguin Classics,3,18209.8,48,High
+100754,Fake Book Title 754,Kahlil Gibran/John Walbridge/Robin Waterfield,4.61,8025152555,1846085709111,spa,844,135253,Cliffs Notes,21,15295.5,58,High
+100755,Fake Book Title 755,Frank Herbert,4.51,9508499533,2901218683981,mul,773,247958,Gramercy Books,16,13646.1,29,High
+100756,Fake Book Title 756,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.96,5364727160,1846193347582,zho,520,273543,Vintage Crime/Black Lizard,25,6274.5,59,High
+100757,Fake Book Title 757,J.R.R. Tolkien/Alan  Lee,4.67,4386667704,3038776950917,swe,233,192053,Greenwillow Books,22,3978.7,48,High
+100758,Fake Book Title 758,Gloria Goldreich,3.01,2480915452,8814335548854,msa,490,274647,Wiley,15,15217.9,34,Medium
+100759,Fake Book Title 759,Mulk Raj Anand/E.M. Forster,2.78,3698343112,3174886629256,en-CA,835,149936,Random House Audio,2,9675.1,79,Medium
+100760,Fake Book Title 760,Rob Orsini,3.17,2428156550,5447641711303,ara,600,149385,Ballantine Books,1,4798.4,85,Medium
+100761,Fake Book Title 761,Wendy Wasserstein,2.64,5485387618,4612725171824,jpn,764,77744,Black Classic Press,13,12472.4,98,Medium
+100762,Fake Book Title 762,Kahlil Gibran/John Walbridge/Robin Waterfield,3.83,7640078465,1165915923866,zho,132,15785,Penguin Classics,25,1157.0,58,High
+100763,Fake Book Title 763,John C. Maxwell/Stephen R. Graves/Thomas G. Addington,4.84,8281641403,8401521936344,nor,154,175795,Knopf,18,6769.4,52,High
+100764,Fake Book Title 764,Ralph Ginzburg,2.6,3713284816,2776663320982,por,618,220584,Putnam,19,9565.1,84,Medium
+100765,Fake Book Title 765,V.T. Rajshekar/Y.N. Kly,2.81,4485356009,8366458025483,eng,855,45116,Shambhala,5,3270.2,95,Medium
+100766,Fake Book Title 766,John McPhee,3.63,9860949331,9998407088335,nl,924,231437,FT Press,17,19698.7,54,High
+100767,Fake Book Title 767,Narendra Jadhav,4.83,2965718821,5969782827595,nor,737,134495,Cliffs Notes,18,4470.6,80,High
+100768,Fake Book Title 768,Delia Sherman,3.29,2260326267,9753599748407,wel,111,272886,HarperAudio,24,2924.5,20,Medium
+100769,Fake Book Title 769,Ewan McGregor/Charley Boorman/Robert Uhlig,3.77,5474951950,7297288235687,wel,627,45591,Amistad,24,4361.4,28,High
+100770,Fake Book Title 770,Rolland Baker/Heidi Baker,2.6,9303765140,8209976360522,nl,819,165179,Penguin Classics,17,15465.5,90,Medium
+100771,Fake Book Title 771,Henry Miller/Jiří Níl,2.87,7508522951,3818767069940,en-US,654,67033,Archaia,4,8719.8,43,Medium
+100772,Fake Book Title 772,Charles Willeford/Elmore Leonard,4.97,7627266377,9456503377070,spa,472,150705,Brookline Books,21,11466.9,9,High
+100773,Fake Book Title 773,Kahlil Gibran/John Walbridge/Robin Waterfield,4.91,2087974350,5124588535889,mul,583,153887,Booket,16,777.5,58,High
+100774,Fake Book Title 774,Heidi Hayes Jacobs,2.51,6115750294,1223350059023,ale,746,190409,Chosen Books,0,1041.1,38,Medium
+100775,Fake Book Title 775,Donna Ickes/Edward Sciranko/Keith Vasconcelles,4.88,4353689019,2566252738110,nor,327,210797,Atheneum Books for Young Readers: Richard Jackson Books,18,9118.8,21,High
+100776,Fake Book Title 776,Chris Malta/Lisa Suttora,4.1,6720572969,2945220237927,en-GB,722,177647,Puffin,3,16400.0,13,High
+100777,Fake Book Title 777,Heidi Fleiss/Libby Keatinge,4.67,6875597607,9691592267128,gla,406,169352,North Light Books,9,17746.7,37,High
+100778,Fake Book Title 778,Bill Bryson,3.64,9115282784,2320752717614,fre,556,287760,Farrar  Straus and Giroux,7,2067.5,4,High
+100779,Fake Book Title 779,Henry Miller/Thomas H. Moore,3.79,8487449580,9032581669387,eng,259,252134,Black Classic Press,5,10935.8,44,High
+100780,Fake Book Title 780,Madeleine L'Engle,3.72,6955593943,5644131052566,spa,430,121065,Cherry Lane Music Company,21,18296.3,71,High
+100781,Fake Book Title 781,Julia Wilkinson,4.17,5182110973,1882462351764,gla,875,172307,Pearson,9,7982.8,57,High
+100782,Fake Book Title 782,Mark Smylie,2.85,7431813987,7336324738142,glg,324,246586,Grove Press,10,16653.5,76,Medium
+100783,Fake Book Title 783,Barry R. Cournoyer,2.57,7525240100,8491766031015,en-US,828,224071,Farrar  Straus and Giroux,4,2990.1,3,Medium
+100784,Fake Book Title 784,Jude Fisher,3.27,4440904834,3038986504316,ale,603,131006,French & European,0,18731.5,56,Medium
+100785,Fake Book Title 785,Leo Tolstoy/Louise Maude/Aylmer Maude,4.26,8417757797,1167700816692,en-GB,555,70794,Putnam,3,15119.2,66,High
+100786,Fake Book Title 786,Heidi Boyd,3.0,5633956194,3434610796206,fre,144,295649,New Directions Publishing,7,18848.1,36,Medium
+100787,Fake Book Title 787,Douglas Adams/Stephen Fry,4.18,4531928910,6781758325080,en-CA,313,73666,Simon & Schuster,2,13650.4,23,High
+100788,Fake Book Title 788,Rolland Baker/Heidi Baker,4.92,7637761996,5718544731900,glg,158,87488,McGraw-Hill,10,7500.4,90,High
+100789,Fake Book Title 789,Vasant Moon/Gail Omvedt/Eleanor Zelliot,2.73,2379592595,7554519316573,mul,743,116891,Delacorte Books for Young Readers,16,18786.2,96,Medium
+100790,Fake Book Title 790,Patricia A. McKillip,4.18,5638860656,7029339361256,rus,715,140608,Citadel,20,5775.8,81,High
+100791,Fake Book Title 791,Robert Louis Stevenson/Scott McKowen,3.61,8133593748,3002240178132,mul,294,169984,Scribner,16,6887.2,89,High
+100792,Fake Book Title 792,Ruby Ann Boxcar,4.67,6611356986,8041172724469,msa,588,252784,Kingfisher,15,14125.4,91,High
+100793,Fake Book Title 793,Dave Thomas/David Heinemeier Hansson/Leon Breedt/Mike Clark/Thomas  Fuchs/Andreas  Schwarz,2.94,2830154607,9031426965896,ara,256,58920,Scribner,1,15392.0,18,Medium
+100794,Fake Book Title 794,Henry James/Patricia Crick,4.23,8257484586,9413199572185,gla,709,86744,Knopf,9,18613.8,41,High
+100795,Fake Book Title 795,John McPhee/William Howarth,4.6,6804850108,8420844060653,jpn,325,237118,Simon & Schuster,13,4386.3,55,High
+100796,Fake Book Title 796,Narendra Jadhav,4.86,9771848610,3936885363654,en-US,511,101457,Random House Audio,4,16033.7,80,High
+100797,Fake Book Title 797,Marguerite Duras/Richard Seever,4.21,9581991473,3328357848660,lat,304,31429,iUniverse,14,14866.4,74,High
+100798,Fake Book Title 798,Henry James/Gabriel Brownstein/Mary Cregan,3.74,5071218314,2821750731550,ara,178,236550,New Directions,1,1617.6,40,High
+100799,Fake Book Title 799,Anthony Thorlby,4.04,9912233947,9493687597431,ara,223,54403,Barnes  Noble Classics,1,7968.1,2,High
+100800,Fake Book Title 800,John McPhee,4.67,8033062794,8708085005359,en-CA,570,181118,Workman Publishing Company,2,5917.1,54,High
+100801,Fake Book Title 801,Ruby Ann Boxcar,3.93,3918046336,9496006471850,wel,317,276225,Atria Books,24,6343.7,91,High
+100802,Fake Book Title 802,Charles Willeford/Elmore Leonard,2.58,5092199300,9589592703947,tur,615,211194,William Morrow Paperbacks,23,19665.2,9,Medium
+100803,Fake Book Title 803,Rolland Baker/Heidi Baker,4.83,8650676663,8754182421733,en-US,701,66032,Cliffs Notes,4,12985.9,90,High
+100804,Fake Book Title 804,Robert Louis Stevenson/Milo Winter,4.22,1149460439,2112593979322,swe,203,36733,Random House Audio,22,14456.6,87,High
+100805,Fake Book Title 805,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,4.19,1288765093,1216098006512,fre,492,114141,Heinemann Drama,7,19540.9,19,High
+100806,Fake Book Title 806,J.K. Rowling/Mary GrandPré,3.04,6868336102,4940911719457,ara,730,117847,Abdo Publishing Company,1,7771.4,46,Medium
+100807,Fake Book Title 807,Philippa Carr,4.15,3436297208,8611091110387,ale,744,6637,O'Reilly Media,0,16109.1,82,High
+100808,Fake Book Title 808,Leo Tolstoy/Amy Mandelker/Constance Garnett,3.48,3598862507,9475038105056,por,923,293674,Vintage,19,8897.0,63,High
+100809,Fake Book Title 809,Bill Bryson,4.13,8211516617,3612993148452,wel,707,229652,Scholastic Inc.,24,17438.3,4,High
+100810,Fake Book Title 810,Kahlil Gibran/John Walbridge/Robin Waterfield,2.77,9370133343,1202097822601,tur,533,151649,Citadel,23,3912.2,58,Medium
+100811,Fake Book Title 811,Quentin Blake,4.14,6892752604,9891256300656,ale,430,285763,Barnes & Noble,0,18972.8,83,High
+100812,Fake Book Title 812,Madeleine L'Engle,5.0,4277422858,9258572906888,eng,242,273345,Routledge,5,4660.6,71,High
+100813,Fake Book Title 813,Robert Louis Stevenson,2.62,3464975279,9722442369607,wel,899,190296,Gramercy Books,24,6770.3,86,Medium
+100814,Fake Book Title 814,Douglas Adams/Stephen Fry,4.94,7568980185,3911426971114,fre,639,44789,Cherry Lane Music Company,7,15212.8,23,High
+100815,Fake Book Title 815,W. Frederick Zimmerman,3.52,7004510516,6641403671571,glg,377,33004,Gramercy Books,10,8096.4,97,High
+100816,Fake Book Title 816,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,4.68,8084809436,6820715308564,en-US,332,243985,Ace Books,4,12307.2,68,High
+100817,Fake Book Title 817,Edward P. Jones/Kevin R. Free,4.46,1487258103,5896134491402,en-CA,628,109423,Atheneum Books for Young Readers,2,9094.2,26,High
+100818,Fake Book Title 818,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,3.92,4159699467,9916568361160,msa,670,34750,Gramercy Books,15,14941.4,68,High
+100819,Fake Book Title 819,Brian Herbert,4.35,3412365931,7659962335630,lat,189,123778,Scholastic Inc.,14,4848.3,5,High
+100820,Fake Book Title 820,Daniel Abraham,4.7,2916728422,2383988786652,rus,591,71095,Turtleback Books,20,1512.8,16,High
+100821,Fake Book Title 821,Daniel Abraham,3.51,3109688769,8814517307680,ale,298,145022,Random House Books for Young Readers,0,6254.1,16,High
+100822,Fake Book Title 822,Henry Miller,3.32,1526723719,2548112795338,jpn,461,1931,Heinemann Drama,13,9678.1,42,Medium
+100823,Fake Book Title 823,Delia Sherman,4.17,4662861038,9769707273837,gla,540,282983,William Morrow,9,3664.1,20,High
+100824,Fake Book Title 824,Henry James/Patricia Crick,4.52,2941508568,6559607823995,nor,125,88109,Mira Books,18,7331.4,41,High
+100825,Fake Book Title 825,Charles Willeford,4.41,9868845806,1312043860994,por,124,214616,North Light Books,19,8218.7,8,High
+100826,Fake Book Title 826,Ewan McGregor/Charley Boorman/Robert Uhlig,4.49,7623575561,8095726822710,swe,493,109438,Wings Books,22,1491.9,28,High
+100827,Fake Book Title 827,J.K. Rowling/Mary GrandPré,3.59,9123207735,1628836205816,ita,606,198353,Ivy Books,12,11818.2,46,High
+100828,Fake Book Title 828,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,4.54,4656572173,9025882869398,en-GB,400,265456,Brookline Books,3,17729.1,67,High
+100829,Fake Book Title 829,Marsha Collier,2.8,3738900744,6999856089417,ara,438,82022,Chosen Books,1,3344.5,77,Medium
+100830,Fake Book Title 830,Charles Willeford/Elmore Leonard,3.86,8703867299,6838812446023,jpn,366,54772,Heinemann Drama,13,12103.0,9,High
+100831,Fake Book Title 831,Douglas Adams,2.51,3185089287,7393733848107,lat,560,181940,Ace Books,14,13417.2,22,Medium
+100832,Fake Book Title 832,Eliot Ness/Oscar Fraley,3.31,1596471620,8961649224562,fre,792,269095,Harper,7,8598.6,27,Medium
+100833,Fake Book Title 833,Vasant Moon/Gail Omvedt/Eleanor Zelliot,3.42,8689593739,2714181677712,eng,555,117523,Dramatists Play Service,5,14131.1,96,High
+100834,Fake Book Title 834,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,3.49,5407856339,1035312134968,glg,459,270791,Puffin,10,8429.7,50,High
+100835,Fake Book Title 835,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,4.24,6879428703,7246348566046,por,167,215336,The New Press,19,10273.6,39,High
+100836,Fake Book Title 836,Kahlil Gibran/John Walbridge/Robin Waterfield,3.47,3369305560,7577836839049,en-US,962,243946,FT Press,4,509.4,58,High
+100837,Fake Book Title 837,Robert Louis Stevenson,3.62,1370292681,2871326253359,en-US,511,156927,Archaia,4,13946.9,86,High
+100838,Fake Book Title 838,Charles Todd,3.09,6623360831,9659359110665,fre,590,11924,Delacorte Press,7,13350.5,7,Medium
+100839,Fake Book Title 839,Gary Russell,3.43,8382488970,8201464260815,enm,932,224187,Ace,6,1119.0,32,High
+100840,Fake Book Title 840,John McPhee/William Howarth,3.07,7552812957,5471520351315,tur,148,276273,Delacorte Books for Young Readers,23,7595.6,55,Medium
+100841,Fake Book Title 841,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,2.68,8598503901,4447187359771,lat,786,95458,Dover Publications,14,19588.3,39,Medium
+100842,Fake Book Title 842,Marianne Sturman/Leo Tolstoy,4.01,1316756902,3122519337009,grc,663,120656,Farrar Straus Giroux,11,8626.2,75,High
+100843,Fake Book Title 843,W. Frederick Zimmerman,4.17,9471306442,4794143599964,mul,201,120112,Gramercy Books,16,10220.7,97,High
+100844,Fake Book Title 844,Rob Orsini,4.05,3758823240,4353430665975,en-CA,315,12150,Association for Supervision & Curriculum Development,2,18231.5,85,High
+100845,Fake Book Title 845,Gary Paulsen,3.66,7227593033,6947313318329,glg,537,150922,Cherry Lane Music Company,10,14448.4,31,High
+100846,Fake Book Title 846,Vasant Moon/Gail Omvedt/Eleanor Zelliot,3.45,2479679716,1817823922845,eng,799,194522,ASCD,5,11793.9,96,High
+100847,Fake Book Title 847,Marianne Sturman/Leo Tolstoy,4.66,5150074940,3167192441645,enm,668,291631,Thomas Nelson,6,16029.9,75,High
+100848,Fake Book Title 848,Douglas Adams/Stephen Fry,3.8,5952163720,9046408647931,nor,658,234246,Tor Science Fiction,18,17336.8,23,High
+100849,Fake Book Title 849,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,3.7,1707196784,9873214272403,nor,258,207659,Atheneum Books for Young Readers,18,9336.0,61,High
+100850,Fake Book Title 850,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,2.56,4046558332,1075156896741,fre,588,151064,Thomas Nelson,7,9693.8,61,Medium
+100851,Fake Book Title 851,Leo Tolstoy/Constance Garnett/Amy Mandelker,3.35,9138644862,8614699166977,spa,785,283056,ASCD,21,7945.1,64,Medium
+100852,Fake Book Title 852,Delia Sherman,3.45,4633257620,4056206619642,ale,341,273863,Gramercy Books,0,19346.3,20,High
+100853,Fake Book Title 853,Julia Wilkinson,3.5,2076341629,2821617529087,gla,893,184894,Farrar  Straus and Giroux,9,14053.9,57,High
+100854,Fake Book Title 854,Edward P. Jones/Kevin R. Free,3.95,7660813178,6664558046003,lat,852,278110,Farrar  Straus and Giroux,14,1999.1,26,High
+100855,Fake Book Title 855,Tom Wolfe,3.83,3291270703,8363226058812,mul,981,273072,iUniverse,16,17309.2,94,High
+100856,Fake Book Title 856,Henry James/Patricia Crick,4.02,1662259333,5366961146954,lat,104,265179,Vintage Crime/Black Lizard,14,9800.8,41,High
+100857,Fake Book Title 857,Molly Hatchet,4.41,7894019119,7997676810533,wel,695,204770,Rowman & Littlefield Publishers,24,1715.0,78,High
+100858,Fake Book Title 858,Barry R. Cournoyer,4.53,3420721027,7034272686312,fre,919,41285,Houghton Mifflin Harcourt,7,11158.7,3,High
+100859,Fake Book Title 859,Charles Willeford/James Lee Burke,4.3,1121863227,6175308854291,gla,460,281125,Random House Books for Young Readers,9,8556.0,10,High
+100860,Fake Book Title 860,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,4.89,7772180882,3427229349894,wel,558,92926,Chosen Books,24,17599.6,67,High
+100861,Fake Book Title 861,Frank Herbert/Brian Herbert/Kevin J. Anderson,2.55,3796581976,6522729686125,wel,347,386,The New Press,24,4370.4,30,Medium
+100862,Fake Book Title 862,V.T. Rajshekar/Y.N. Kly,2.99,3744446292,4825237817978,zho,665,69554,Atheneum Books for Young Readers,25,16592.6,95,Medium
+100863,Fake Book Title 863,Robert Louis Stevenson/Milo Winter,2.52,9403748506,4685944752006,glg,772,99264,Citadel,10,11315.2,87,Medium
+100864,Fake Book Title 864,Frank Herbert/Brian Herbert/Kevin J. Anderson,4.12,3074232200,3335055064849,zho,521,182270,Turtleback Books,25,1437.3,30,High
+100865,Fake Book Title 865,Rob Orsini,4.75,8236980551,4130852172280,spa,837,113986,Scholastic Inc.,21,19447.2,85,High
+100866,Fake Book Title 866,Robert Louis Stevenson/Milo Winter,3.11,6572436051,8433932552572,ara,114,16329,Barnes & Noble Classics,1,10430.2,87,Medium
+100867,Fake Book Title 867,Henry Miller/Thomas H. Moore,4.82,9903351330,1226809942012,ita,835,199787,Atheneum Books for Young Readers,12,6076.4,44,High
+100868,Fake Book Title 868,Heidi Boyd,2.65,1257324536,2874850849263,grc,672,103801,Knopf,11,9581.8,36,Medium
+100869,Fake Book Title 869,Tom Wolfe,4.84,7183058541,7700257524788,en-CA,221,71436,Atheneum Books for Young Readers,2,17209.0,94,High
+100870,Fake Book Title 870,Jean Gibran/جبران خليل جبران/Kahlil Gibran,3.38,7374810067,1932632076732,fre,376,86174,Crown,7,6351.8,49,Medium
+100871,Fake Book Title 871,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,2.75,6171239466,1995016165167,nl,657,91961,Teaching Resources,17,4148.2,67,Medium
+100872,Fake Book Title 872,Narendra Jadhav,3.71,3605585995,5695257828874,lat,552,197792,Tor Books,14,2899.3,80,High
+100873,Fake Book Title 873,Robert Louis Stevenson/Milo Winter,3.14,8380312396,3573761561636,rus,489,221144,Little  Brown Book Group,20,6213.5,87,Medium
+100874,Fake Book Title 874,Leo Tolstoy/David Magarshack/Priscilla Meyer,3.21,8991977937,2094526810624,msa,393,237773,Ivy Books,15,15681.2,65,Medium
+100875,Fake Book Title 875,Frank Herbert/Brian Herbert/Kevin J. Anderson,3.27,9484167278,4587565311241,eng,673,82856,Interlink Publishing Group,5,9625.4,30,Medium
+100876,Fake Book Title 876,Robert Louis Stevenson/N.C. Wyeth/Timothy Meis,4.51,3412273600,7309445712687,mul,697,207655,Changeling Press,16,4831.6,88,High
+100877,Fake Book Title 877,Marguerite Duras/Barbara Bray,3.85,2370592316,8962070615464,nor,545,230147,The New Press,18,3628.0,73,High
+100878,Fake Book Title 878,Tom Wolfe,3.28,3003484425,4946494443633,en-US,309,197528,Zebra,4,6898.1,94,Medium
+100879,Fake Book Title 879,Heidi Boyd,4.03,6443749394,7839998573898,tur,689,170641,Farrar  Straus and Giroux,23,18820.4,36,High
+100880,Fake Book Title 880,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,4.29,2064803502,9986092048025,zho,813,165646,One Hour Entertainment,25,7100.3,67,High
+100881,Fake Book Title 881,Quentin Blake,3.18,1415802902,1827487698979,mul,401,165007,Vintage,16,19766.8,83,Medium
+100882,Fake Book Title 882,Douglas Adams/Stephen Fry,3.53,7937993287,7712718138317,zho,322,232254,Atria Books,25,9892.5,23,High
+100883,Fake Book Title 883,Heidi Hayes Jacobs,2.8,2343100352,8328878741525,spa,833,292870,Houghton Mifflin Harcourt,21,3882.9,38,Medium
+100884,Fake Book Title 884,Douglas Adams,2.95,4277581356,1947264162231,wel,102,181921,Random House Books for Young Readers,24,17862.5,22,Medium
+100885,Fake Book Title 885,Jude Fisher,4.2,7505693643,4570197324912,enm,617,243204,Harper,6,9404.1,56,High
+100886,Fake Book Title 886,Leo Tolstoy/Louise Maude/Aylmer Maude,2.95,6620138568,8794807803706,fre,192,72357,ASCD,7,14299.4,66,Medium
+100887,Fake Book Title 887,Delia Sherman,3.81,1099541460,4967819566134,msa,619,294117,Broadway Books,15,19680.2,20,High
+100888,Fake Book Title 888,Daniel Abraham,4.27,9354711271,7471002307694,zho,527,236048,Firebird,25,1350.2,16,High
+100889,Fake Book Title 889,Delia Sherman,2.77,7465834732,4455745233314,glg,592,121807,Picador USA,10,2263.6,20,Medium
+100890,Fake Book Title 890,Henry Miller/Jiří Níl,3.92,5151887478,4405755691702,ita,334,53714,Archaia,12,14511.2,43,High
+100891,Fake Book Title 891,Marguerite Duras/Barbara Bray,3.14,2515672889,8895413373742,gla,719,293221,Vintage,9,5898.6,73,Medium
+100892,Fake Book Title 892,Madeleine L'Engle,4.91,5512036684,2312897022745,enm,260,166586,Cambridge University Press,6,3983.8,71,High
+100893,Fake Book Title 893,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,3.71,7316122432,3098150995885,tur,820,296679,Teacher Created Resources,23,1137.9,39,High
+100894,Fake Book Title 894,Bill Bryson,4.51,3305069227,1714584625212,zho,851,259488,Scholastic,25,794.0,4,High
+100895,Fake Book Title 895,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky/John Bayley,3.88,4638577630,5910988046368,ale,430,150578,O'Reilly Media,0,15572.0,68,High
+100896,Fake Book Title 896,Barry R. Cournoyer,2.61,2850820685,5649545187162,mul,432,297748,Tor Books,16,3004.6,3,Medium
+100897,Fake Book Title 897,Charles Willeford/Elmore Leonard,4.08,9085085822,3830942079565,nor,149,275603,Penguin Classics,18,9548.7,9,High
+100898,Fake Book Title 898,Louis E. Catron,4.88,8419590655,1099879533841,swe,622,200449,The New Press,22,12261.8,69,High
+100899,Fake Book Title 899,Charles Willeford/James Lee Burke,4.0,8575707116,9204807291724,por,962,222522,Nimble Books,19,8775.7,10,High
+100900,Fake Book Title 900,Edward P. Jones/Kevin R. Free,4.55,2571688961,1700744554656,gla,767,298833,Random House Audio,9,897.2,26,High
+100901,Fake Book Title 901,Leo Tolstoy/Amy Mandelker/Constance Garnett,4.71,2720484983,6298537472799,msa,591,231232,Ace Books,15,15749.1,63,High
+100902,Fake Book Title 902,Edward Lear/Laura Huliska-Beith/Edward Mendelson,3.07,6131005449,2281438220106,zho,681,281886,Barnes  Noble Classics,25,571.4,24,Medium
+100903,Fake Book Title 903,Robert Louis Stevenson,3.03,7671041685,3802488238281,msa,780,89087,Kingfisher,15,15324.7,86,Medium
+100904,Fake Book Title 904,Charles Willeford/James Lee Burke,4.03,5610783750,8097592524861,fre,371,209962,Association for Supervision & Curriculum Development,7,17905.0,10,High
+100905,Fake Book Title 905,Angela Knight/Sahara Kelly/Judy Mays/Marteeka Karland/Kate Douglas/Shelby Morgen/Lacey Savage/Kate Hill/Willa Okati,3.53,7460728316,7146493103715,ger,679,185322,Barnes & Noble Classics,8,8863.8,1,High
+100906,Fake Book Title 906,J.R.R. Tolkien/Alan  Lee,4.6,1510289448,6825401082222,msa,966,224185,Vintage,15,10880.4,48,High
+100907,Fake Book Title 907,Douglas Adams,4.75,5187948804,6164100304667,en-CA,351,188537,Dover Publications,2,9730.6,22,High
+100908,Fake Book Title 908,Douglas Adams,3.38,6986770879,9355989866141,glg,659,18124,Zebra,10,8007.1,22,Medium
+100909,Fake Book Title 909,Leo Tolstoy/Louise Maude/Aylmer Maude,3.09,9327720702,3014377473434,nl,795,146671,Ballantine Books,17,17789.6,66,Medium
+100910,Fake Book Title 910,Mark Smylie,4.45,4242550727,7088841727266,grc,931,292157,Harper Perennial,11,17917.4,76,High
+100911,Fake Book Title 911,John Carratello/Patty Carratello/Theresa Wright,3.19,7481631841,5228161945507,zho,798,227484,Barnes  Noble Classics,25,6958.8,53,Medium
+100912,Fake Book Title 912,Robert Louis Stevenson/Scott McKowen,4.56,3147818256,5289045101759,en-CA,189,232729,Harper Perennial,2,12441.9,89,High
+100913,Fake Book Title 913,John Carratello/Patty Carratello/Theresa Wright,3.56,1194576436,1704198099742,nor,545,52315,Del Rey,18,18564.8,53,High
+100914,Fake Book Title 914,John McPhee,4.17,2962750929,7710117330317,gla,431,16111,French & European,9,19255.0,54,High
+100915,Fake Book Title 915,Kahlil Gibran/جبران خليل جبران,2.74,3214080278,2996923516490,msa,238,159932,Sterling Children's Books,15,10358.4,60,Medium
+100916,Fake Book Title 916,Johanna Spyri/Beverly Cleary/Angelo  Rinaldi,4.06,7928074841,5511372985332,lat,456,113552,iUniverse,14,9256.2,50,High
+100917,Fake Book Title 917,Rob Orsini,3.63,5992908271,1435006438192,glg,700,284994,Rowman & Littlefield Publishers,10,5837.2,85,High
+100918,Fake Book Title 918,John Banville,3.97,7581349462,9949864949198,zho,373,256555,Tor Books,25,19192.4,51,High
+100919,Fake Book Title 919,Leo Tolstoy/Richard Pevear/Larissa Volokhonsky,2.92,6582557981,9561783473242,tur,118,107278,Crown,23,3169.2,67,Medium
+100920,Fake Book Title 920,Zilpha Keatley Snyder,4.34,4503614567,6214278638799,mul,410,206598,One Hour Entertainment,16,11750.0,99,High
+100921,Fake Book Title 921,Philippa Carr,4.66,6877052039,6635823926776,wel,969,290248,Amistad,24,5912.9,82,High
+100922,Fake Book Title 922,Douglas Adams/Stephen Fry,3.04,3893976444,2449611139681,spa,985,176519,Cliffs Notes,21,5843.3,23,Medium
+100923,Fake Book Title 923,Henry Miller/Thomas H. Moore,2.74,9503597301,2691994686111,enm,253,13283,One World (UK),6,8316.6,44,Medium
+100924,Fake Book Title 924,Kahlil Gibran/John Walbridge/Robin Waterfield,2.56,7801948900,4706837975781,ita,489,242327,Signet,12,19976.3,58,Medium
+100925,Fake Book Title 925,Dave Lakhani,4.1,9704383251,4752828959960,en-CA,359,156190,Delacorte Press,2,1444.3,17,High
+100926,Fake Book Title 926,John Banville,4.02,7333316743,4616808825502,eng,719,104185,Zebra,5,11724.7,51,High
+100927,Fake Book Title 927,Edward P. Jones,3.87,3480920839,8656961209056,tur,982,217364,Atheneum Books for Young Readers: Richard Jackson Books,23,1986.3,25,High
+100928,Fake Book Title 928,Philippa Carr,3.08,4098389895,2271051552630,glg,896,13732,ASCD,10,3399.0,82,Medium
+100929,Fake Book Title 929,Tara MacCarthy,3.48,7801180691,1417272198620,gla,670,154505,FT Press,9,8995.8,93,High
+100930,Fake Book Title 930,J.K. Rowling/Mary GrandPré,3.99,8907752604,1667144637585,zho,224,224454,Greenwillow Books,25,10387.9,46,High
+100931,Fake Book Title 931,Douglas Adams/Stephen Fry,3.74,3923699745,2288866088216,jpn,453,285860,Black Classic Press,13,5446.4,23,High
+100932,Fake Book Title 932,Gary Paulsen,4.97,9725528903,4131264238398,wel,372,91248,McGraw-Hill,24,6578.6,31,High
+100933,Fake Book Title 933,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,2.84,1471997674,5431522408721,fre,718,41880,Wiley,7,2072.6,59,Medium
+100934,Fake Book Title 934,Chris Malta/Lisa Suttora,4.24,5376302686,2239347534662,en-CA,910,10284,Broadway Books,2,6318.7,13,High
+100935,Fake Book Title 935,Heidi Murkoff/Sharon Mazel/Arlene Eisenberg/Sandee Hathaway/Mark D. Widome,3.51,6642266247,8169411301567,zho,344,57666,Barnes & Noble Classics,25,19343.4,39,High
+100936,Fake Book Title 936,Ruby Ann Boxcar,3.57,5945359606,8934471183069,en-CA,947,271415,Putnam,2,18914.3,91,High
+100937,Fake Book Title 937,Charles Willeford,4.29,3965676060,8115172604716,spa,549,142532,iUniverse,21,6940.3,8,High
+100938,Fake Book Title 938,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.23,9248574674,6563842476684,spa,346,211177,Dramatists Play Service,21,11573.7,59,High
+100939,Fake Book Title 939,Marsha Collier,4.98,9857430687,7850545383289,enm,619,192535,EMC/Paradigm Publishing,6,18224.9,77,High
+100940,Fake Book Title 940,John McPhee,2.82,8139209752,3081655967319,en-US,240,1101,Knopf,4,486.4,54,Medium
+100941,Fake Book Title 941,Ewan McGregor/Charley Boorman/Robert Uhlig,2.76,7551874474,1105376311252,en-CA,461,76968,EMC/Paradigm Publishing,2,16282.8,28,Medium
+100942,Fake Book Title 942,John McPhee/William Howarth,4.31,6038780151,2115052319965,zho,107,78166,One Hour Entertainment,25,18986.2,55,High
+100943,Fake Book Title 943,Julia Wilkinson,3.95,8272725281,1801379084325,swe,577,228981,Citadel,22,2158.2,57,High
+100944,Fake Book Title 944,Henry James/Gabriel Brownstein/Mary Cregan,3.19,7915226263,7292438857951,en-CA,451,208597,Greenwillow Books,2,3535.0,40,Medium
+100945,Fake Book Title 945,Leo Tolstoy/Louise Maude/Aylmer Maude,2.7,6353758928,9847323597195,tur,594,226622,Dover Publications,23,19229.3,66,Medium
+100946,Fake Book Title 946,Kahlil Gibran/جبران خليل جبران/Anthony Rizcallah Ferris,2.71,7691931213,6098582029036,nor,705,131429,Atria Books,18,10919.6,61,Medium
+100947,Fake Book Title 947,Narendra Jadhav,4.74,8322868827,5952468829386,por,932,56939,ASCD,19,643.8,80,High
+100948,Fake Book Title 948,Lucas Carlson/Leonard Richardson,2.98,6656646925,7710618721091,ita,526,226306,Teacher Created Resources,12,5423.6,70,Medium
+100949,Fake Book Title 949,John Banville,3.31,6469458472,1544003663685,por,138,298138,Turtleback Books,19,9199.6,51,Medium
+100950,Fake Book Title 950,Quentin Blake,3.07,9504724761,3750814831035,ara,692,38184,Archaia,1,13970.3,83,Medium
+100951,Fake Book Title 951,John McPhee/William Howarth,3.39,8809871735,4867761793021,fre,286,202884,Nimble Books,7,14760.6,55,Medium
+100952,Fake Book Title 952,Frank Herbert,2.67,4455798713,6190664362330,jpn,695,227629,Brookline Books,13,19910.1,29,Medium
+100953,Fake Book Title 953,J.K. Rowling/Mary GrandPré,3.8,2247484671,6240478900844,zho,699,26004,William Morrow Paperbacks,25,6010.3,46,High
+100954,Fake Book Title 954,J.R.R. Tolkien/Alan  Lee,2.67,4067213499,1197351449893,rus,853,186143,Black Classic Press,20,10933.0,48,Medium
+100955,Fake Book Title 955,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,4.5,3057629778,3489170070791,wel,953,227049,Archaia,24,10836.8,19,High
+100956,Fake Book Title 956,Leo Tolstoy/David Magarshack/Priscilla Meyer,3.08,7608141858,1734968698592,wel,192,210988,New Directions Publishing,24,8329.8,65,Medium
+100957,Fake Book Title 957,Tom Wolfe,3.85,8285000265,7934639828976,en-GB,185,201549,North Light Books,3,3686.5,94,High
+100958,Fake Book Title 958,Julia Wilkinson,4.7,1589582865,2498715864531,por,143,267186,Crown,19,19557.4,57,High
+100959,Fake Book Title 959,Leo Tolstoy/Louise Maude/Aylmer Maude,4.13,3520417815,4694980513109,glg,236,2011,Houghton Mifflin Harcourt,10,17119.9,66,High
+100960,Fake Book Title 960,Henry James/Gabriel Brownstein/Mary Cregan,3.83,2041349374,4725213477217,en-GB,520,12547,Kingfisher,3,10149.8,40,High
+100961,Fake Book Title 961,Molly Hatchet,3.31,3280805846,3506167330648,fre,173,256496,Sterling,7,12209.7,78,Medium
+100962,Fake Book Title 962,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,3.33,3739951076,4234801667605,ara,647,275449,French & European,1,4827.3,59,Medium
+100963,Fake Book Title 963,Wendy Wasserstein,4.17,1225447588,5448876368297,eng,712,135689,Changeling Press,5,11042.3,98,High
+100964,Fake Book Title 964,Marguerite Duras,4.99,7070083150,3015174286582,wel,611,235939,Pearson,24,14010.7,72,High
+100965,Fake Book Title 965,Charles Willeford,4.15,8375996697,1957143130454,en-CA,255,179125,Wings Books,2,10480.3,8,High
+100966,Fake Book Title 966,Marguerite Duras/Barbara Bray,3.89,4310415016,2286556013040,en-CA,354,20439,Wings Books,2,19809.2,73,High
+100967,Fake Book Title 967,J.K. Rowling,4.33,4990452762,5406925766532,spa,270,175645,Pantheon,21,12368.7,45,High
+100968,Fake Book Title 968,John McPhee/William Howarth,3.66,9067664957,4470755351292,fre,827,213225,Delacorte Books for Young Readers,7,7649.1,55,High
+100969,Fake Book Title 969,Molly Hatchet,2.65,9434946584,7280663180674,ita,269,3408,Gramercy Books,12,15526.2,78,Medium
+100970,Fake Book Title 970,Anthony Thorlby,3.91,6674372082,5125983839179,en-US,863,252607,McGraw-Hill,4,3712.0,2,High
+100971,Fake Book Title 971,Leo Tolstoy/Louise Maude/Aylmer Maude,4.89,3774110439,6012656524692,tur,971,207646,One World (UK),23,7915.0,66,High
+100972,Fake Book Title 972,J.R.R. Tolkien,2.94,9974165440,2226726479389,eng,421,254538,Pearson,5,7177.5,47,Medium
+100973,Fake Book Title 973,W. Frederick Zimmerman,4.23,3465883999,4405480078353,enm,666,106032,Putnam,6,8843.5,97,High
+100974,Fake Book Title 974,Edward P. Jones/Kevin R. Free,3.0,5022964382,9548349799235,nl,555,228179,Wings Books,17,15715.2,26,Medium
+100975,Fake Book Title 975,Patricia A. McKillip,3.84,6046864799,6774371555571,nor,702,267892,Knopf,18,9871.7,81,High
+100976,Fake Book Title 976,Frank Herbert/Brian Herbert/Kevin J. Anderson,2.74,4949801453,3682568583478,lat,889,93129,Delacorte Press,14,15955.5,30,Medium
+100977,Fake Book Title 977,Deidre S. Laiken/A.J. McAllister/Robert Louis Stevenson,3.63,3127657643,3965367000493,enm,712,55855,Sterling,6,11684.4,19,High
+100978,Fake Book Title 978,Dale Peck,4.39,9272277508,6506168826264,ara,254,162471,Pearson,1,7081.5,15,High
+100979,Fake Book Title 979,V.T. Rajshekar/Y.N. Kly,3.37,4765583254,5868071084976,swe,988,207899,Broadway Books,22,16268.9,95,Medium
+100980,Fake Book Title 980,Marguerite Duras/Richard Seever,4.16,5334769475,7325800104932,ara,448,238533,Barnes & Noble,1,5043.8,74,High
+100981,Fake Book Title 981,Wendy Wasserstein,4.49,9516893896,6835713682144,zho,550,44091,Puffin,25,4770.8,98,High
+100982,Fake Book Title 982,Daniel Abraham,4.82,6517150278,9443381227564,lat,975,294148,Sterling,14,10270.9,16,High
+100983,Fake Book Title 983,Gary Russell,3.09,5031086659,8836008266535,lat,752,270196,Turtleback Books,14,5486.8,32,Medium
+100984,Fake Book Title 984,Leo Tolstoy/Constance Garnett/Amy Mandelker,3.5,7305101214,9565476779588,en-CA,272,107574,Teacher Created Resources,2,543.4,64,High
+100985,Fake Book Title 985,Delia Sherman,2.88,5778781449,2913629859190,msa,109,218356,Turtleback Books,15,13094.3,20,Medium
+100986,Fake Book Title 986,Henry James/Gabriel Brownstein/Mary Cregan,4.98,1799718923,2441419490167,ale,839,19788,Del Rey,0,10400.3,40,High
+100987,Fake Book Title 987,Kahlil Gibran/Suheil Bushrui/Salma H. Al-Kuzbari,4.82,8458717057,5938532896491,glg,364,272897,Workman Publishing Company,10,9112.7,59,High
+100988,Fake Book Title 988,Adam Ginsberg,3.85,8691288568,4455467052836,swe,537,113826,iUniverse,22,19351.4,0,High
+100989,Fake Book Title 989,Mark Smylie,4.61,4252504650,4743450701492,enm,859,180544,Ivy Books,6,11580.5,76,High
+100990,Fake Book Title 990,Delia Sherman,3.8,9147736635,1648137638635,wel,346,193021,Tor Books,24,17318.5,20,High
+100991,Fake Book Title 991,Donna Ickes/Edward Sciranko/Keith Vasconcelles,4.06,8846861559,5585099183038,msa,766,294493,Scholastic Inc.,15,3103.1,21,High
+100992,Fake Book Title 992,Henry Miller/Jiří Níl,2.72,7508080884,3614669562752,mul,645,277835,William Morrow Paperbacks,16,11541.4,43,Medium
+100993,Fake Book Title 993,Mark Smylie,4.39,5667503195,7903583623738,glg,598,268499,Grove Press,10,17407.8,76,High
+100994,Fake Book Title 994,George Smoot/Keay Davidson,2.82,3874432021,3354891910082,gla,228,229384,Little  Brown Book Group,9,11814.3,33,Medium
+100995,Fake Book Title 995,Jude Fisher,4.57,5898890707,9815268767608,msa,771,280976,Penguin Books,15,14463.2,56,High
+100996,Fake Book Title 996,John Carratello/Patty Carratello/Theresa Wright,4.46,2065354117,2591330102342,spa,700,236421,Simon & Schuster,21,7670.1,53,High
+100997,Fake Book Title 997,Patricia A. McKillip,4.27,6415031531,7401205450329,nor,704,78013,Heinemann Drama,18,2180.2,81,High
+100998,Fake Book Title 998,Ralph Ginzburg,2.59,6306523372,1186840385746,grc,426,122037,Houghton Mifflin Harcourt,11,9355.9,84,Medium
+100999,Fake Book Title 999,Henry James/Gabriel Brownstein/Mary Cregan,3.26,8532327465,5203324197924,spa,852,151688,Simon & Schuster,21,8110.6,40,Medium
