@@ -171,7 +171,8 @@ joblib.dump(label_encoder_author, 'models/author_encoder.joblib')
 
 # Generating Fake Data
 
-num_fake_books = 1000
+num_real_books = len(df)
+num_fake_books = int(num_real_books * 0.3 / 0.7)
 
 # Random values will be consistent
 np.random.seed(42)
@@ -211,10 +212,65 @@ fake_df['rating_category'] = pd.cut(
     labels=['Low', 'Medium', 'High']
 )
 
+fake_df = fake_df.dropna(subset=['rating_category'])
+
 # Reordering columns for easier comparison with real data columns
-fake_df = fake_df[['bookID', 'title', 'authors', 'average_rating', 'isbn', 'isbn13', 
-    'language_code', 'num_pages', 'ratings_count', 'publisher',
-    'language_code_encoded', 'book_age_days', 'author_encoded',
-    'rating_category']]
+fake_df = fake_df[df.columns]
 
 fake_df.to_csv('data/books_fake.csv', index=False)
+
+# --- Creating 30% fake data with 70% real data Dataset ---
+combined_df = pd.concat([df, fake_df], ignore_index=True)
+combined_df = combined_df.sample(frac=1, random_state=42).reset_index(drop=True)
+combined_df.to_csv('data/books_combined_fake.csv', index=False)
+# --- Training Models with Fake Data ---
+
+# Fake Data Linear Regression Model
+
+y_lin_fake = combined_df['average_rating']
+X_lin_fake = combined_df[['num_pages', 'ratings_count', 'book_age_days']]
+
+X_train_lin_fake, X_test_lin_fake, y_train_lin_fake, y_test_lin_fake = train_test_split(
+    X_lin_fake, y_lin_fake, test_size=0.3, random_state=42
+)
+
+lin_model_fake = LinearRegression()
+lin_model_fake.fit(X_train_lin_fake, y_train_lin_fake)
+predicted_rating_fake = lin_model_fake.predict(X_test_lin_fake)
+
+mse_fake = mean_squared_error(y_test_lin_fake, predicted_rating_fake)
+r2_fake = r2_score(y_test_lin_fake, predicted_rating_fake)
+
+print("\n--- Linear Regression Model with Fake Data ---")
+print(f"Coefficients: {lin_model_fake.coef_}")
+print(f"Intercept: {lin_model_fake.intercept_}")
+print(f"Mean Squared Error (MSE): {mse_fake:.2f}")
+print(f"R-Squared (R²): {r2_fake:.2f}")
+
+# Fake Data Random Forest Classification
+y_class_fake = combined_df['rating_category']
+X_class_fake = combined_df[['num_pages', 'ratings_count', 'book_age_days',
+                         'language_code_encoded', 'author_encoded']]
+
+X_train_class_fake, X_test_class_fake, y_train_class_fake, y_test_class_fake = train_test_split(
+    X_class_fake, y_class_fake, test_size=0.3, random_state=42
+)
+
+rf_model_fake = RandomForestClassifier(n_estimators=100, random_state=42)
+rf_model_fake.fit(X_train_class_fake, y_train_class_fake)
+predicted_y_class_fake = rf_model_fake.predict(X_test_class_fake)
+
+accuracy_rf_fake = accuracy_score(y_test_class_fake, predicted_y_class_fake)
+
+print(f"\n--- Random Forest Classifier using Fake Data ---")
+print(f"Random Forest Accuracy: {accuracy_rf_fake:.2f}")
+
+# Dumping Fake Data Models to Joblib files
+
+joblib.dump(rf_model_fake, 'models/book_rf_model_fake.joblib')
+joblib.dump(list(X_train_class_fake.columns), 'models/book_rf_features_fake.joblib')
+joblib.dump(lin_model_fake, 'models/book_lin_model_fake.joblib')
+joblib.dump(list(X_train_lin_fake.columns), 'models/book_lin_features_fake.joblib')
+
+joblib.dump(fake_label_encoder_language, 'models/language_encoder_fake.joblib')
+joblib.dump(fake_label_encoder_author, 'models/author_encoder_fake.joblib')

@@ -124,3 +124,29 @@ st.markdown("""
 - **Encode authors**: Converted author names to numbers using Label Encoding
 - **Create rating_category**: Low (0-1.7), Medium (1.7-3.4), High (3.4-5.0)
 """)
+
+st.header("Key Takeaways")
+avg_pages = df_real_after["num_pages"].mean()
+avg_rating = df_real_after["average_rating"].mean()
+num_languages = df_real_after["language_code"].nunique()
+num_publishers = df_real_after["publisher"].nunique()
+most_common = df_real_after["rating_category"].value_counts().idxmax()
+total_count = len(df_real_after)
+
+st.success(f"""
+           **Data is ready for Models!**
+
+           **Important Statistics**
+           - Average Book Length: ~{avg_pages:.0f} pages
+           - Average Rating: {avg_rating:.2f} / 5.0
+           - Dataset Spans {num_languages} languages and {num_publishers} publishers
+           - Total Books after Cleaning: {len(df_real_after):,}
+           """)
+
+st.info("""
+**How to use this Data:**
+1. Browse the dataset
+2. Look into Statistical Summaries
+3. Understanding the Cleaning Process
+4. Walkthrough of how Raw Data becomes ML-ready
+""")
