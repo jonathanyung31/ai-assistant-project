@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="Real Dataset", page_icon="📊", layout="wide")
 st.title("📊 Real Dataset Walkthrough")
 st.markdown("This page shows the data preprocessing processes from raw" \
-"data to the final cleaned dataset ready to be used")
+"data to the final cleaned dataset ready to be used.")
 
 # --- Original Raw Data ---
 st.header("Original Raw Data")
