@@ -1,9 +1,6 @@
 import streamlit as st
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
 import pandas as pd
 import joblib
-import numpy as np
 
 st.markdown(
  """
@@ -62,25 +59,20 @@ st.set_page_config(page_title="GoodreadsRec",page_icon="📖", layout="wide")
 
 st.title('Goodreads recommandation App')
 st.write("This App will Recommend you Books you might Like!")
+st.markdown('**Linear Regression - Real Data**')
 
 @st.cache_resource
 def load_models():
     try:
-        # Classification
-        rf_model = joblib.load("models/book_rf_model.joblib")
-        rf_features = joblib.load("models/book_rf_features.joblib")
-
-        # Regression
         lin_model = joblib.load("models/book_lin_model.joblib")
         lin_features = joblib.load("models/book_lin_features.joblib")
-
-        return rf_model, rf_features, lin_model, lin_features
+        return lin_model, lin_features
     
     except FileNotFoundError:
         st.error("Model files not found.")
         st.stop()
 
-rf_model, rf_features, lin_model, lin_features = load_models()
+lin_model, lin_features = load_models()
 
 # Load real dataset
 
@@ -94,9 +86,9 @@ def load_book_data():
 
 df_real = load_book_data()
 
-# --- Input Widgets for Customer Features ---
+# Input Widgets
 
-st.sidebar.header("📋 Your Preferences")
+st.header("📋 Your Preferences")
 
 num_pages = st.radio("Preffered Book Length:",
 ["Short (< 250 pages)", "Medium (250-450 pages)",
@@ -121,23 +113,57 @@ else:
     ratings_count = 50000
 
 
-average_rating = st.slider("Preferred average rating:", 0.0, 5.0, 2.5, 0.5)
+book_age_days = st.slider("Book Age (in years):", 
+    min_value=1, max_value=50, value=10,
+    help="How old should the book be?") * 365
+
 
 if st.button("Submit"):
-    st.write("Processing your desired books now...")
 
-input_data = {
-    'average_rating' : average_rating,
-    'num_pages' : num_pages,
-    'ratings_count' : ratings_count
-}
+    st.subheader("Linear Regression Prediction - Real Data")
 
-input_rf_df = pd.DataFrame([input_data])
-input_rf_df = input_rf_df[rf_features] # Reorder columns to match trained model's features
+    input_data = pd.DataFrame([{
+        'num_pages': num_pages,
+        'ratings_count': ratings_count,
+        'book_age_days': book_age_days
+    }])
 
-input_lin_df = pd.DataFrame([input_data])
-input_lin_df = pd.DataFrame([lin_features])
+    input_data = input_data[lin_features]
+    predicted_rating = lin_model.predict(input_data)[0]
+    st.success(f"Predicted Average Rating: **{predicted_rating:.2f} / 5.0**")
 
-st.subheader("Customer Input Summary:")
-st.dataframe(input_rf_df)
-st.dataframe(input_lin_df)
+    if predicted_rating >= 4.5:
+        st.info("Books with these inputs usually receive high ratings!")
+    elif predicted_rating >= 4.0:
+        st.info("Books with these inputs have better than usual ratings!")
+    elif predicted_rating >= 3.5:
+        st.info("This is a nice rating range")
+    else:
+        st.info("Low ratings for this combination of inputs")
+    
+    st.subheader("Here are the Books that Match Your Preference")
+
+    filtered_books = df_real[
+        (df_real['num_pages'].between(num_pages * 0.7, num_pages * 1.3)) &
+        (df_real['ratings_count'].between(ratings_count * 0.5, ratings_count * 2)) &
+        (df_real['book_age_days'].between(book_age_days * 0.7, book_age_days * 1.3))].copy()
+
+    if len(filtered_books) > 0:
+        top_books = filtered_books.nlargest(10, 'average_rating')
+        st.write(f"These top 10 average ratings books were Found for You:")
+
+        for id, book in top_books.iterrows():
+            with st.expander(f"{book['title']} - Rating: {book['average_rating']:.2f}"):
+                column1, column2 = st.columns([2, 1])
+                with column1:
+                    st.write(f"**Author:** {book['authors']}")
+                    st.write(f"**Number of Pages:** {int(book['num_pages'])}")
+                    st.write(f"**Publishers:** {book['publisher']}")
+                with column2:
+                    st.write(f"**Rating:** {book['average_rating']:.2f} / 5.0")
+                    st.write(f"**Ratings Count** {int(book['ratings_count']):,}")
+                    st.write(f"**Language** {book['language_code']}")
+    else:
+        st.warning("No Books matched your preferences. Try different inputs!")
+else:
+    st.info("Select your preferences and click 'Submit' to get your predictions!")
