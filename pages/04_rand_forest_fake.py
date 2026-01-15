@@ -55,26 +55,24 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.set_page_config(page_title="GoodreadsRec",page_icon="📖", layout="wide")
-
+st.set_page_config(page_title="GoodreadsRec", page_icon= "📖", layout="wide")
 st.title('Goodreads recommandation App')
 st.write("This App will Recommend you Books you might Like!")
-st.markdown('**Linear Regression - Combined Data (70% Real + 30% Fake)**')
+st.markdown('**Random Forest Classification - Combined Data (70% real + 30% fake)**')
+
 
 @st.cache_resource
 def load_models():
     try:
-        lin_model = joblib.load("models/book_lin_model_fake.joblib")
-        lin_features = joblib.load("models/book_lin_features_fake.joblib")
-        return lin_model, lin_features
+        rf_model = joblib.load("models/book_rf_model_fake.joblib")
+        rf_features = joblib.load("models/book_rf_features_fake.joblib")
+        return rf_model, rf_features
     
     except FileNotFoundError:
         st.error("Model files not found.")
         st.stop()
 
-lin_model, lin_features = load_models()
-
-# Load combined dataset
+rf_model, rf_features = load_models()
 
 @st.cache_data
 def load_book_data():
@@ -84,15 +82,13 @@ def load_book_data():
         st.error("Book data not found!")
         st.stop()
 
-df_combined = load_book_data()
-
-# --- Input Widgets ---
+df_fake = load_book_data()
 
 st.header("📋 Your Preferences")
 
 num_pages = st.radio("Preffered Book Length:",
-["Short (< 250 pages)", "Medium (250-450 pages)",
-  "Long (> 450 pages)"])
+            ["Short (< 250 pages)", "Medium (250-450 pages)",
+            "Long (> 450 pages)"])
 
 if "Short" in num_pages:
     num_pages = 200
@@ -101,9 +97,9 @@ elif "Medium" in num_pages:
 else:
     num_pages = 600
 
-
 ratings_count = st.radio("Preffered Popularity",
 ["Niche", "Popular", "Blockbusters"])
+
 
 if "Niche" in ratings_count:
     ratings_count = 500
@@ -114,60 +110,57 @@ else:
 
 
 book_age_days = st.slider("Book Age (in years):", 
-                          min_value=1, 
-                          max_value=50, 
-                          value=10,
-                          help="How old should the book be?"
-                          ) * 365
-
-st.sidebar.markdown("---")
+    min_value=1, max_value=50, value=10,
+    help="How old should the book be?") * 365
 
 if st.button("Submit"):
-    st.subheader("Your Input Summary")    
-
-    st.subheader("Linear Regression Prediction - Combined Data")
+    st.subheader("""Random Forest Classifier Prediction - Combined Data (70% Real + 30% Fake)""")
 
     input_data = pd.DataFrame([{
-        'num_pages' : num_pages,
-        'ratings_count' : ratings_count,
-        'book_age_days' : book_age_days
+        'num_pages': num_pages,
+        'ratings_count': ratings_count,
+        'book_age_days': book_age_days,
+        'language_code_encoded': int(df_fake['language_code_encoded'].median()),
+        'author_encoded': int(df_fake['author_encoded'].median())
     }])
 
-    input_data = input_data[lin_features]
-    predicted_rating = lin_model.predict(input_data)[0]
-    st.success(f"#### Predicted Average Rating: **{predicted_rating:.2f} / 5.0**")
+    input_data = input_data[rf_features]
+    predict_cat = rf_model.predict(input_data)[0]
+    st.success(f"Predicted Rating Category: **{predict_cat}**")
 
-    if predicted_rating >= 4.5:
-        st.info("Books with these characteristics typically receive high ratings!")
-    elif predicted_rating >= 4.0:
-        st.info("Books with these characteristics are well-received!")
-    elif predicted_rating >= 3.5:
-        st.info("This is a nice rating range")
+    if predict_cat == 'High':
+        st.info("Books with these inputs usually receive high ratings!")
+    elif predict_cat == 'Medium':
+        st.info("Books with these inputs have better than usual ratings!")
     else:
-        st.warning("Okeish ratings are expected for this combination")
-    
+        st.info("Low ratings for this combination of inputs")
+
     st.subheader("Here are the Books that Match Your Preference")
 
-    filtered_books = df_combined[
-        (df_combined['num_pages'].between(num_pages * 0.7, num_pages * 1.3)) &
-        (df_combined['ratings_count'].between(ratings_count * 0.5, ratings_count * 2)) &
-        (df_combined['book_age_days'].between(book_age_days * 0.7, book_age_days * 1.3))].copy()
+    filter_books = df_fake[
+        (df_fake['num_pages'].between(num_pages * 0.7, num_pages * 1.3)) &
+        (df_fake['ratings_count'].between(ratings_count * 0.5, ratings_count * 2)) &
+        (df_fake['book_age_days'].between(book_age_days * 0.7, book_age_days * 1.3)) &
+        (df_fake['rating_category'] == predict_cat)
+    ].copy()
 
-    if len(filtered_books) > 0:
-        top_books = filtered_books.nlargest(10, 'average_rating')
-        st.write(f"**{len(filtered_books)}** Books were Found for You:")
-
-        for id, book in top_books.iterrows():
+    if len(filter_books) > 0:
+        top = filter_books.nlargest(10, 'average_rating')
+        st.write(f"""These top 10 average ratings books 
+                were found for you in the **{predict_cat}** category""")
+        
+        for id, book in top.iterrows():
             with st.expander(f"{book['title']} - Rating: {book['average_rating']:.2f}"):
-                column1, column2 = st.columns([2, 1])
-                with column1:
+                general, specific = st.columns([2, 1])
+                with general:
                     st.write(f"**Author:** {book['authors']}")
                     st.write(f"**Number of Pages:** {int(book['num_pages'])}")
-                    st.write(f"**Publishers:** {book['publisher']}")
-                with column2:
+                    st.write(f"**Publisher:** {book['publisher']}")
+                with specific:
                     st.write(f"**Rating:** {book['average_rating']:.2f} / 5.0")
-                    st.write(f"**Ratings Count** {int(book['ratings_count']):,}")
-                    st.write(f"**Language** {book['language_code']}")
+                    st.write(f"**Category:** {book['rating_category']}")
+                    st.write(f"**Ratings Count:** {int(book['ratings_count']):,}")
+                    st.write(f"**Language:** {book['language_code']}")
     else:
         st.warning("No Books matched your preferences. Try different inputs!")
 else:
