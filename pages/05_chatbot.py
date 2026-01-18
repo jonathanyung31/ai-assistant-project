@@ -1,116 +1,150 @@
 import streamlit as st
-import speech_recognition as sr
+import pandas as pd
+import numpy as np
+import joblib
 import nltk
 from nltk.tokenize import word_tokenize
-import json
+import speech_recognition as sr
 import random
-from collections import defaultdict
-import pandas as pd
-import pyttsx3
 import datetime
-import time
+import json
+from collections import defaultdict
+import base64
+import io
+from gtts import gTTS
 
-#The Use Case the chatbot will be focused on is for the user to see top-rated books
+st.markdown(
+ """
+    <style>
+    /* --- Page background --- */
+    /* Page background to beige */
+    .stApp {
+    background-color: #E8DCB8 !important;
 
+    /* --- Headers --- */
+    h1, h2, h3, h4, h5, h6 {
+        color: #FF8C42 !important;
+    }
 
-nltk.download('punkt')
+    /* --- Buttons --- */
+    .stButton>button {
+        background-color: #4a3b41;
+        color: #FFAA5C;
+        border-radius: 8px;
+        padding: 0.5em 1em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .stButton>button:hover {
+        background-color: #7a656b;
+        color: #FFD28C;
+        cursor: pointer;
+    }
 
-with open("intents_data.json", "r") as f:
-    training_data = json.load(f)
+    /* --- Radio buttons --- */
+    div[role="radiogroup"] label div {
+        color: #FF8C42 !important;  /* warm orange text */
+        transition: color 0.3s ease;
+    }
+    div[role="radiogroup"] label:hover div {
+        color: #FFA75C !important;  /* lighter orange on hover */
+        cursor: pointer;
+    }
+
+    /* Slider track */
+.stSlider > div > div > div > div {
+    background-color: #4a3b41 !important;  /* dark track */
+}
+
+/* Slider value tooltip */
+.stSlider > div > div > div > div > div > div > div {
+    background-color: #0d0d0d !important;  /* match app background */
+    color: #FF8C42 !important;  /* warm orange text */
+    font-weight: bold;
+    border-radius: 6px;
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.set_page_config(page_title="Book Chatbot", page_icon="💬", layout="wide")
+st.title("💬 Book Recommendation Chatbot")
+st.write("""Ask me about your preffered books!
+         I will help you find top-rated books,
+         you can search by author, get book details and more!""")
+st.markdown("#### If You Want to Speak instead of Texting, Click on the 'Speak' button!")
 
 
 def extract_features(text):
-
     features = {}
     words = word_tokenize(text.lower())
-    
     for word in words:
         features[f'has({word})'] = True
-    
     return features
 
-feature_sets = [(extract_features(item["text"]), item["intent"]) 
-                for item in training_data] # Extracting from JSON
 
-random.shuffle(feature_sets)
+def text_to_audio_for_web1(text):
+    try:
+        mp3_fp = io.BytesIO()
+        tts = gTTS(text, lang='en', tld='com.au')
+        tts.write_to_fp(mp3_fp)
+        mp3_fp.seek(0)
+        data = mp3_fp.read()
+        b64 = base64.b64encode(data).decode()
+        return f"""
+        <audio controls autoplay style="width: 100%;">
+            <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+        </audio>
+        """
+    except Exception as e:
+        st.error(f"TTS Error: Could not generate audio. Details: {e}")
+        return None
+    
 
-split_point = int(len(feature_sets) * 0.8)
-train_set = feature_sets[:split_point]
-test_set = feature_sets[split_point:]
+def assistant_action(intent, query_text=""):
+    if "joke" in query_text:
+        return "What do you call a fake noodle? An impasta!"
+    if "time" in query_text:
+        return f"The current time is {datetime.datetime.now().strftime('%H:%M')}."
+    if "hello" in query_text or "hi" in query_text:
+        return "Hello! I'm your book assistant. How can I help you find a great read today?"
+    if "bye" in query_text or "goodbye" in query_text:
+        return "Goodbye! Happy reading!"
+    
+    actions = {
+        "top_rated_books": "Here are the top rated books you asked for!",
+        "get_books_by_author": "I found some great books by that author.",
+        "search_by_title": "I found the book title you were looking for.",
+        "get_details": "I've pulled up the full details for that book."
+    }
+    
+    return actions.get(intent, "I'm sorry, I don't recognize that command. Try asking for a book title or an author!")
+    
 
-classifier = nltk.NaiveBayesClassifier.train(feature_sets)
+# Initilizing session Engine
+if 'messages' not in st.session_state:
+    st.session_state.messages = []
 
-accuracy = nltk.classify.util.accuracy(classifier, test_set)
-print(f"Overall Accuracy: {accuracy:.2%}")
+@st.cache_resource
+def load_intent_model():
+    try:
+        classifier = joblib.load('models/book_intent_model.joblib')
+        return classifier
+    except FileNotFoundError:
+        st.error("book_intent_model.joblib not found. Please run intent_classifier.py first.")
+        st.stop()
 
-print("\nMost Informative Features (Mensa Data):")
-classifier.show_most_informative_features(5)
-
-# 1. Get predictions for the test set
-refsets = defaultdict(set) # Reference (Actual) Intents
-testsets = defaultdict(set) # Predicted Intents
-
-for i, (features, intent_actual) in enumerate(test_set):
-    intent_predicted = classifier.classify(features)
-    refsets[intent_actual].add(i)
-    testsets[intent_predicted].add(i)
-
-st.title("Book Chatbot")
-user_input = st.text_input("Do You Have any Questions about Books?")
-
-if user_input:
-    features = extract_features(user_input)
-    intent = classifier.classify(features)
-
-intents = classifier.labels()
-
-for intent in intents:
-    if intent in refsets:
-
-        precision = nltk.scores.precision(refsets[intent], testsets[intent])
-
-        recall = nltk.scores.recall(refsets[intent], testsets[intent])
-
-        f1_score = nltk.scores.f_measure(refsets[intent], testsets[intent])
-
-        # Using 0.0 if one of matrices is None
-        print(f"Intent: {intent}")
-        print(f"Precision: {(precision if precision else 0.0):.2f}")
-        print(f"Recall: {(recall if recall else 0.0):.2f}")
-        print(f"F1-Score: {(f1_score if f1_score else 0.0):.2f}")
-
-test_sentences = [
-    "show me the top rated books",
-    "tell me about Dune",
-    "show me the best books by Stephen King"
-]
-
-for sentence in test_sentences:
-    features1 = extract_features(sentence)
-    predicted_intent = classifier.classify(features1)  # ← Use features1, not features
-    print(f"'{sentence}' -> {predicted_intent}")
-    # Remove the second print line entirely - it's causing the weird output
-
-
-# if intent == "top_rated_books":
-  #  st.write("Here are the top-rated books...")
-#elif intent == "get_books_by_author":
- #   st.write("Which author's top books would you like?")
-#elif intent == "search_by_title":
-  #  st.write("Searching for that book...")
-#elif intent == "get_details":
- #   st.write("Fetching book details...")
-#else:
- #   st.write("Sorry, I didn't catch that, could you say that more clearly?")
-
+classifier = load_intent_model()
 
 @st.cache_data
-def load_data():
-    #Using cache to save time
-    df = pd.read_csv("data/books_copy.csv")
-    return df
+def load_book():
+    try:
+        return pd.read_csv("data/books_copy.csv")
+    except FileNotFoundError:
+        st.error("Data file not found.")
 
-df = load_data()
+df = load_book()
+
 
 def top_rated_books(limit=10):
     #Get the highest rated books
@@ -120,13 +154,13 @@ def top_rated_books(limit=10):
 
 def get_books_by_author(author_name, limit=10):
     #Get books by a specific author
-    author_books = df[df['authors'].str.contains(author_name, case=False)]
+    author_books = df[df['authors'].str.contains(author_name, case=False, na=False)]
     author_books = author_books.nlargest(limit, 'average_rating')
     return author_books[['title', 'authors', 'average_rating']].to_dict('records')
 
 def search_by_title(title):
     #Find a specific book by title
-    result = df[df['title'].str.contains(title, case=False)]
+    result = df[df['title'].str.contains(title, case=False, na=False)]
     if len(result) > 0:
         return result.iloc[0].to_dict()
     return None
@@ -136,25 +170,11 @@ def get_details(title):
     book = search_by_title(title)
     return book
 
-st.set_page_config(layout="centered")
-st.markdown("If You Want to Speak Click on the Microphone")
+user_input = st.text_input("Do You Have any Questions about Books?")
 
-def change_voice(engine, language, gender='VoiceGenderFemale'):
-    #Checks if the voice exists on the current Hardware
-    for voice in engine.getProperty('voices'):
-        if language in voice.languages and gender == voice.gender:
-            engine.setProperty('voice', voice.id)
-            return True
 
-    raise RuntimeError("Language '{}' for gender '{}' not found".format(language, gender))
-
-def speak(text):
-    #Translates Text to Speech by the Engine
-    st.session_state.tts_engine.say(text)
-    try:
-        st.session_state.tts_engine.runAndWait()
-    except RuntimeError:
-        pass
+# -------------------------------------------------------------
+# Voice Assistant
 
 def speech_to_text():
     #Listens and Transcribe whatever the user have said
@@ -169,46 +189,141 @@ def speech_to_text():
             command = rec.recognize_google(audio).lower() # Convert to lowercase for easier matching
             st.write(f"You said: **{command}**")
             return command
+        
         except sr.WaitTimeoutError:
             st.warning("No speech detected. Please try again.")
-            speak("No speech detected. Please try again.")
+            response = "No speech detected. Please try again."
+            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            if audio_html:
+                st.components.v1.html(audio_html, height=100) # Play the audio
             return None
+        
         except sr.UnknownValueError:
             st.warning("Sorry, I could not understand that command.")
-            speak("Sorry, I could not understand that command.")
+            response = "Sorry, I could not understand that command."
+            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            if audio_html:
+                st.components.v1.html(audio_html, height=100) # Play the audio
+
             return None
         except sr.RequestError as e:
             st.error(f"Speech service error: {e}. Check internet connection.")
-            speak("I am having trouble connecting to the speech service.")
+            response = "I am having trouble connecting to the speech service."
+            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            if audio_html:
+                st.components.v1.html(audio_html, height=100) # Play the audio
+            
             return None
         except Exception as e:
             st.error(f"An unexpected error occurred: {e}")
-            speak("An unexpected error occurred.")
+            response = "An unexpected error occurred."
+            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            if audio_html:
+                st.components.v1.html(audio_html, height=100) # Play the audio
+            
             return None
+    
+# Handeling Voice Input
+if st.button("Speak"):
+    voice_cmd = speech_to_text()
+    if voice_cmd:
+        # Finding intent for voice
+        voice_features = extract_features(voice_cmd)
+        voice_intent = classifier.classify(voice_features)
 
-def process_command(command):
-    if command is None:
-        return
+        if voice_intent == "top_rated_books":
+            results = top_rated_books(3)
+            st.table(pd.DataFrame(results))
+            response_msg = assistant_action(voice_intent, voice_cmd)
+        
+        elif voice_intent == "search_by_title" or voice_intent == "get_details":
+            que = voice_cmd.lower()
+            for word in ["find", "search", "for",
+                         "details", "about", "book", "the", "title"]:
+                que = que.replace(word, "")
+            book_title = que.strip()
+            result = search_by_title(book_title)
+            if result:
+                st.json(result)
+                response_msg = f"I found the details for {result['title']}"
+            else:
+                response_msg = "I couldn't find that book in my records."
+        
+        else:
+            response_msg = assistant_action(voice_intent, voice_cmd)
+        
+        st.write(f"Assistant: {response_msg}")
+        audio_html = text_to_audio_for_web1(response_msg)
+        if audio_html:
+            st.components.v1.html(audio_html, height=0)
 
-    response = ""
-    if "hello" in command or "hi" in command:
-        response = "Hello there! How can I help you?"
-    elif "time" in command:
-        current_time = datetime.datetime.now().strftime("%H:%M")
-        response = f"The current time is {current_time}."
-    elif "joke" in command:
-        jokes = [
-            "Why don't scientists trust atoms? Because they make up everything!",
-            "Did you hear about the mathematician who was afraid of negative numbers? He would stop at nothing to avoid them!",
-            "Why did the scarecrow win an award? Because he was outstanding in his field!"
-        ]
-        response = random.choice(jokes)
-    elif "how are you" in command:
-        response = "I'm doing great, thank you for asking!"
-    elif "goodbye" in command or "bye" in command:
-        response = "Goodbye! Have a great day."
+st.write("""Please Remember to speak clearly after clicking on 'Speak'.""")
+st.markdown("---")
+# ------------------------------------------------------------
+# ------------------------------------------------------------    
+
+# Handeling user text input
+if user_input:
+    features = extract_features(user_input)
+    intent = classifier.classify(features)
+
+    if "by" in user_input.lower() or "from" in user_input.lower():
+        intent = "get_books_by_author"
+
+    if intent == "top_rated_books":
+        results = top_rated_books(5)
+        st.table(pd.DataFrame(results))
+        response = "Here are the top rated books you asked for"
+        audio_html = text_to_audio_for_web1(response) # Generate the audio
+        if audio_html:
+            st.components.v1.html(audio_html, height=100) # Play the audio
+
+
+    elif intent == "get_books_by_author":
+        que = user_input.lower()
+        for word in ["show", "me", "books", "by", "author",
+                    "find", "get", "top", "rated"]:
+            que = que.replace(word, "")
+        author_name = que.strip()
+        if author_name:
+            results = get_books_by_author(author_name, limit=5)
+            if results:
+                st.write(f"Top books by {author_name}:")
+                st.table(pd.DataFrame(results))
+                response = f"I found top rated books by {author_name}"
+                audio_html = text_to_audio_for_web1(response) # Generate the audio
+                if audio_html:
+                    st.components.v1.html(audio_html, height=100) # Play the audio
+            
+            else:
+                st.write(f"I couldn't find any books by {author_name} in my dataset.")
+                response = "Sorry, I couldn't find any books by that author"
+                audio_html = text_to_audio_for_web1(response) # Generate the audio
+                if audio_html:
+                    st.components.v1.html(audio_html, height=100) # Play the audio
+        else:
+            st.write("Which author would you like top rated books from?")
+    
+    elif intent == "search_by_title" or intent == "get_details":
+        que = user_input.lower()
+        for word in ["find", "search", "for", "the", "book",
+                     "title" , "details", "about"]:
+            que = que.replace(word, "")
+        book_title = que.strip()
+        result = search_by_title(book_title)
+        if result:
+            st.write(f"I found: {result['title']}")
+            st.json(result)
+            response = assistant_action(intent, user_input)
+        else:
+            st.write("I couldn't find that title. Try another")
+            response = "I'm sorry, I couldn't find that book in my dataset."
+        audio_html = text_to_audio_for_web1(response)
+        if audio_html:
+            st.components.v1.html(audio_html, height=100)
     else:
-        response = "I'm sorry, I don't recognize that command. Can you please try again?"
-
-    st.write(f"Assistant says: **{response}**")
-    speak(response)
+        response_msg = assistant_action(intent, user_input)
+        st.write(f"Assistant: {response_msg}")
+        audio_html = text_to_audio_for_web1(response_msg)
+        if audio_html:
+            st.components.v1.html(audio_html, height=0)
