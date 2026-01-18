@@ -18,11 +18,12 @@ pip install -r requirements.txt
 - Pandas version: 2.3.3
 - NumPy version: 2.3.4
 - Scikit-learn version: 1.7.2
-- Streamlit version: 1.50.0
+- Streamlit version: 1.51.0
 - SpeechRecognition version: 3.14.3
 - joblib: 1.5.2
-- nltk: 25.3
+- nltk: 3.9.2
 - pyttsx3: 25.3
+- gTTS: 2.5.4
 
 ## Data
 
