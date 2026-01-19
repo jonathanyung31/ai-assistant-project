@@ -16,64 +16,33 @@ from gtts import gTTS
 st.markdown(
  """
     <style>
-    /* --- Page background --- */
-    /* Page background to beige */
-    .stApp {
-    background-color: #E8DCB8 !important;
-
-    /* --- Headers --- */
-    h1, h2, h3, h4, h5, h6 {
-        color: #FF8C42 !important;
-    }
-
-    /* --- Buttons --- */
+    .stApp { background-color: #E8DCB8 !important; }
+    h1, h2, h3, h4, h5, h6 { color: #FF8C42 !important; }
     .stButton>button {
         background-color: #4a3b41;
         color: #FFAA5C;
         border-radius: 8px;
         padding: 0.5em 1em;
         font-weight: bold;
-        transition: background-color 0.3s ease, color 0.3s ease;
     }
-    .stButton>button:hover {
-        background-color: #7a656b;
-        color: #FFD28C;
-        cursor: pointer;
-    }
-
-    /* --- Radio buttons --- */
-    div[role="radiogroup"] label div {
-        color: #FF8C42 !important;  /* warm orange text */
-        transition: color 0.3s ease;
-    }
-    div[role="radiogroup"] label:hover div {
-        color: #FFA75C !important;  /* lighter orange on hover */
-        cursor: pointer;
-    }
-
-    /* Slider track */
-.stSlider > div > div > div > div {
-    background-color: #4a3b41 !important;  /* dark track */
-}
-
-/* Slider value tooltip */
-.stSlider > div > div > div > div > div > div > div {
-    background-color: #0d0d0d !important;  /* match app background */
-    color: #FF8C42 !important;  /* warm orange text */
-    font-weight: bold;
-    border-radius: 6px;
     </style>
     """,
     unsafe_allow_html=True
 )
 
 st.set_page_config(page_title="Book Chatbot", page_icon="💬", layout="wide")
-st.title("💬 Book Recommendation Chatbot")
+st.title("💬 Voice & Chat Enabled AI Book Recommendation Chatbot")
 st.write("""Ask me about your preffered books!
          I will help you find top-rated books,
          you can search by author, get book details and more!""")
+st.markdown("#### Use the **text input** or the **'Speak'** button to interact.")
 st.markdown("#### If You Want to Speak instead of Texting, Click on the 'Speak' button!")
 
+if 'messages' not in st.session_state:
+    st.session_state.messages = []
+
+if 'input_key' not in st.session_state:
+    st.session_state.input_key = 0
 
 def extract_features(text):
     features = {}
@@ -121,10 +90,6 @@ def assistant_action(intent, query_text=""):
     return actions.get(intent, "I'm sorry, I don't recognize that command. Try asking for a book title or an author!")
     
 
-# Initilizing session Engine
-if 'messages' not in st.session_state:
-    st.session_state.messages = []
-
 @st.cache_resource
 def load_intent_model():
     try:
@@ -149,7 +114,6 @@ df = load_book()
 def top_rated_books(limit=10):
     #Get the highest rated books
     top_books = df.nlargest(limit, 'average_rating')
-    #Each row becomes one dictionary
     return top_books[['title', 'authors', 'average_rating']].to_dict('records')
 
 def get_books_by_author(author_name, limit=10):
@@ -169,9 +133,6 @@ def get_details(title):
     #Get full details about a book
     book = search_by_title(title)
     return book
-
-user_input = st.text_input("Do You Have any Questions about Books?")
-
 
 # -------------------------------------------------------------
 # Voice Assistant
@@ -193,48 +154,93 @@ def speech_to_text():
         except sr.WaitTimeoutError:
             st.warning("No speech detected. Please try again.")
             response = "No speech detected. Please try again."
-            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            audio_html = text_to_audio_for_web1(response)
             if audio_html:
-                st.components.v1.html(audio_html, height=100) # Play the audio
+                st.components.v1.html(audio_html, height=100)
             return None
         
         except sr.UnknownValueError:
             st.warning("Sorry, I could not understand that command.")
             response = "Sorry, I could not understand that command."
-            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            audio_html = text_to_audio_for_web1(response)
             if audio_html:
-                st.components.v1.html(audio_html, height=100) # Play the audio
+                st.components.v1.html(audio_html, height=100)
 
             return None
         except sr.RequestError as e:
             st.error(f"Speech service error: {e}. Check internet connection.")
             response = "I am having trouble connecting to the speech service."
-            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            audio_html = text_to_audio_for_web1(response)
             if audio_html:
-                st.components.v1.html(audio_html, height=100) # Play the audio
+                st.components.v1.html(audio_html, height=100)
             
             return None
         except Exception as e:
             st.error(f"An unexpected error occurred: {e}")
             response = "An unexpected error occurred."
-            audio_html = text_to_audio_for_web1(response) # Generate the audio
+            audio_html = text_to_audio_for_web1(response)
             if audio_html:
-                st.components.v1.html(audio_html, height=100) # Play the audio
+                st.components.v1.html(audio_html, height=100)
             
             return None
+        
     
+for id, message in enumerate(st.session_state.messages):
+    with st.chat_message(message["role"]):
+        st.write(message["content"])
+        if "data" in message:
+            if isinstance(message["data"], list):
+                st.table(pd.DataFrame(message["data"]))
+            else:
+                st.json(message["data"])
+        if "audio" in message:
+            is_last_assistant = (id == len(st.session_state.messages) - 1 and message["role"] == "assistant")
+            if is_last_assistant:
+                st.components.v1.html(message["audio"], height=80)
+            else:
+                audio_no_autoplay = message["audio"].replace("autoplay", "")
+                st.components.v1.html(audio_no_autoplay, height=80)
+
+user_input = st.text_input("Do You Have any Questions about Books?", key=f"user_input_{st.session_state.input_key}")
+submit = st.button("📬 Send")
+st.write("""Please Remember to speak clearly after clicking on 'Speak'.""")
+st.write("If you want to get rid of chat history, click on 'clear chat'")
+
+st.markdown("---")
+
 # Handeling Voice Input
-if st.button("Speak"):
+if st.button("🎤 Speak"):
     voice_cmd = speech_to_text()
     if voice_cmd:
-        # Finding intent for voice
+        # Saving to history
+        st.session_state.messages.append({"role": "user", "content": voice_cmd})
+        
         voice_features = extract_features(voice_cmd)
         voice_intent = classifier.classify(voice_features)
 
+        res_table = None
+        res_json = None
+
         if voice_intent == "top_rated_books":
-            results = top_rated_books(3)
-            st.table(pd.DataFrame(results))
+            results = top_rated_books(5)
+            res_table = results
             response_msg = assistant_action(voice_intent, voice_cmd)
+        
+        elif voice_intent == "get_books_by_author":
+            que = voice_cmd.lower()
+            for word in ["show", "me", "books", "by", "author",
+                        "find", "get", "top", "rated"]:
+                que = que.replace(word, "")
+            author_name = que.strip()
+            if author_name:
+                results = get_books_by_author(author_name, limit=3)
+                if results:
+                    res_table = results
+                    response_msg = f"I found top rated books by {author_name}. Here they are:"
+                else:
+                    response_msg = f"Sorry, I couldn't find any books by {author_name}."
+            else:
+                response_msg = "Which author would you like top rated books from?"
         
         elif voice_intent == "search_by_title" or voice_intent == "get_details":
             que = voice_cmd.lower()
@@ -244,7 +250,7 @@ if st.button("Speak"):
             book_title = que.strip()
             result = search_by_title(book_title)
             if result:
-                st.json(result)
+                res_json = result
                 response_msg = f"I found the details for {result['title']}"
             else:
                 response_msg = "I couldn't find that book in my records."
@@ -252,78 +258,91 @@ if st.button("Speak"):
         else:
             response_msg = assistant_action(voice_intent, voice_cmd)
         
-        st.write(f"Assistant: {response_msg}")
+        history_msg = {"role": "assistant", "content": response_msg}
+        if res_table is not None: 
+            history_msg["data"] = res_table
+        if res_json is not None: 
+            history_msg["data"] = res_json
+
         audio_html = text_to_audio_for_web1(response_msg)
         if audio_html:
-            st.components.v1.html(audio_html, height=0)
+            history_msg["audio"] = audio_html
 
-st.write("""Please Remember to speak clearly after clicking on 'Speak'.""")
-st.markdown("---")
-# ------------------------------------------------------------
+        st.session_state.messages.append(history_msg)
+        
+        st.rerun()
+
+if st.button("🗑️ Clear Chat"):
+    st.session_state.messages = []
+    st.session_state.input_key += 1
+    st.rerun()
+
 # ------------------------------------------------------------    
 
 # Handeling user text input
-if user_input:
-    features = extract_features(user_input)
-    intent = classifier.classify(features)
+if user_input or submit:
+    if user_input:
+        st.session_state.messages.append({"role": "user", "content": user_input})
 
-    if "by" in user_input.lower() or "from" in user_input.lower():
-        intent = "get_books_by_author"
+        features = extract_features(user_input)
+        intent = classifier.classify(features)
 
-    if intent == "top_rated_books":
-        results = top_rated_books(5)
-        st.table(pd.DataFrame(results))
-        response = "Here are the top rated books you asked for"
-        audio_html = text_to_audio_for_web1(response) # Generate the audio
-        if audio_html:
-            st.components.v1.html(audio_html, height=100) # Play the audio
+        if "by" in user_input.lower() or "from" in user_input.lower():
+            intent = "get_books_by_author"
 
+        res_table = None
+        res_json = None
+        response = ""
 
-    elif intent == "get_books_by_author":
-        que = user_input.lower()
-        for word in ["show", "me", "books", "by", "author",
-                    "find", "get", "top", "rated"]:
-            que = que.replace(word, "")
-        author_name = que.strip()
-        if author_name:
-            results = get_books_by_author(author_name, limit=5)
-            if results:
-                st.write(f"Top books by {author_name}:")
-                st.table(pd.DataFrame(results))
-                response = f"I found top rated books by {author_name}"
-                audio_html = text_to_audio_for_web1(response) # Generate the audio
-                if audio_html:
-                    st.components.v1.html(audio_html, height=100) # Play the audio
-            
+        if intent == "top_rated_books":
+            results = top_rated_books(5)
+            res_table = results
+            response = "Here are the top rated books you asked for"
+
+        elif intent == "get_books_by_author":
+            que = user_input.lower()
+            for word in ["show", "me", "books", "by", "author",
+                        "find", "get", "top", "rated"]:
+                que = que.replace(word, "")
+            author_name = que.strip()
+            if author_name:
+                results = get_books_by_author(author_name, limit=5)
+                if results:
+                    res_table = results
+                    response = f"I found top rated books by {author_name}. Here they are:"
+                
+                else:
+                    response = f"Sorry, I couldn't find any books by {author_name}."
             else:
-                st.write(f"I couldn't find any books by {author_name} in my dataset.")
-                response = "Sorry, I couldn't find any books by that author"
-                audio_html = text_to_audio_for_web1(response) # Generate the audio
-                if audio_html:
-                    st.components.v1.html(audio_html, height=100) # Play the audio
+                response = "Which author would you like top rated books from?"
+        
+        elif intent == "search_by_title" or intent == "get_details":
+            que = user_input.lower()
+            for word in ["find", "search", "for", "the", "book",
+                         "title" , "details", "about"]:
+                que = que.replace(word, "")
+            book_title = que.strip()
+            result = search_by_title(book_title)
+            if result:
+                res_json = result
+                response = assistant_action(intent, user_input)
+            else:
+                response = "I'm sorry, I couldn't find that book in my dataset."
+
         else:
-            st.write("Which author would you like top rated books from?")
-    
-    elif intent == "search_by_title" or intent == "get_details":
-        que = user_input.lower()
-        for word in ["find", "search", "for", "the", "book",
-                     "title" , "details", "about"]:
-            que = que.replace(word, "")
-        book_title = que.strip()
-        result = search_by_title(book_title)
-        if result:
-            st.write(f"I found: {result['title']}")
-            st.json(result)
             response = assistant_action(intent, user_input)
-        else:
-            st.write("I couldn't find that title. Try another")
-            response = "I'm sorry, I couldn't find that book in my dataset."
+        
+        history_msg = {"role": "assistant", "content": response}
+        if res_table is not None: 
+            history_msg["data"] = res_table
+        if res_json is not None: 
+            history_msg["data"] = res_json
+
         audio_html = text_to_audio_for_web1(response)
         if audio_html:
-            st.components.v1.html(audio_html, height=100)
-    else:
-        response_msg = assistant_action(intent, user_input)
-        st.write(f"Assistant: {response_msg}")
-        audio_html = text_to_audio_for_web1(response_msg)
-        if audio_html:
-            st.components.v1.html(audio_html, height=0)
+            history_msg["audio"] = audio_html
+
+        st.session_state.messages.append(history_msg)
+        
+        st.session_state.input_key += 1
+        st.rerun()
