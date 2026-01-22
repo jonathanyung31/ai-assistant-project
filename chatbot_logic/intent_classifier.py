@@ -16,10 +16,10 @@ def extract_features(text):
     return features
 
 try:
-    with open('intents_data.json', 'r') as file:
+    with open('data\intents_data.json', 'r') as file:
         training_data = json.load(file)
 except FileNotFoundError:
-    print("intents_data.json not found!")
+    print("data\intents_data.json not found!")
     exit()
 
 feature_sets = [(extract_features(item["text"]), item["intent"]) 

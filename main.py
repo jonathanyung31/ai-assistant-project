@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
-
+from sklearn.preprocessing import StandardScaler
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -27,7 +27,7 @@ except FileNotFoundError:
 
 df.columns = df.columns.str.strip()
 
-print("\n--- Statistical Analysis Before Cleaning ---")
+print("\n Statistical Analysis Before Cleaning")
 
 # 5-number summary for numerical columns
 print("\n5-Number Summary Before Cleaning:")
@@ -106,8 +106,12 @@ df = df.dropna(subset=['book_age_days'])
 y_reg = df['average_rating']
 X_reg = df[['num_pages', 'ratings_count', 'book_age_days']]
 
+scaler_reg = StandardScaler()
+X_reg_scaled = scaler_reg.fit_transform(X_reg)
+X_reg_scaled = pd.DataFrame(X_reg_scaled, columns=X_reg.columns, index=X_reg.index)
+
 X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(
-    X_reg, y_reg, test_size=0.3, random_state=42
+    X_reg_scaled, y_reg, test_size=0.3, random_state=42
 )
 
 lin_reg_model = LinearRegression()
@@ -142,8 +146,12 @@ y_class = df['rating_category']
 X_class = df[['num_pages', 'ratings_count', 'book_age_days',
                'language_code_encoded', 'author_encoded']]
 
+scaler_rf = StandardScaler()
+X_class_scaled = scaler_rf.fit_transform(X_class)
+X_class_scaled = pd.DataFrame(X_class_scaled, columns=X_class.columns, index=X_class.index)
+
 X_train_class, X_test_class, y_train_class, y_test_class = train_test_split(
-    X_class, y_class, test_size=0.3, random_state=42
+    X_class_scaled, y_class, test_size=0.3, random_state=42
 )
 
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
@@ -165,9 +173,13 @@ joblib.dump(list(X_train_class.columns), "models/book_rf_features.joblib")
 joblib.dump(lin_reg_model, 'models/book_lin_model.joblib')
 joblib.dump(list(X_train_reg.columns), "models/book_lin_features.joblib")
 
-# Save label encoders if the user will ask for a new book in chatbot
+# Dumping label encoders
 joblib.dump(label_encoder_language, 'models/language_encoder.joblib')
 joblib.dump(label_encoder_author, 'models/author_encoder.joblib')
+
+# Dumping Scalers
+joblib.dump(scaler_reg, 'models/scaler_lin_real.joblib')
+joblib.dump(scaler_rf, 'models/scaler_rand_real.joblib')
 
 # Generating Fake Data
 
@@ -230,8 +242,12 @@ combined_df.to_csv('data/books_combined_fake.csv', index=False)
 y_lin_fake = combined_df['average_rating']
 X_lin_fake = combined_df[['num_pages', 'ratings_count', 'book_age_days']]
 
+scaler_lin_fake = StandardScaler()
+X_lin_fake_scaled = scaler_lin_fake.fit_transform(X_lin_fake)
+X_lin_fake_scaled = pd.DataFrame(X_lin_fake_scaled, columns=X_lin_fake.columns, index=X_lin_fake.index)
+
 X_train_lin_fake, X_test_lin_fake, y_train_lin_fake, y_test_lin_fake = train_test_split(
-    X_lin_fake, y_lin_fake, test_size=0.3, random_state=42
+    X_lin_fake_scaled, y_lin_fake, test_size=0.3, random_state=42
 )
 
 lin_model_fake = LinearRegression()
@@ -252,8 +268,12 @@ y_class_fake = combined_df['rating_category']
 X_class_fake = combined_df[['num_pages', 'ratings_count', 'book_age_days',
                          'language_code_encoded', 'author_encoded']]
 
+scaler_rf_fake = StandardScaler()
+X_class_scaled_fake = scaler_rf_fake.fit_transform(X_class_fake)
+X_class_scaled_fake = pd.DataFrame(X_class_scaled_fake, columns=X_class_fake.columns, index=X_class_fake.index)
+
 X_train_class_fake, X_test_class_fake, y_train_class_fake, y_test_class_fake = train_test_split(
-    X_class_fake, y_class_fake, test_size=0.3, random_state=42
+    X_class_scaled_fake, y_class_fake, test_size=0.3, random_state=42
 )
 
 rf_model_fake = RandomForestClassifier(n_estimators=100, random_state=42)
@@ -272,5 +292,10 @@ joblib.dump(list(X_train_class_fake.columns), 'models/book_rf_features_fake.jobl
 joblib.dump(lin_model_fake, 'models/book_lin_model_fake.joblib')
 joblib.dump(list(X_train_lin_fake.columns), 'models/book_lin_features_fake.joblib')
 
+# # Dumping label encoders - Fake Data
 joblib.dump(fake_label_encoder_language, 'models/language_encoder_fake.joblib')
 joblib.dump(fake_label_encoder_author, 'models/author_encoder_fake.joblib')
+
+# Dumping Scalers - Fake Data
+joblib.dump(scaler_lin_fake, 'models/scaler_lin_fake.joblib')
+joblib.dump(scaler_rf_fake, 'models/scaler_rand_fake.joblib')

@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
 
 st.set_page_config(page_title="Fake Dataset", page_icon="🎭", layout="wide")
 st.title("Fake Dataset (70% Real + 30% Fake)")

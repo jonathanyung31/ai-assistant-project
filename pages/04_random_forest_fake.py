@@ -2,59 +2,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.markdown(
- """
-    <style>
-    /* --- Page background --- */
-    /* Page background to beige */
-    .stApp {
-    background-color: #E8DCB8 !important;
-
-    /* --- Headers --- */
-    h1, h2, h3, h4, h5, h6 {
-        color: #FF8C42 !important;
-    }
-
-    /* --- Buttons --- */
-    .stButton>button {
-        background-color: #4a3b41;
-        color: #FFAA5C;
-        border-radius: 8px;
-        padding: 0.5em 1em;
-        font-weight: bold;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .stButton>button:hover {
-        background-color: #7a656b;
-        color: #FFD28C;
-        cursor: pointer;
-    }
-
-    /* --- Radio buttons --- */
-    div[role="radiogroup"] label div {
-        color: #FF8C42 !important;  /* warm orange text */
-        transition: color 0.3s ease;
-    }
-    div[role="radiogroup"] label:hover div {
-        color: #FFA75C !important;  /* lighter orange on hover */
-        cursor: pointer;
-    }
-
-    /* Slider track */
-.stSlider > div > div > div > div {
-    background-color: #4a3b41 !important;  /* dark track */
-}
-
-/* Slider value tooltip */
-.stSlider > div > div > div > div > div > div > div {
-    background-color: #0d0d0d !important;  /* match app background */
-    color: #FF8C42 !important;  /* warm orange text */
-    font-weight: bold;
-    border-radius: 6px;
-    """,
-    unsafe_allow_html=True
-)
-
 st.set_page_config(page_title="GoodreadsRec", page_icon= "📖", layout="wide")
 st.title('Goodreads recommandation App')
 st.write("This App will Recommend you Books you might Like!")
@@ -66,13 +13,14 @@ def load_models():
     try:
         rf_model = joblib.load("models/book_rf_model_fake.joblib")
         rf_features = joblib.load("models/book_rf_features_fake.joblib")
-        return rf_model, rf_features
+        scaler = joblib.load("models/scaler_rand_fake.joblib")
+        return rf_model, rf_features, scaler
     
     except FileNotFoundError:
         st.error("Model files not found.")
         st.stop()
 
-rf_model, rf_features = load_models()
+rf_model, rf_features, scaler = load_models()
 
 @st.cache_data
 def load_book_data():
@@ -125,7 +73,10 @@ if st.button("Submit"):
     }])
 
     input_data = input_data[rf_features]
-    predict_cat = rf_model.predict(input_data)[0]
+    input_data_scaled = scaler.transform(input_data)
+    input_data_scaled = pd.DataFrame(input_data_scaled, columns=rf_features)
+
+    predict_cat = rf_model.predict(input_data_scaled)[0]
     st.success(f"Predicted Rating Category: **{predict_cat}**")
 
     if predict_cat == 'High':

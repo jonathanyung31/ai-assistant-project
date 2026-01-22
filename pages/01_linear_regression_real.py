@@ -2,77 +2,25 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-st.markdown(
- """
-    <style>
-    /* --- Page background --- */
-    /* Page background to beige */
-    .stApp {
-    background-color: #E8DCB8 !important;
-
-    /* --- Headers --- */
-    h1, h2, h3, h4, h5, h6 {
-        color: #FF8C42 !important;
-    }
-
-    /* --- Buttons --- */
-    .stButton>button {
-        background-color: #4a3b41;
-        color: #FFAA5C;
-        border-radius: 8px;
-        padding: 0.5em 1em;
-        font-weight: bold;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .stButton>button:hover {
-        background-color: #7a656b;
-        color: #FFD28C;
-        cursor: pointer;
-    }
-
-    /* --- Radio buttons --- */
-    div[role="radiogroup"] label div {
-        color: #FF8C42 !important;  /* warm orange text */
-        transition: color 0.3s ease;
-    }
-    div[role="radiogroup"] label:hover div {
-        color: #FFA75C !important;  /* lighter orange on hover */
-        cursor: pointer;
-    }
-
-    /* Slider track */
-.stSlider > div > div > div > div {
-    background-color: #4a3b41 !important;  /* dark track */
-}
-
-/* Slider value tooltip */
-.stSlider > div > div > div > div > div > div > div {
-    background-color: #0d0d0d !important;  /* match app background */
-    color: #FF8C42 !important;  /* warm orange text */
-    font-weight: bold;
-    border-radius: 6px;
-    """,
-    unsafe_allow_html=True
-)
-
 st.set_page_config(page_title="GoodreadsRec",page_icon="📖", layout="wide")
 
 st.title('Goodreads recommandation App')
-st.write("This App will Recommend you Books you might Like!")
-st.markdown('**Linear Regression - Real Data**')
+st.write("## This App will Recommend you Books you might Like!")
+st.markdown('### **Linear Regression - Real Data**')
 
 @st.cache_resource
 def load_models():
     try:
         lin_model = joblib.load("models/book_lin_model.joblib")
         lin_features = joblib.load("models/book_lin_features.joblib")
-        return lin_model, lin_features
+        scaler = joblib.load("models/scaler_lin_real.joblib")
+        return lin_model, lin_features, scaler
     
     except FileNotFoundError:
         st.error("Model files not found.")
         st.stop()
 
-lin_model, lin_features = load_models()
+lin_model, lin_features, scaler = load_models()
 
 # Load real dataset
 
@@ -129,7 +77,10 @@ if st.button("Submit"):
     }])
 
     input_data = input_data[lin_features]
-    predicted_rating = lin_model.predict(input_data)[0]
+    input_data_scaled = scaler.transform(input_data)
+    input_data_scaled = pd.DataFrame(input_data_scaled, columns=lin_features)
+    
+    predicted_rating = lin_model.predict(input_data_scaled)[0]
     st.success(f"Predicted Average Rating: **{predicted_rating:.2f} / 5.0**")
 
     if predicted_rating >= 4.5:

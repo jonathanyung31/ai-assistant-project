@@ -1,42 +1,19 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import joblib
-import nltk
 from nltk.tokenize import word_tokenize
 import speech_recognition as sr
-import random
 import datetime
-import json
-from collections import defaultdict
 import base64
 import io
 from gtts import gTTS
-
-st.markdown(
- """
-    <style>
-    .stApp { background-color: #E8DCB8 !important; }
-    h1, h2, h3, h4, h5, h6 { color: #FF8C42 !important; }
-    .stButton>button {
-        background-color: #4a3b41;
-        color: #FFAA5C;
-        border-radius: 8px;
-        padding: 0.5em 1em;
-        font-weight: bold;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 st.set_page_config(page_title="Book Chatbot", page_icon="💬", layout="wide")
 st.title("💬 Voice & Chat Enabled AI Book Recommendation Chatbot")
 st.write("""Ask me about your preffered books!
          I will help you find top-rated books,
          you can search by author, get book details and more!""")
-st.markdown("#### Use the **text input** or the **'Speak'** button to interact.")
-st.markdown("#### If You Want to Speak instead of Texting, Click on the 'Speak' button!")
+st.markdown("Type your question below or click 'Speak' to use your voice!")
 
 if 'messages' not in st.session_state:
     st.session_state.messages = []
@@ -202,14 +179,24 @@ for id, message in enumerate(st.session_state.messages):
                 st.components.v1.html(audio_no_autoplay, height=80)
 
 user_input = st.text_input("Do You Have any Questions about Books?", key=f"user_input_{st.session_state.input_key}")
-submit = st.button("📬 Send")
-st.write("""Please Remember to speak clearly after clicking on 'Speak'.""")
+
+send, talk, garbage, push = st.columns([1, 1, 1, 6])
+with send:
+    submit = st.button("📬 Send")
+with talk:
+    speak = st.button("🎤 Speak")
+with garbage: 
+    clear = st.button("🗑️ Clear")
+
+st.write("💡 Tips Below:")
+st.write("Please write clearly and use proper spelling before clicking on 'Send'")
+st.write("Please Remember to speak clearly after clicking on 'Speak'.")
 st.write("If you want to get rid of chat history, click on 'clear chat'")
 
 st.markdown("---")
 
 # Handeling Voice Input
-if st.button("🎤 Speak"):
+if speak:
     voice_cmd = speech_to_text()
     if voice_cmd:
         # Saving to history
@@ -272,7 +259,7 @@ if st.button("🎤 Speak"):
         
         st.rerun()
 
-if st.button("🗑️ Clear Chat"):
+if clear:
     st.session_state.messages = []
     st.session_state.input_key += 1
     st.rerun()
@@ -282,7 +269,19 @@ if st.button("🗑️ Clear Chat"):
 # Handeling user text input
 if user_input or submit:
     if user_input:
-        st.session_state.messages.append({"role": "user", "content": user_input})
+        
+        if st.session_state.messages:
+            last_msg = st.session_state.messages[-1]
+        else:
+            last_msg = None
+
+        if last_msg and last_msg.get("role") == "user" and last_msg.get("content") == user_input:
+            duplicate = True
+        else:
+            duplicate = False
+
+        if not duplicate:
+            st.session_state.messages.append({"role": "user", "content": user_input})
 
         features = extract_features(user_input)
         intent = classifier.classify(features)
