@@ -81,6 +81,9 @@ The detailed description about the data and the processes performed can be found
 
 ## Basic Usage
 
+Link on Youtube for Screencast of the App:
+https://youtu.be/Jr07qMFelVs
+
 ### Models Information
 
 The detailed description about the models and how they were used can be found in the 'Models' wiki page on gitlab.

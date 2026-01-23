@@ -188,10 +188,6 @@ with talk:
 with garbage: 
     clear = st.button("🗑️ Clear")
 
-st.write("💡 Tips Below:")
-st.write("Please write clearly and use proper spelling before clicking on 'Send'")
-st.write("Please Remember to speak clearly after clicking on 'Speak'.")
-st.write("If you want to get rid of chat history, click on 'clear chat'")
 
 st.markdown("---")
 
@@ -345,3 +341,8 @@ if user_input or submit:
         
         st.session_state.input_key += 1
         st.rerun()
+
+st.write("💡 Tips Below:")
+st.write("Please write clearly and use proper spelling before clicking on 'Send'")
+st.write("Please Remember to speak clearly after clicking on 'Speak'.")
+st.write("If you want to get rid of chat history, click on 'clear chat'")
