@@ -9,7 +9,7 @@ import io
 from gtts import gTTS
 
 st.set_page_config(page_title="Book Chatbot", page_icon="💬", layout="wide")
-st.title("💬 Voice & Chat Enabled AI Book Recommendation Chatbot")
+st.title("💬 BooCompass - Voice & Chat Enabled AI Book Recommendation Chatbot")
 st.write("""Ask me about your preffered books!
          I will help you find top-rated books,
          you can search by author, get book details and more!""")
